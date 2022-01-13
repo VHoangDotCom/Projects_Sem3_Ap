@@ -77,20 +77,21 @@ namespace HelloWorld
             intrErr.Text = "";
         }
 
-        private void Validate()
+        private bool Validate()
         {
+           
             //First Name
-            if(fName.Text == "")
+            if (fName.Text == "")
             {
                 fNameErr.Text = "Please enter your First name";
-                return;
+                return false;
             }
 
             //Last Name
             if (lName.Text == "")
             {
                 lNameErr.Text = "Please enter your Last name";
-                return;
+                return false;
             }
 
             //Password
@@ -105,91 +106,143 @@ namespace HelloWorld
             if (string.IsNullOrWhiteSpace(input))
             {
                 passwordErr.Text = "Please enter your password.";
-                return;
+                return false;
             }
             
             if (!hasNumber.IsMatch(input))
             {
                 passwordErr.Text = "Password must contains\nat least a number.";
-                return;
+                return false;
             }else if (!hasUpperChar.IsMatch(input))
             {
                 passwordErr.Text = "Password must contains\nat least an upper character .";
-                return;
+                return false;
             }
             else if (!hasLowerChar.IsMatch(input))
             {
                 passwordErr.Text = "Password must contains\nat least a lower character .";
-                return;
-            }
+                return false;
+            } 
             else if (!hasMinimum8Chars.IsMatch(input))
             {
                 passwordErr.Text = "Password must contains\nat least 8 characters .";
-                return;
+                return false;
             }
             else if (!hasSymbols.IsMatch(input))
             {
                 passwordErr.Text = "Password must contains\nat least a special character .";
-                return;
+                return false;
             }
 
-            //Address
-            if (address.Text == "")
-            {
-                addressErr.Text = "Please enter your address";
-                return;
-            }
+
             //Phone
             if (phone.Text == "")
             {
                 phoneErr.Text = "Please enter your phone number";
-                return;
-            }else if (!hasNumber.IsMatch(phone.Text))
+                return false;
+            }
+            else if (!hasNumber.IsMatch(phone.Text))
             {
                 phoneErr.Text = "Phone number must be number type.";
-               
-                return;
+
+                return false;
             }
+            //Address
+            if (address.Text == "")
+            {
+                addressErr.Text = "Please enter your address";
+                return false;
+            }
+           
             //Avatar
             if (avatar.Text == "")
             {
                 avatarErr.Text = "Please enter your avatar";
-                return;
+                return false;
             }
             //Gender
             if(male.IsChecked != true && female.IsChecked != true)
             {
                 genderErr.Text = "Please choose your gender";
-                return;
+                return false;
             }
             //Email
             string email_validate = "@gmail.com";
             if (email.Text == "")
             {
                 emailErr.Text = "Please enter your emai";
-                return;
+                return false;
             }else if(email.Text.Contains(email_validate) != true)
             {
                 emailErr.Text = "Your email must contains\n" +
                     "@gmail.com";
-                return;
+                return false;
             }
-            //Birthday
-            if(birthday.ToString() == "")
-            {
-                birthdayErr.Text = "Please choose your birthday";
-                return;
-            }else if(DateTime.Now.Year - DateTime.Parse(birthday.ToString()).Year < 18)
-            {
-                birthdayErr.Text = "You must over 18 years old.";
-                return;
-            }
+            ////Birthday
+            //if(birthday.Date.ToString() == "")
+            //{
+            //    birthdayErr.Text = "Please choose your birthday";
+            //    return false;
+            //}else if(DateTime.Now.Year - DateTime.Parse(birthday.ToString()).Year < 18)
+            //{
+            //    birthdayErr.Text = "You must over 18 years old.";
+            //    return false;
+            //}
 
+            return true;
 
+        }
+
+        private void ClearData()
+        {
+            lName.Text = string.Empty;
+            fName.Text = string.Empty;
+            password.Text = string.Empty;
+            phone.Text = string.Empty;
+            address.Text = string.Empty;
+            avatar.Text = string.Empty;
+            email.Text = string.Empty;
+            male.IsChecked = false;
+            female.IsChecked = false;
+        }
+        private async void ShowDialog()
+        {
+            ContentDialog dialog = new ContentDialog();
+            dialog.Title = " Welcome " + fName.Text + " " + lName.Text + " !";
+           
+            dialog.Content = "Here is your info";
+            //Info here
+
+            dialog.PrimaryButtonText = "Save";
+            dialog.SecondaryButtonText = "Don't Save";
+            dialog.CloseButtonText = "Cancel";
+            var result = await dialog.ShowAsync();
+          
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Validate();
+            try
+            {
+                if(Validate() == true)
+                {
+                    ShowDialog();
+                    ClearData();
+                }
+                else
+                {
+                   
+                }                   
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                
+            }
+                
+
         }
         private void Menu_Opening(object sender, object e)
         {
