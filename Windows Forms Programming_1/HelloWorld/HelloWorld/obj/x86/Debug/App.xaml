@@ -36,6 +36,20 @@
             </Setter>
 
         </Style>
+        <Style TargetType="TextBlock" x:Key="Basic">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Warning" BasedOn="{StaticResource Basic}">
+            <Setter Property="Foreground" Value="Red"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+        </Style>
+
     </Application.Resources>
    
 </Application>

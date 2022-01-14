@@ -1,0 +1,10 @@
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\HelloNewtonsoft.exe.config
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\HelloNewtonsoft.exe
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\HelloNewtonsoft.pdb
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\HelloNewtonsoft\obj\Debug\HelloNewtonsoft.csproj.AssemblyReference.cache
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\HelloNewtonsoft\obj\Debug\HelloNewtonsoft.csproj.CoreCompileInputs.cache
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\HelloNewtonsoft\obj\Debug\HelloNewtonsoft.exe
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\HelloNewtonsoft\obj\Debug\HelloNewtonsoft.pdb
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\Newtonsoft.Json.dll
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\HelloNewtonsoft\bin\Debug\Newtonsoft.Json.xml
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\HelloNewtonsoft\obj\Debug\HelloNewtonsoft.csproj.CopyComplete

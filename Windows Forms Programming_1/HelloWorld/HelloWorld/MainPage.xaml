@@ -18,22 +18,23 @@
            
             <StackPanel>
                
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock Foreground="DarkBlue" FontSize="30" Text="SIGN IN " Margin="0 5 0 10"/>
+                <StackPanel  Orientation="Vertical" HorizontalAlignment="Center">
+                    <TextBlock x:Name="title" Foreground="DarkBlue" FontSize="30" Text="SIGN IN " Margin="0 5 0 10"/>
+                    <TextBlock  x:Name="DialogResult" Foreground="YellowGreen" FontSize="30"    Margin="20 -25 0 0"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Margin="40 10 0 10">
                     
                     <!-- First name-->
                     <StackPanel Orientation="Vertical" Margin="20 0 20 0">
-                        <TextBlock Text="First Name:" Margin="10 0 80 0"/>
-                        <TextBlock x:Name="fNameErr" Foreground="Red"  Margin="10 0 0 0"/>
-                        <TextBox x:Name="fName" Width="250"  SelectionChanged="fName_SelectionChanged" ></TextBox>
+                        <TextBlock Style="{StaticResource Basic}" Text="First Name:" Margin="10 0 80 0"/>
+                        <TextBlock Style="{StaticResource Warning}" x:Name="fNameErr"   Margin="10 0 0 0"/>
+                        <TextBox  x:Name="fName" Width="250"  SelectionChanged="fName_SelectionChanged" PointerEntered="fName_PointerEntered" ></TextBox>
                     </StackPanel>
                     <!-- Last name-->
                     <StackPanel Orientation="Vertical" Margin="70 0 0 0 ">
-                        <TextBlock Text="Last Name:" Margin="10 0 80 0"/>
-                        <TextBlock x:Name="lNameErr" Foreground="Red"  Margin="10 0 0 0"/>
+                        <TextBlock Style="{StaticResource Basic}" Text="Last Name:" Margin="10 0 80 0"/>
+                        <TextBlock Style="{StaticResource Warning}" x:Name="lNameErr"   Margin="10 0 0 0"/>
                         <TextBox x:Name="lName" Width="250"  SelectionChanged="lName_SelectionChanged" ></TextBox>
                     </StackPanel>
                    
@@ -42,15 +43,15 @@
 
                     <!-- Password-->
                     <StackPanel Orientation="Vertical" Margin="20 0 20 0">
-                        <TextBlock Text="Password:" Margin="10 0 80 0"/>
-                        <TextBlock x:Name="passwordErr" Foreground="Red"  Margin="10 0 0 0"/>
+                        <TextBlock Style="{StaticResource Basic}" Text="Password:" Margin="10 0 80 0"/>
+                        <TextBlock Style="{StaticResource Warning}" x:Name="passwordErr"   Margin="10 0 0 0"/>
                      
                         <TextBox x:Name="password" Width="250" AutomationProperties.Name="Simple PasswordBox" SelectionChanged="password_SelectionChanged" />
                     </StackPanel>
                     <!-- Phone-->
                     <StackPanel Orientation="Vertical" Margin="70 0 0 0">
-                        <TextBlock Text="Phone:" Margin="10 0 80 0"/>
-                        <TextBlock x:Name="phoneErr" Foreground="Red"  Margin="10 0 0 0"/>
+                        <TextBlock Style="{StaticResource Basic}" Text="Phone:" Margin="10 0 80 0"/>
+                        <TextBlock Style="{StaticResource Warning}" x:Name="phoneErr"   Margin="10 0 0 0"/>
                         <TextBox x:Name="phone" Width="250" SelectionChanged="phone_SelectionChanged"></TextBox>
                     </StackPanel>
                    
@@ -60,14 +61,14 @@
                 <StackPanel Orientation="Horizontal" Margin="40 10 0 10">
                     <!-- Address-->
                     <StackPanel Orientation="Vertical" Margin="20 0 20 0 ">
-                        <TextBlock Text="Address:" Margin="10 0 80 0"/>
-                        <TextBlock x:Name="addressErr" Foreground="Red"  Margin="10 0 0 0"/>
+                        <TextBlock Style="{StaticResource Basic}" Text="Address:" Margin="10 0 80 0"/>
+                        <TextBlock Style="{StaticResource Warning}" x:Name="addressErr"   Margin="10 0 0 0"/>
                         <TextBox x:Name="address" Width="300" SelectionChanged="address_SelectionChanged"></TextBox>
                     </StackPanel>
                     <!-- Avatar-->
                     <StackPanel Orientation="Vertical" Margin="20 0 0 0 ">
-                        <TextBlock Text="Avatar:" Margin="10 0 80 0"/>
-                        <TextBlock x:Name="avatarErr" Foreground="Red"  Margin="10 0 0 0"/>
+                        <TextBlock Style="{StaticResource Basic}" Text="Avatar:" Margin="10 0 80 0"/>
+                        <TextBlock Style="{StaticResource Warning}" x:Name="avatarErr"   Margin="10 0 0 0"/>
                         <TextBox x:Name="avatar" Width="250" TextChanged="avatar_TextChanged"></TextBox>
                     </StackPanel>
                 </StackPanel>
@@ -75,18 +76,18 @@
                 <StackPanel Orientation="Horizontal" Margin="40 10 0 10">
                     <!-- Gender-->
                     <StackPanel Orientation="Vertical" Margin="20 0 0 0">
-                        <TextBlock Text="Gender:" Margin="10 0 10 0"/>
-                        <TextBlock x:Name="genderErr"   Foreground="Red"  Margin="10 -10 0 0"/>
+                        <TextBlock Style="{StaticResource Basic}" Text="Gender:" Margin="10 0 10 0"/>
+                        <TextBlock Style="{StaticResource Warning}" x:Name="genderErr"     Margin="10 -10 0 0"/>
                         <StackPanel Orientation="Horizontal">
-                            <RadioButton x:Name="male" Content="Male" Margin="20 0 0 10"/>
-                            <RadioButton x:Name="female" Content="Female" Margin="-30 0 0 10"/>
+                            <RadioButton x:Name="male" Content="Male" Margin="20 0 0 10" Click="male_Click" />
+                            <RadioButton x:Name="female" Content="Female" Margin="-30 0 0 10" Click="female_Click" />
                         </StackPanel>
                         
                     </StackPanel>
                     <!-- Email-->
                     <StackPanel Orientation="Vertical" Margin="110 0 0 0 ">
-                        <TextBlock Text="Email:" Margin="10 0 80 0"/>
-                        <TextBlock x:Name="emailErr"  Foreground="Red"  Margin="10 0 0 0"/>
+                        <TextBlock Style="{StaticResource Basic}" Text="Email:" Margin="10 0 80 0"/>
+                        <TextBlock Style="{StaticResource Warning}" x:Name="emailErr"    Margin="10 0 0 0"/>
                         <TextBox x:Name="email" Width="250" TextChanged="email_TextChanged"></TextBox>
                     </StackPanel>
                 </StackPanel>
@@ -94,33 +95,30 @@
                 <StackPanel Orientation="Horizontal" Margin="40 10 0 10">
                     <!-- Birthday-->
                     <StackPanel Orientation="Vertical" Margin="20 -5 20 0">
-                        <TextBlock Text="Birthday:" Margin="10 0 80 0"/>
-                        <TextBlock x:Name="birthdayErr" Foreground="Red"  Margin="10 0 0 0"/>
-                        <DatePicker x:Name="birthday" Width="280" IsEnabledChanged="birthday_IsEnabledChanged" Margin="-30 0 0 0" />
+                        <TextBlock Style="{StaticResource Basic}" Text="Birthday:" Margin="10 0 80 0"/>
+                        <TextBlock Style="{StaticResource Warning}" x:Name="birthdayErr"   Margin="10 0 0 0"/>
+                        <DatePicker x:Name="birthday" Width="280" IsEnabledChanged="birthday_IsEnabledChanged" Margin="-30 0 0 0" PointerEntered="birthday_PointerEntered" />
 
                     </StackPanel>
                     <!-- Introduction-->
                     <StackPanel Orientation="Vertical" Margin="70 0 0 0 ">
-                        <TextBlock Text="Introduction:" Margin="10 0 80 0"/>
-                        <TextBlock x:Name="intrErr"  Foreground="Red"  Margin="10 0 0 0"/>
-                        <RichEditBox x:Name="REBCustom"
-                                     PlaceholderText="Your introduction here ..."
-                                     AutomationProperties.Name="editor with custom menu"
-                                     Width="300" Height="120"
-                                     Loaded="REBCustom_Loaded"
-                                     Unloaded="REBCustom_Unloaded"  SelectionChanged="REBCustom_SelectionChanged"/>
+                        <TextBlock Style="{StaticResource Basic}" Text="Introduction:" Margin="10 0 80 0"/>
+                        <TextBlock Style="{StaticResource Warning}" x:Name="intrErr"    Margin="10 0 0 0"/>
+                        <TextBox x:Name="intro" Width="300" Height="100"  ></TextBox>
                     </StackPanel>
 
                    
                 </StackPanel>
-                <StackPanel  Margin=" 95 -80 15 40">
+                <StackPanel  Margin=" 95 -60 15 40">
                     <Button  Width="110" Height="80" x:Name="login" Click="Button_Click" AutomationProperties.Name="Pie">
                         <Image Source="/Assets/1.jpg" Width="100" AutomationProperties.Name="Slice"/>
                         
                     </Button>
+                    
                     <Image Source="/Assets/talk.png" Margin="-300 -100 70 70" Width="100" Height="75" AutomationProperties.Name="Slice"/>
+                    
                 </StackPanel>
-            
+               
             </StackPanel>
            
         </Border>

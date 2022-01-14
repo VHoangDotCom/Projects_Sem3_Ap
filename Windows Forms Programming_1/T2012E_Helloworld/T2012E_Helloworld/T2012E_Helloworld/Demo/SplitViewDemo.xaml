@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="T2012E_Helloworld.Demo.SplitViewDemo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:T2012E_Helloworld.Demo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <SplitView x:Name="MySplitView" IsPaneOpen="False" DisplayMode="CompactInline">
+        <SplitView.Pane>
+            <StackPanel Margin="10">
+                <SymbolIcon Tapped="SymbolIcon_Tapped" Symbol="GlobalNavigationButton" HorizontalAlignment="Left"/>
+                <TextBlock Text="Page 01" Tag="page1" HorizontalAlignment="Center" Tapped="Link_Tapped"/>
+                <TextBlock Text="Page 02" Tag="page2" HorizontalAlignment="Center" Tapped="Link_Tapped"/>
+                <TextBlock Text="List View" Tag="listview" HorizontalAlignment="Center" Tapped="Link_Tapped"/>
+            </StackPanel>
+        </SplitView.Pane>
+        <SplitView.Content>
+            <Frame x:Name="MainFrame"/>
+        </SplitView.Content>
+    </SplitView>
+</Page>

@@ -1,0 +1,150 @@
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\App.xbf
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\MainPage.xbf
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\T2012E_Helloworld.xr.xml
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\T2012E_Helloworld.exe
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\T2012E_Helloworld.pdb
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\resources.pri
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\AppxManifest.xml
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Core\AppxManifest.xml
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Core\T2012E_Helloworld.exe
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\T2012E_Helloworld.build.appxrecipe
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\System.Runtime.dll
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\App.g.i.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\App.g.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\MainPage.g.i.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\MainPage.g.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\App.xaml
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\MainPage.xaml
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\App.xbf
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\MainPage.xbf
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\XamlSaveStateFile.xml
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\T2012E_Helloworld.csproj.CoreCompileInputs.cache
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\T2012E_Helloworld.exe
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\T2012E_Helloworld.pdb
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\ResourceHandlingTask.state
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\priconfig.xml
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\priconfig.xml.intermediate
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\unfiltered.layout.resfiles
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\filtered.layout.resfiles
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\filtered.layout.resfiles.intermediate
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\excluded.layout.resfiles
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\excluded.layout.resfiles.intermediate
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\resources.resfiles
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\resources.resfiles.intermediate
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\pri.resfiles
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\pri.resfiles.intermediate
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\qualifiers.txt
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\qualifiers.txt.intermediate
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637425067200000000.json
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Pages\LoginPage.xbf
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Pages\LoginPage.g.i.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Pages\LoginPage.g.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Pages\LoginPage.xaml
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Pages\LoginPage.xbf
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Demo\GridLayoutDemo.xbf
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Demo\SplitViewDemo.xbf
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\T2012E_Helloworld.csproj.AssemblyReference.cache
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\GridLayoutDemo.g.i.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\GridLayoutDemo.g.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\SplitViewDemo.g.i.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\SplitViewDemo.g.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\GridLayoutDemo.xaml
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\SplitViewDemo.xaml
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\GridLayoutDemo.xbf
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\SplitViewDemo.xbf
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Demo\Page02.xbf
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Demo\Page01.xbf
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\Page02.g.i.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\Page02.g.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\Page01.g.i.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\Page01.g.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\Page02.xaml
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\Page01.xaml
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\Page02.xbf
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\Page01.xbf
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Demo\ListViewDemo.xbf
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\ListViewDemo.g.i.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\ListViewDemo.g.cs
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\ListViewDemo.xaml
+C:\Users\xuanhung\source\repos\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\ListViewDemo.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\App.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Demo\GridLayoutDemo.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Demo\ListViewDemo.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Demo\Page02.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Demo\Page01.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Demo\SplitViewDemo.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\MainPage.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Pages\LoginPage.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\T2012E_Helloworld.xr.xml
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\T2012E_Helloworld.exe
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\T2012E_Helloworld.pdb
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\resources.pri
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\AppxManifest.xml
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Core\AppxManifest.xml
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Core\T2012E_Helloworld.exe
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\T2012E_Helloworld.build.appxrecipe
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\System.Runtime.dll
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\T2012E_Helloworld.csproj.AssemblyReference.cache
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\App.g.i.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\App.g.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\GridLayoutDemo.g.i.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\GridLayoutDemo.g.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\ListViewDemo.g.i.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\ListViewDemo.g.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\Page02.g.i.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\Page02.g.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\Page01.g.i.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\Page01.g.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\SplitViewDemo.g.i.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\SplitViewDemo.g.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\MainPage.g.i.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\MainPage.g.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Pages\LoginPage.g.i.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Pages\LoginPage.g.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\XamlTypeInfo.g.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\App.xaml
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\GridLayoutDemo.xaml
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\ListViewDemo.xaml
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\Page02.xaml
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\Page01.xaml
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\SplitViewDemo.xaml
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\MainPage.xaml
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Pages\LoginPage.xaml
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\App.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\GridLayoutDemo.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\ListViewDemo.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\Page02.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\Page01.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Demo\SplitViewDemo.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\MainPage.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\Pages\LoginPage.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\XamlSaveStateFile.xml
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\T2012E_Helloworld.csproj.CoreCompileInputs.cache
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\T2012E_Helloworld.csproj.CopyComplete
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\T2012E_Helloworld.exe
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\T2012E_Helloworld.pdb
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\ResourceHandlingTask.state
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\priconfig.xml
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\priconfig.xml.intermediate
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\unfiltered.layout.resfiles
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\filtered.layout.resfiles
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\filtered.layout.resfiles.intermediate
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\excluded.layout.resfiles
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\excluded.layout.resfiles.intermediate
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\resources.resfiles
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\resources.resfiles.intermediate
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\pri.resfiles
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\pri.resfiles.intermediate
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\qualifiers.txt
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\qualifiers.txt.intermediate
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\ProjectArchitectures.txt
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424563200000000.json
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\T2012E_Helloworld\T2012E_Helloworld\T2012E_Helloworld\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637425067200000000.json

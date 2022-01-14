@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Newtonsoft.Json;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -33,6 +34,12 @@ namespace HelloWorld
         private void fName_SelectionChanged(object sender, RoutedEventArgs e)
         {
             fNameErr.Text = "";
+           
+        }
+        private void fName_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            DialogResult.Text = "";
+            title.Text = "SIGN IN";
         }
         private void lName_SelectionChanged(object sender, RoutedEventArgs e)
         {
@@ -71,11 +78,28 @@ namespace HelloWorld
         {
             birthdayErr.Text = "";
         }
+        private void male_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            genderErr.Text = "";
+        }
+        private void female_Click(object sender, RoutedEventArgs e)
+        {
+            genderErr.Text = "";
+        }
+        private void male_Click(object sender, RoutedEventArgs e)
+        {
+            genderErr.Text = "";
+        }
 
         private void REBCustom_SelectionChanged(object sender, RoutedEventArgs e)
         {
             intrErr.Text = "";
         }
+        private void birthday_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            birthdayErr.Text = "";
+        }
+       
 
         private bool Validate()
         {
@@ -98,6 +122,7 @@ namespace HelloWorld
             var input = password.Text;
           
             var hasNumber = new Regex(@"[0-9]+");
+           
             var hasUpperChar = new Regex(@"[A-Z]+");
             var hasLowerChar = new Regex(@"[a-z]+");
             var hasMinimum8Chars = new Regex(@".{8,}");
@@ -143,7 +168,7 @@ namespace HelloWorld
             }
             else if (!hasNumber.IsMatch(phone.Text))
             {
-                phoneErr.Text = "Phone number must be number type.";
+                phoneErr.Text = "Phone number must be number type (10-12).";
 
                 return false;
             }
@@ -178,16 +203,17 @@ namespace HelloWorld
                     "@gmail.com";
                 return false;
             }
-            ////Birthday
-            //if(birthday.Date.ToString() == "")
-            //{
-            //    birthdayErr.Text = "Please choose your birthday";
-            //    return false;
-            //}else if(DateTime.Now.Year - DateTime.Parse(birthday.ToString()).Year < 18)
-            //{
-            //    birthdayErr.Text = "You must over 18 years old.";
-            //    return false;
-            //}
+            //Birthday
+            if (birthday.SelectedDate == null)
+            {
+                birthdayErr.Text = "Please choose your birthday";
+                return false;
+            }
+            else if (DateTime.Now.Year - DateTime.Parse(birthday.SelectedDate.ToString()).Year < 18)
+            {
+                birthdayErr.Text = "You must over 18 years old.";
+                return false;
+            }
 
             return true;
 
@@ -202,36 +228,91 @@ namespace HelloWorld
             address.Text = string.Empty;
             avatar.Text = string.Empty;
             email.Text = string.Empty;
+            intro.Text = string.Empty;
             male.IsChecked = false;
             female.IsChecked = false;
         }
         private async void ShowDialog()
         {
+           
+            
+
+            var account = new Models.Account()
+            {
+                Id = 1,
+                firstName = fName.Text,
+                lastName = lName.Text,
+                Password = password.Text,
+                Address = address.Text,
+                Gender = lName.Text,//check
+                Phone = phone.Text,
+                Avatar = avatar.Text,
+                Email = email.Text,
+                Birthday = birthday.SelectedDate.ToString(),
+                Intro = intro.Text,
+
+            };
+            var jsonString = JsonConvert.SerializeObject(account);
             ContentDialog dialog = new ContentDialog();
             dialog.Title = " Welcome " + fName.Text + " " + lName.Text + " !";
-           
-            dialog.Content = "Here is your info";
+            dialog.Foreground = GetSolidColorBrush("#FFCD3917");
+
+            dialog.Content = "Here is your info: \n"+jsonString;
             //Info here
 
             dialog.PrimaryButtonText = "Save";
             dialog.SecondaryButtonText = "Don't Save";
             dialog.CloseButtonText = "Cancel";
             var result = await dialog.ShowAsync();
-          
+
+            if (result == ContentDialogResult.Primary)
+            {
+               
+                DialogResult.Text = "Saved successfull !";
+                title.Text = "";
+                DialogResult.Foreground = GetSolidColorBrush("#84b94b00");//phai la string 8 char
+            }
+            else if (result == ContentDialogResult.Secondary)
+            {
+                title.Text = "";
+                DialogResult.Text = "Saved canceled !";
+            }
+            else
+            {
+                title.Text = "";
+                DialogResult.Text = "What the f*ck ?";
+                DialogResult.Foreground = GetSolidColorBrush("#FFCD3917");
+            }
+
         }
+
+        //Set color
+        public SolidColorBrush GetSolidColorBrush(string hex)
+        {
+            hex = hex.Replace("#", string.Empty);
+            byte a = (byte)(Convert.ToUInt32(hex.Substring(0, 2), 16));
+            byte r = (byte)(Convert.ToUInt32(hex.Substring(2, 2), 16));
+            byte g = (byte)(Convert.ToUInt32(hex.Substring(4, 2), 16));
+            byte b = (byte)(Convert.ToUInt32(hex.Substring(6, 2), 16));
+            SolidColorBrush myBrush = new SolidColorBrush(Windows.UI.Color.FromArgb(a, r, g, b));
+            return myBrush;
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
+
             try
             {
-                if(Validate() == true)
+                if (Validate() == true)
                 {
                     ShowDialog();
                     ClearData();
                 }
                 else
                 {
-                   
-                }                   
+
+                }
             }
             catch
             {
@@ -239,34 +320,12 @@ namespace HelloWorld
             }
             finally
             {
-                
+
             }
-                
+
 
         }
-        private void Menu_Opening(object sender, object e)
-        {
-            CommandBarFlyout myFlyout = sender as CommandBarFlyout;
-            if (myFlyout.Target == REBCustom)
-            {
-                AppBarButton myButton = new AppBarButton();
-                myButton.Command = new StandardUICommand(StandardUICommandKind.Share);
-                myFlyout.PrimaryCommands.Add(myButton);
-            }
-        }
 
-        private void REBCustom_Loaded(object sender, RoutedEventArgs e)
-        {
-            REBCustom.SelectionFlyout.Opening += Menu_Opening;
-            REBCustom.ContextFlyout.Opening += Menu_Opening;
-        }
-
-        private void REBCustom_Unloaded(object sender, RoutedEventArgs e)
-        {
-            REBCustom.SelectionFlyout.Opening -= Menu_Opening;
-            REBCustom.ContextFlyout.Opening -= Menu_Opening;
-        }
-
-       
+        
     }
 }

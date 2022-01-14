@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="T2012E_Helloworld.Pages.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:T2012E_Helloworld.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <TextBlock Text="First Group:"  Margin="5" />
+        <RadioButton x:ConnectionId='2' x:Name="TopButton" Margin="5"                      
+     GroupName="Gender" Tag="Male" Content="First Choice" />
+        <RadioButton x:ConnectionId='3' x:Name="MiddleButton" Margin="5"                      
+     GroupName="Gender" Tag="Female" Content="Second Choice" />
+        <TextBlock Text="Ungrouped:" Margin="5" />
+        <RadioButton x:ConnectionId='4' Tag="Other" GroupName="Gender" x:Name="LowerButton" Margin="5"                      
+    Content="Third Choice" />
+        <TextBlock x:ConnectionId='5' x:Name="choiceTextBlock" Margin="5" />
+        <Button x:ConnectionId='6' Content="Login"                      Style="{StaticResource AccentButtonStyle}" />
+    </StackPanel>
+</Page>
+    
+
