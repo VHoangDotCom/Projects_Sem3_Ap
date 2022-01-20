@@ -30,13 +30,45 @@
     <AppXManifest Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-14T07:04:05.025</Modified>
+      <Modified>2022-01-20T00:50:00.416</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\HelloWorld.exe">
       <PackagePath>entrypoint\HelloWorld.exe</PackagePath>
-      <Modified>2022-01-14T07:04:04.412</Modified>
+      <Modified>2022-01-20T00:49:56.853</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\cloudinarydotnet\1.17.0\lib\netstandard2.0\CloudinaryDotNet.dll">
+      <PackagePath>CloudinaryDotNet.dll</PackagePath>
+      <Modified>2022-01-17T14:09:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.aspnetcore.html.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Html.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Html.Abstractions.dll</PackagePath>
+      <Modified>2018-11-12T17:28:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.aspnetcore.http.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.Abstractions.dll</PackagePath>
+      <Modified>2018-11-12T17:29:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.aspnetcore.http.features\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.Features.dll</PackagePath>
+      <Modified>2018-11-12T17:28:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\5.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
+      <Modified>2020-10-19T18:48:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.extensions.options\5.0.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll">
+      <PackagePath>Microsoft.Extensions.Options.dll</PackagePath>
+      <Modified>2020-10-19T18:48:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.extensions.primitives\5.0.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll">
+      <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
+      <Modified>2020-10-19T18:48:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.extensions.webencoders\5.0.3\lib\netstandard2.0\Microsoft.Extensions.WebEncoders.dll">
+      <PackagePath>Microsoft.Extensions.WebEncoders.dll</PackagePath>
+      <Modified>2021-01-23T12:35:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\2.0.1\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
@@ -53,6 +85,14 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2021-02-04T18:15:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\system.runtime.compilerservices.unsafe\5.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+      <Modified>2020-10-19T18:46:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\system.text.encodings.web\5.0.0\lib\netstandard2.0\System.Text.Encodings.Web.dll">
+      <PackagePath>System.Text.Encodings.Web.dll</PackagePath>
+      <Modified>2020-10-19T18:40:38.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -106,15 +146,51 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\HelloWorld.xr.xml">
       <PackagePath>HelloWorld.xr.xml</PackagePath>
-      <Modified>2022-01-14T01:24:50.747</Modified>
+      <Modified>2022-01-20T00:49:56.506</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-01-14T07:02:25.727</Modified>
+      <Modified>2022-01-20T00:49:56.661</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\DemoFilePicker.xbf">
+      <PackagePath>Demo\DemoFilePicker.xbf</PackagePath>
+      <Modified>2022-01-20T00:49:56.661</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\GridLayoutDemo.xbf">
+      <PackagePath>Demo\GridLayoutDemo.xbf</PackagePath>
+      <Modified>2022-01-20T00:49:56.661</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\ListSongPage.xbf">
+      <PackagePath>Demo\ListSongPage.xbf</PackagePath>
+      <Modified>2022-01-20T00:49:56.662</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\ListViewDemo.xbf">
+      <PackagePath>Demo\ListViewDemo.xbf</PackagePath>
+      <Modified>2022-01-20T00:49:56.662</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\NavigationViewDemo.xbf">
+      <PackagePath>Demo\NavigationViewDemo.xbf</PackagePath>
+      <Modified>2022-01-20T00:49:56.662</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\NavigationViewDemo02.xbf">
+      <PackagePath>Demo\NavigationViewDemo02.xbf</PackagePath>
+      <Modified>2022-01-20T00:49:56.662</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\SplitViewDemo.xbf">
+      <PackagePath>Demo\SplitViewDemo.xbf</PackagePath>
+      <Modified>2022-01-20T00:49:56.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-01-14T07:04:04.328</Modified>
+      <Modified>2022-01-20T00:49:56.659</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Pages\LoginPage.xbf">
+      <PackagePath>Pages\LoginPage.xbf</PackagePath>
+      <Modified>2022-01-20T00:49:56.663</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Pages\SettingPage.xbf">
+      <PackagePath>Pages\SettingPage.xbf</PackagePath>
+      <Modified>2022-01-20T00:49:56.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -122,11 +198,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-01-13T10:35:57.341</Modified>
+      <Modified>2022-01-20T00:49:59.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Core\HelloWorld.exe">
       <PackagePath>HelloWorld.exe</PackagePath>
-      <Modified>2022-01-14T07:04:05.020</Modified>
+      <Modified>2022-01-20T00:50:00.404</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

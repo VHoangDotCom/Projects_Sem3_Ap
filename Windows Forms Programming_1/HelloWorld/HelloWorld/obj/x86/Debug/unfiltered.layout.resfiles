@@ -9,6 +9,15 @@ Assets\StoreLogo.png
 Assets\talk.png
 Assets\Wide310x150Logo.scale-200.png
 App.xbf
+Demo\DemoFilePicker.xbf
+Demo\GridLayoutDemo.xbf
+Demo\ListSongPage.xbf
+Demo\ListViewDemo.xbf
+Demo\NavigationViewDemo.xbf
+Demo\NavigationViewDemo02.xbf
+Demo\SplitViewDemo.xbf
 HelloWorld.xr.xml
 MainPage.xbf
+Pages\LoginPage.xbf
+Pages\SettingPage.xbf
 Properties\Default.rd.xml

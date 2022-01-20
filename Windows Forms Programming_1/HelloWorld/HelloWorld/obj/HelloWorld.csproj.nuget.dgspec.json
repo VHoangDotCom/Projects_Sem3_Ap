@@ -39,6 +39,10 @@
       "frameworks": {
         "uap10.0.17763": {
           "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.12, )"

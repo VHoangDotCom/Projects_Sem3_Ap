@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Newtonsoft.Json;
+using HelloWorld.Service;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -24,6 +25,7 @@ namespace HelloWorld
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private AccountService accountService = new AccountService();
         public MainPage()
         {
             this.InitializeComponent();
@@ -231,12 +233,11 @@ namespace HelloWorld
             intro.Text = string.Empty;
             male.IsChecked = false;
             female.IsChecked = false;
+            birthday.SelectedDate = null;
         }
         private async void ShowDialog()
         {
            
-            
-
             var account = new Models.Account()
             {
                 Id = 1,
@@ -270,11 +271,12 @@ namespace HelloWorld
                
                 DialogResult.Text = "Saved successfull !";
                 title.Text = "";
-                DialogResult.Foreground = GetSolidColorBrush("#84b94b00");//phai la string 8 char
+                
             }
             else if (result == ContentDialogResult.Secondary)
             {
                 title.Text = "";
+                DialogResult.Foreground = GetSolidColorBrush("#84b94b00");//phai la string 8 char
                 DialogResult.Text = "Saved canceled !";
             }
             else

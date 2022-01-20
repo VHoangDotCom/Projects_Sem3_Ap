@@ -9,7 +9,7 @@
     <Application.Resources>
         <Style TargetType="Button">
             <Setter Property="Background" Value="White" />
-            <Setter Property="Foreground" Value="WhiteSmoke" />
+            <Setter Property="Foreground" Value="DarkGreen" />
             <Setter Property="FontSize" Value="15" />
 
 

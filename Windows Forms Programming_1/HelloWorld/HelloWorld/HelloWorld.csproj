@@ -119,11 +119,42 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Config\APIConfig.cs" />
+    <Compile Include="Demo\DemoFilePicker.xaml.cs">
+      <DependentUpon>DemoFilePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\GridLayoutDemo.xaml.cs">
+      <DependentUpon>GridLayoutDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\ListSongPage.xaml.cs">
+      <DependentUpon>ListSongPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\ListViewDemo.xaml.cs">
+      <DependentUpon>ListViewDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\NavigationViewDemo.xaml.cs">
+      <DependentUpon>NavigationViewDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\NavigationViewDemo02.xaml.cs">
+      <DependentUpon>NavigationViewDemo02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\SplitViewDemo.xaml.cs">
+      <DependentUpon>SplitViewDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Account.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Account.cs" />
+    <Compile Include="Pages\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SettingPage.xaml.cs">
+      <DependentUpon>SettingPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\AccountService.cs" />
+    <Compile Include="Service\SongService.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -147,12 +178,51 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Demo\DemoFilePicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demo\GridLayoutDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demo\ListSongPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demo\ListViewDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demo\NavigationViewDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demo\NavigationViewDemo02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demo\SplitViewDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Pages\LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SettingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="CloudinaryDotNet">
+      <Version>1.17.0</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.12</Version>
     </PackageReference>
@@ -163,6 +233,7 @@
       <Version>13.0.1</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

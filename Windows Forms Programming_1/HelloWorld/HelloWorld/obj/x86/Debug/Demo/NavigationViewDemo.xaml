@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="HelloWorld.Demo.NavigationViewDemo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloWorld.Demo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <NavigationView x:ConnectionId='2' x:Name="NavView"                                                                            >
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Lastest Songs" Icon="Audio" Tag="listSong" />
+                
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem Content="Login" Icon="Permissions" Tag="register" />
+                <NavigationViewItem Content="Register" Icon="AddFriend" Tag="login" />
+               
+            </NavigationView.MenuItems>
+            <NavigationView.AutoSuggestBox>
+                <AutoSuggestBox x:ConnectionId='3' x:Name="NavViewSearchBox" QueryIcon="Find"/>
+            </NavigationView.AutoSuggestBox>
+            <ScrollViewer>
+                <Frame x:ConnectionId='4' x:Name="MainContent" Margin="5" Padding="5">
+
+                </Frame>
+            </ScrollViewer>
+           
+        </NavigationView>
+    </Grid>
+</Page>
+

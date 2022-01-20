@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="HelloWorld.Demo.GridLayoutDemo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloWorld.Demo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBox Width="220" Height="60" Header="Username"/>
+            <TextBlock Text="Error" Style="{StaticResource Warning}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <PasswordBox Width="220" Height="60" Header="Password" />
+            <TextBlock Text="Error" Style="{StaticResource Warning}"/>
+        </StackPanel>
+        <StackPanel Margin="10" Grid.Row="2" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Login" Foreground="Black" Width="90" Margin="0 0 10 0" Click="Button_Click"/>
+            <Button Content="Reset" Foreground="Black" Width="90"/>
+        </StackPanel>
+    </Grid>
+   
+</Page>

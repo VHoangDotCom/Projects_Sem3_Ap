@@ -1,0 +1,72 @@
+﻿<Page
+    x:Class="HelloWorld.Demo.DemoFilePicker"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloWorld.Demo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <MenuBar >
+            <MenuBarItem Title="File">
+                <MenuFlyoutItem Text="New" Click="MenuFlyoutItem_Click" Tag="new">
+                    <MenuFlyoutItem.KeyboardAccelerators>
+                        <KeyboardAccelerator Modifiers="Control" Key="N"/>
+                    </MenuFlyoutItem.KeyboardAccelerators>
+                </MenuFlyoutItem>
+                <MenuFlyoutItem Text="Open..." Click="MenuFlyoutItem_Click" Tag="open">
+                    <MenuFlyoutItem.KeyboardAccelerators>
+                        <KeyboardAccelerator Modifiers="Control" Key="O"/>
+                    </MenuFlyoutItem.KeyboardAccelerators>
+                </MenuFlyoutItem>
+                <MenuFlyoutItem Text="Save" Click="MenuFlyoutItem_Click" Tag="save">
+                    <MenuFlyoutItem.KeyboardAccelerators>
+                        <KeyboardAccelerator Modifiers="Control" Key="S"/>
+                    </MenuFlyoutItem.KeyboardAccelerators>
+                </MenuFlyoutItem>
+                <MenuFlyoutItem Text="Exit" Click="MenuFlyoutItem_Click" Tag="exit">
+                    <MenuFlyoutItem.KeyboardAccelerators>
+                        <KeyboardAccelerator Modifiers="Control" Key="E"/>
+                    </MenuFlyoutItem.KeyboardAccelerators>
+                </MenuFlyoutItem>
+            </MenuBarItem>
+
+            <MenuBarItem Title="Edit">
+                <MenuFlyoutItem Text="Undo">
+                    <MenuFlyoutItem.KeyboardAccelerators>
+                        <KeyboardAccelerator Modifiers="Control" Key="Z"/>
+                    </MenuFlyoutItem.KeyboardAccelerators>
+                </MenuFlyoutItem>
+                <MenuFlyoutItem Text="Cut">
+                    <MenuFlyoutItem.KeyboardAccelerators>
+                        <KeyboardAccelerator Modifiers="Control" Key="X"/>
+                    </MenuFlyoutItem.KeyboardAccelerators>
+                </MenuFlyoutItem>
+                <MenuFlyoutItem Text="Copy">
+                    <MenuFlyoutItem.KeyboardAccelerators>
+                        <KeyboardAccelerator Modifiers="Control" Key="C"/>
+                    </MenuFlyoutItem.KeyboardAccelerators>
+                </MenuFlyoutItem>
+                <MenuFlyoutItem Text="Paste">
+                    <MenuFlyoutItem.KeyboardAccelerators>
+                        <KeyboardAccelerator Modifiers="Control" Key="V"/>
+                    </MenuFlyoutItem.KeyboardAccelerators>
+                </MenuFlyoutItem>
+            </MenuBarItem>
+
+            <MenuBarItem Title="Help">
+                <MenuFlyoutItem Text="About">
+                    <MenuFlyoutItem.KeyboardAccelerators>
+                        <KeyboardAccelerator Modifiers="Control" Key="I"/>
+                    </MenuFlyoutItem.KeyboardAccelerators>
+                </MenuFlyoutItem>
+            </MenuBarItem>
+        </MenuBar>
+        <TextBox x:Name="editor"/>
+        <Image x:Name="imagePreview" Height="200" Width="290"/>
+      
+        <ProgressRing x:Name="progress1" HorizontalAlignment="Center"/>
+    </StackPanel>
+</Page>

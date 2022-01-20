@@ -28,6 +28,30 @@
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\HelloWorld.exe">
       <PackagePath>entrypoint\HelloWorld.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\cloudinarydotnet\1.17.0\lib\netstandard2.0\CloudinaryDotNet.dll">
+      <PackagePath>CloudinaryDotNet.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.aspnetcore.html.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Html.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Html.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.aspnetcore.http.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.aspnetcore.http.features\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.Features.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\5.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.extensions.options\5.0.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll">
+      <PackagePath>Microsoft.Extensions.Options.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.extensions.primitives\5.0.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll">
+      <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.extensions.webencoders\5.0.3\lib\netstandard2.0\Microsoft.Extensions.WebEncoders.dll">
+      <PackagePath>Microsoft.Extensions.WebEncoders.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\2.0.1\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
     </AppxPackagedFile>
@@ -39,6 +63,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\system.runtime.compilerservices.unsafe\5.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\system.text.encodings.web\5.0.0\lib\netstandard2.0\System.Text.Encodings.Web.dll">
+      <PackagePath>System.Text.Encodings.Web.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -85,8 +115,35 @@
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\DemoFilePicker.xbf">
+      <PackagePath>Demo\DemoFilePicker.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\GridLayoutDemo.xbf">
+      <PackagePath>Demo\GridLayoutDemo.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\ListSongPage.xbf">
+      <PackagePath>Demo\ListSongPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\ListViewDemo.xbf">
+      <PackagePath>Demo\ListViewDemo.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\NavigationViewDemo.xbf">
+      <PackagePath>Demo\NavigationViewDemo.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\NavigationViewDemo02.xbf">
+      <PackagePath>Demo\NavigationViewDemo02.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\SplitViewDemo.xbf">
+      <PackagePath>Demo\SplitViewDemo.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Pages\LoginPage.xbf">
+      <PackagePath>Pages\LoginPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Pages\SettingPage.xbf">
+      <PackagePath>Pages\SettingPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
