@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-20T00:50:00.416</Modified>
+      <Modified>2022-01-20T02:49:51.846</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\HelloWorld.exe">
       <PackagePath>entrypoint\HelloWorld.exe</PackagePath>
-      <Modified>2022-01-20T00:49:56.853</Modified>
+      <Modified>2022-01-20T02:49:51.353</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\cloudinarydotnet\1.17.0\lib\netstandard2.0\CloudinaryDotNet.dll">
       <PackagePath>CloudinaryDotNet.dll</PackagePath>
@@ -102,6 +102,10 @@
       <PackagePath>Assets\1.jpg</PackagePath>
       <Modified>2022-01-12T01:55:54.678</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\Assets\Dogsmile.jpg">
+      <PackagePath>Assets\Dogsmile.jpg</PackagePath>
+      <Modified>2022-01-20T01:33:17.872</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\Assets\talk.png">
       <PackagePath>Assets\talk.png</PackagePath>
       <Modified>2022-01-12T02:13:20.790</Modified>
@@ -146,51 +150,55 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\HelloWorld.xr.xml">
       <PackagePath>HelloWorld.xr.xml</PackagePath>
-      <Modified>2022-01-20T00:49:56.506</Modified>
+      <Modified>2022-01-20T02:10:51.506</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-01-20T00:49:56.661</Modified>
+      <Modified>2022-01-20T02:41:39.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\DemoFilePicker.xbf">
       <PackagePath>Demo\DemoFilePicker.xbf</PackagePath>
-      <Modified>2022-01-20T00:49:56.661</Modified>
+      <Modified>2022-01-20T02:41:39.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\GridLayoutDemo.xbf">
       <PackagePath>Demo\GridLayoutDemo.xbf</PackagePath>
-      <Modified>2022-01-20T00:49:56.661</Modified>
+      <Modified>2022-01-20T02:41:39.011</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\Lab2FilePicker.xbf">
+      <PackagePath>Demo\Lab2FilePicker.xbf</PackagePath>
+      <Modified>2022-01-20T02:41:39.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\ListSongPage.xbf">
       <PackagePath>Demo\ListSongPage.xbf</PackagePath>
-      <Modified>2022-01-20T00:49:56.662</Modified>
+      <Modified>2022-01-20T02:41:39.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\ListViewDemo.xbf">
       <PackagePath>Demo\ListViewDemo.xbf</PackagePath>
-      <Modified>2022-01-20T00:49:56.662</Modified>
+      <Modified>2022-01-20T02:41:39.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\NavigationViewDemo.xbf">
       <PackagePath>Demo\NavigationViewDemo.xbf</PackagePath>
-      <Modified>2022-01-20T00:49:56.662</Modified>
+      <Modified>2022-01-20T02:41:39.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\NavigationViewDemo02.xbf">
       <PackagePath>Demo\NavigationViewDemo02.xbf</PackagePath>
-      <Modified>2022-01-20T00:49:56.662</Modified>
+      <Modified>2022-01-20T02:41:39.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\SplitViewDemo.xbf">
       <PackagePath>Demo\SplitViewDemo.xbf</PackagePath>
-      <Modified>2022-01-20T00:49:56.663</Modified>
+      <Modified>2022-01-20T02:41:39.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-01-20T00:49:56.659</Modified>
+      <Modified>2022-01-20T02:41:39.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Pages\LoginPage.xbf">
       <PackagePath>Pages\LoginPage.xbf</PackagePath>
-      <Modified>2022-01-20T00:49:56.663</Modified>
+      <Modified>2022-01-20T02:41:39.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Pages\SettingPage.xbf">
       <PackagePath>Pages\SettingPage.xbf</PackagePath>
-      <Modified>2022-01-20T00:49:56.663</Modified>
+      <Modified>2022-01-20T02:41:39.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -198,11 +206,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-01-20T00:49:59.282</Modified>
+      <Modified>2022-01-20T02:13:15.475</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Core\HelloWorld.exe">
       <PackagePath>HelloWorld.exe</PackagePath>
-      <Modified>2022-01-20T00:50:00.404</Modified>
+      <Modified>2022-01-20T02:49:51.843</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

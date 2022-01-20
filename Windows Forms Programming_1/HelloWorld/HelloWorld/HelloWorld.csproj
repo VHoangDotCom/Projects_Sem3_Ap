@@ -126,6 +126,9 @@
     <Compile Include="Demo\GridLayoutDemo.xaml.cs">
       <DependentUpon>GridLayoutDemo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Demo\Lab2FilePicker.xaml.cs">
+      <DependentUpon>Lab2FilePicker.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Demo\ListSongPage.xaml.cs">
       <DependentUpon>ListSongPage.xaml</DependentUpon>
     </Compile>
@@ -163,6 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\1.jpg" />
+    <Content Include="Assets\Dogsmile.jpg" />
     <Content Include="Assets\talk.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -183,6 +187,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Demo\GridLayoutDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Demo\Lab2FilePicker.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

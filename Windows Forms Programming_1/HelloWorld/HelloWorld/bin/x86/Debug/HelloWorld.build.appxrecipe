@@ -76,6 +76,9 @@
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\Assets\1.jpg">
       <PackagePath>Assets\1.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\Assets\Dogsmile.jpg">
+      <PackagePath>Assets\Dogsmile.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\Assets\talk.png">
       <PackagePath>Assets\talk.png</PackagePath>
     </AppxPackagedFile>
@@ -120,6 +123,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\GridLayoutDemo.xbf">
       <PackagePath>Demo\GridLayoutDemo.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\Lab2FilePicker.xbf">
+      <PackagePath>Demo\Lab2FilePicker.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\ListSongPage.xbf">
       <PackagePath>Demo\ListSongPage.xbf</PackagePath>

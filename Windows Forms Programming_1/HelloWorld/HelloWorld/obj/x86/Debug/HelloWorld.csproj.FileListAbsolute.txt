@@ -162,3 +162,8 @@ D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\obj\x86\Debu
 D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\obj\x86\Debug\Pages\LoginPage.xaml
 D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\obj\x86\Debug\Pages\LoginPage.xbf
 D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Pages\LoginPage.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\obj\x86\Debug\Demo\Lab2FilePicker.g.i.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\obj\x86\Debug\Demo\Lab2FilePicker.g.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\obj\x86\Debug\Demo\Lab2FilePicker.xaml
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\obj\x86\Debug\Demo\Lab2FilePicker.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Demo\Lab2FilePicker.xbf

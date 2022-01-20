@@ -1,5 +1,6 @@
 WinMetadata\Windows.winmd
 Assets\1.jpg
+Assets\Dogsmile.jpg
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -11,6 +12,7 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 Demo\DemoFilePicker.xbf
 Demo\GridLayoutDemo.xbf
+Demo\Lab2FilePicker.xbf
 Demo\ListSongPage.xbf
 Demo\ListViewDemo.xbf
 Demo\NavigationViewDemo.xbf
