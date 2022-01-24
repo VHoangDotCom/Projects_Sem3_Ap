@@ -238,19 +238,19 @@ namespace HelloWorld
         private async void ShowDialog()
         {
            
-            var account = new Models.Account()
+            var account = new Entity.Account()
             {
-                Id = 1,
+                id = 1,
                 firstName = fName.Text,
                 lastName = lName.Text,
-                Password = password.Text,
-                Address = address.Text,
-                Gender = lName.Text,//check
-                Phone = phone.Text,
-                Avatar = avatar.Text,
-                Email = email.Text,
-                Birthday = birthday.SelectedDate.ToString(),
-                Intro = intro.Text,
+                password = password.Text,
+                address = address.Text,
+              //  gender = lName.Text,//check
+                phone = phone.Text,
+                avatar = avatar.Text,
+                email = email.Text,
+                birthday = birthday.SelectedDate.ToString(),
+                introduction = intro.Text,
 
             };
             var jsonString = JsonConvert.SerializeObject(account);

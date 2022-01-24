@@ -13,13 +13,13 @@
         <DataTemplate x:Key="AccountListViewTemplate"                            >
             <StackPanel x:ConnectionId='8' Orientation="Horizontal" Margin="5">
                 <Image x:ConnectionId='9'                          Width="100"/>
-                <TextBlock x:ConnectionId='10' Style="{StaticResource MsgError}"                                     />
+                <TextBlock x:ConnectionId='10' Style="{StaticResource MsgError}"                                      />
                 <TextBlock x:ConnectionId='11'                                     />
             </StackPanel>
         </DataTemplate>
 
         <DataTemplate x:Key="AccountListViewTemplate2"                            >
-            <Grid x:ConnectionId='3' Margin="0,12,0,12"                                              >
+            <Grid x:ConnectionId='3' Margin="0,12,0,12"                                               >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" MinWidth="150"/>
                     <ColumnDefinition Width="*" />
@@ -27,7 +27,7 @@
                 <Image x:ConnectionId='4'                          MaxHeight="100" Stretch="Fill"/>
 
                 <StackPanel Margin="12,0,0,0" Grid.Column="1" >
-                    <TextBlock x:ConnectionId='5' Style="{StaticResource MsgError}"                          FontSize="14" FontWeight="SemiBold" 
+                    <TextBlock x:ConnectionId='5' Style="{StaticResource MsgError}"                           FontSize="14" FontWeight="SemiBold" 
                         HorizontalAlignment="Left" Margin="0,0,0,6" LineHeight="20"/>
                     <TextBlock x:ConnectionId='6'                          FontFamily="Segoe UI" FontWeight="Normal" Style="{ThemeResource BodyTextBlockStyle}"
                         TextTrimming="CharacterEllipsis" Width="350" MaxLines="1"/>

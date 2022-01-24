@@ -52,6 +52,21 @@
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.extensions.webencoders\5.0.3\lib\netstandard2.0\Microsoft.Extensions.WebEncoders.dll">
       <PackagePath>Microsoft.Extensions.WebEncoders.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.identity.client\1.0.304142221-alpha\lib\netcore45\Microsoft.Identity.Client.Platform.dll">
+      <PackagePath>Microsoft.Identity.Client.Platform.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.identity.client\1.0.304142221-alpha\lib\netcore45\Microsoft.Identity.Client.dll">
+      <PackagePath>Microsoft.Identity.Client.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.toolkit\2.1.1\lib\netstandard1.4\Microsoft.Toolkit.dll">
+      <PackagePath>Microsoft.Toolkit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.toolkit.uwp\2.1.1\lib\uap10.0\Microsoft.Toolkit.Uwp.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.toolkit.uwp.ui\2.1.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\2.0.1\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
     </AppxPackagedFile>
@@ -78,6 +93,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\Assets\Dogsmile.jpg">
       <PackagePath>Assets\Dogsmile.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\Assets\Image\niceFrog.jpg">
+      <PackagePath>Assets\Image\niceFrog.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\Assets\Image\FrogLogin.png">
+      <PackagePath>Assets\Image\FrogLogin.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\Assets\talk.png">
       <PackagePath>Assets\talk.png</PackagePath>
@@ -145,11 +166,38 @@
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Pages\AccountInformation.xbf">
+      <PackagePath>Pages\AccountInformation.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Pages\CreateSong.xbf">
+      <PackagePath>Pages\CreateSong.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Pages\LoginFormStyle.xbf">
+      <PackagePath>Pages\LoginFormStyle.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Pages\LoginPage.xbf">
       <PackagePath>Pages\LoginPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Pages\LoginPageDemo.xbf">
+      <PackagePath>Pages\LoginPageDemo.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Pages\MySong.xbf">
+      <PackagePath>Pages\MySong.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Pages\RegisterPage.xbf">
+      <PackagePath>Pages\RegisterPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Pages\SettingPage.xbf">
       <PackagePath>Pages\SettingPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Views\PassportRegister.xbf">
+      <PackagePath>Views\PassportRegister.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Views\UserSelection.xbf">
+      <PackagePath>Views\UserSelection.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Views\Welcome.xbf">
+      <PackagePath>Views\Welcome.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>

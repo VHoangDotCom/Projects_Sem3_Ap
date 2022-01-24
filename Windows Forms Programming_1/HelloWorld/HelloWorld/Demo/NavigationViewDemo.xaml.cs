@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HelloWorld.Pages;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -23,11 +24,11 @@ namespace HelloWorld.Demo
     /// </summary>
     public sealed partial class NavigationViewDemo : Page
     {
+        private bool LoggedIn;
         private readonly List<(string Tag, Type Page)> _pages = new List<(string Tag, Type Page)>
 {
     ("listSong", typeof(Demo.ListSongPage)),
-    ("register", typeof(MainPage)),
-    ("login", typeof(MainPage)),
+    ("imformation", typeof(Pages.AccountInformation)),
 
 };
 
@@ -39,14 +40,16 @@ namespace HelloWorld.Demo
 
         private void NavigationViewDemo_Loaded(object sender, RoutedEventArgs e)
         {
-            NavView.MenuItems.Add(new NavigationViewItemSeparator());
-            NavView.MenuItems.Add(new NavigationViewItem
+
+            if (App.currentLoggedIn != null)
             {
-                Content = "My content",
-                Icon = new SymbolIcon((Symbol)0xF1AD),
-                Tag = "content"
-            });
-            _pages.Add(("content", typeof(MainPage)));
+              LoggedIn = true;
+            }
+            else
+            {
+                LoggedIn = false;
+            }
+            MainContent.Navigate(typeof(Demo.ListSongPage));
 
         }
 

@@ -12,24 +12,24 @@
     <Page.Resources>
         <DataTemplate x:Key="AccountListViewTemplate" x:DataType="local1:Account">
             <StackPanel Orientation="Horizontal" Margin="5">
-                <Image Source="{x:Bind Avatar}" Width="100"/>
-                <TextBlock Style="{StaticResource MsgError}" Text="{x:Bind Username}" x:Phase="1"/>
-                <TextBlock Text="{x:Bind Password}" x:Phase="1"/>
+                <Image Source="{x:Bind avatar}" Width="100"/>
+                <TextBlock Style="{StaticResource MsgError}" Text="{x:Bind firstName}" x:Phase="1"/>
+                <TextBlock Text="{x:Bind password}" x:Phase="1"/>
             </StackPanel>
         </DataTemplate>
 
         <DataTemplate x:Key="AccountListViewTemplate2" x:DataType="local1:Account">
-            <Grid Margin="0,12,0,12" AutomationProperties.Name="{x:Bind Username}">
+            <Grid Margin="0,12,0,12" AutomationProperties.Name="{x:Bind firstName}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" MinWidth="150"/>
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="{x:Bind Avatar}" MaxHeight="100" Stretch="Fill"/>
+                <Image Source="{x:Bind avatar}" MaxHeight="100" Stretch="Fill"/>
 
                 <StackPanel Margin="12,0,0,0" Grid.Column="1" >
-                    <TextBlock Style="{StaticResource MsgError}" Text="{x:Bind Username}" FontSize="14" FontWeight="SemiBold" 
+                    <TextBlock Style="{StaticResource MsgError}" Text="{x:Bind firstName}" FontSize="14" FontWeight="SemiBold" 
                         HorizontalAlignment="Left" Margin="0,0,0,6" LineHeight="20"/>
-                    <TextBlock Text="{x:Bind Username}" FontFamily="Segoe UI" FontWeight="Normal" Style="{ThemeResource BodyTextBlockStyle}"
+                    <TextBlock Text="{x:Bind lastName}" FontFamily="Segoe UI" FontWeight="Normal" Style="{ThemeResource BodyTextBlockStyle}"
                         TextTrimming="CharacterEllipsis" Width="350" MaxLines="1"/>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="10" HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}" Margin="0,0,0,0"/>

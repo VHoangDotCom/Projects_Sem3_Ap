@@ -94,7 +94,7 @@ namespace HelloWorld.Demo
 
                // RawUploadResult result = await cloudinary.UploadAsync(rawUploadParams);
               //  Debug.WriteLine(result.Url);
-               // ShowLoading(true);
+               // ShowLoading(false);
 
                 
             }

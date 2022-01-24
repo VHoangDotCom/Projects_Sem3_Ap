@@ -14,8 +14,8 @@
                 <NavigationViewItem Content="Lastest Songs" Icon="Audio" Tag="listSong" />
                 
                 <NavigationViewItemSeparator/>
-                <NavigationViewItem Content="Login" Icon="Permissions" Tag="register" />
-                <NavigationViewItem Content="Register" Icon="AddFriend" Tag="login" />
+                <NavigationViewItem Content="Account Information" Icon="Account"  Tag="information" />
+           
                
             </NavigationView.MenuItems>
             <NavigationView.AutoSuggestBox>

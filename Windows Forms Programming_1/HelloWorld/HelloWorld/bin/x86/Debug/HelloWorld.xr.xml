@@ -4,6 +4,7 @@
     <RootPropertyPathName Name="PointerMovedEvent" />
     <RootPropertyPathName Name="Background" />
     <RootPropertyPathName Name="CornerRadius" />
+    <RootPropertyPathName Name="Username" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -15,6 +16,12 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Height" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
@@ -23,7 +30,6 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Template" />
-      <RootProperty Name="FontFamily" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="FontSize" />
@@ -40,22 +46,18 @@
       <RootProperty Name="TextTrimming" />
       <RootProperty Name="MaxLines" />
       <RootProperty Name="Tag" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="TextAlignment" />
       <RootEvent Name="Tapped" />
+      <RootEvent Name="PointerPressed" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Header" />
-      <RootEvent Name="TextChanged" />
-      <RootEvent Name="SelectionChanged" />
-      <RootEvent Name="PointerEntered" />
-    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
       <RootProperty Name="Value" />
       <RootProperty Name="Target" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
       <RootProperty Name="TargetType" />
       <RootProperty Name="Template" />
@@ -70,6 +72,8 @@
       <RootProperty Name="Child" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
@@ -78,6 +82,10 @@
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
@@ -109,6 +117,7 @@
       <RootProperty Name="Resources" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Width" />
+      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
@@ -120,6 +129,23 @@
     <RootType FullName="Windows.UI.Xaml.Controls.MenuBar">
       <RootProperty Name="Items" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootEvent Name="TextChanged" />
+      <RootEvent Name="SelectionChanged" />
+      <RootEvent Name="PointerEntered" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
@@ -127,6 +153,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="MaxHeight" />
       <RootProperty Name="Stretch" />
+      <RootProperty Name="MaxWidth" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
       <RootProperty Name="HorizontalAlignment" />
@@ -158,6 +185,12 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Header" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="HelloWorld.Demo.GridLayoutDemo" />
     <RootType FullName="Windows.UI.Xaml.Automation.AutomationProperties">
@@ -165,14 +198,34 @@
       <RootMethod Name="SetName" />
     </RootType>
     <RootType FullName="HelloWorld.Demo.Lab2FilePicker" />
-    <RootType FullName="HelloWorld.Demo.ListSongPage" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="ItemTemplate" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Foreground" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="MaxHeight" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootEvent Name="SelectionChanged" />
+      <RootEvent Name="ItemClick" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.MediaPlayerElement">
+      <RootProperty Name="AreTransportControlsEnabled" />
+      <RootProperty Name="AutoPlay" />
+    </RootType>
+    <RootType FullName="HelloWorld.Demo.ListSongPage" />
     <RootType FullName="HelloWorld.Demo.ListViewDemo" />
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationView">
       <RootProperty Name="MenuItems" />
@@ -189,9 +242,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationViewItemSeparator" />
     <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
       <RootProperty Name="QueryIcon" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
-      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootProperty Name="Margin" />
@@ -241,10 +291,42 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="GroupName" />
+      <RootProperty Name="Width" />
       <RootEvent Name="Click" />
+      <RootEvent Name="Checked" />
     </RootType>
     <RootType FullName="HelloWorld.MainPage" />
+    <RootType FullName="HelloWorld.Pages.AccountInformation" />
+    <RootType FullName="HelloWorld.Pages.CreateSong" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetAlignHorizontalCenterWithPanel" />
+      <RootMethod Name="SetAlignHorizontalCenterWithPanel" />
+      <RootMethod Name="GetAlignVerticalCenterWithPanel" />
+      <RootMethod Name="SetAlignVerticalCenterWithPanel" />
+    </RootType>
+    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Extensions.Mouse">
+      <RootMethod Name="GetCursor" />
+      <RootMethod Name="SetCursor" />
+    </RootType>
+    <RootType FullName="HelloWorld.Pages.LoginFormStyle" />
     <RootType FullName="HelloWorld.Pages.LoginPage" />
+    <RootType FullName="HelloWorld.Pages.LoginPageDemo" />
+    <RootType FullName="HelloWorld.Pages.MySong" />
+    <RootType FullName="Windows.UI.Xaml.Controls.CalendarDatePicker">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootEvent Name="DateChanged" />
+    </RootType>
+    <RootType FullName="HelloWorld.Pages.RegisterPage" />
     <RootType FullName="HelloWorld.Pages.SettingPage" />
+    <RootType FullName="HelloWorld.Views.PassportRegister" />
+    <RootType FullName="HelloWorld.Views.UserSelection" />
+    <RootType FullName="HelloWorld.Views.Welcome" />
   </Roots.RootTypes>
 </Roots>

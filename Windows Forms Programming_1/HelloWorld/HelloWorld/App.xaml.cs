@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HelloWorld.Entity;
+using HelloWorld.Service;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,14 +24,14 @@ namespace HelloWorld
     /// </summary>
     sealed partial class App : Application
     {
-        /// <summary>
-        /// Initializes the singleton application object.  This is the first line of authored code
-        /// executed, and as such is the logical equivalent of main() or WinMain().
-        /// </summary>
+        private AccountService accountService;
+        public static Account currentLoggedIn;
+        public static Credential currentCredential;
         public App()
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            this.accountService = new AccountService();
         }
 
         /// <summary>
@@ -37,7 +39,7 @@ namespace HelloWorld
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override  void  OnLaunched(LaunchActivatedEventArgs e)
         {
             Frame rootFrame = Window.Current.Content as Frame;
 
@@ -66,7 +68,18 @@ namespace HelloWorld
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                    rootFrame.Navigate(typeof(Demo.Lab2FilePicker), e.Arguments);
+                 /* Account account =   await  accountService.GetLoggedInAccount();
+                    if(account == null)
+                    {
+                        rootFrame.Navigate(typeof(Pages.LoginPageDemo), e.Arguments);
+                    }
+                    else
+                    {
+                        currentLoggedIn = account;
+                        rootFrame.Navigate(typeof(Demo.NavigationViewDemo), e.Arguments);
+                    } */
+                    rootFrame.Navigate(typeof(Pages.LoginFormStyle), e.Arguments);
+
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();

@@ -1,0 +1,77 @@
+﻿<Page
+    x:Class="HelloWorld.Pages.LoginFormStyle"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloWorld.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:Extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <RelativePanel Grid.Column="0" Background="GreenYellow">
+            <Image Source="/Assets/Image/FrogLogin.png"
+                   MaxHeight="400"
+                   MaxWidth="400"
+                   Margin="50"
+                   RelativePanel.AlignHorizontalCenterWithPanel="True"
+                   RelativePanel.AlignVerticalCenterWithPanel="True"/>
+        </RelativePanel>
+        <ScrollViewer Grid.Column="1"
+                      FontFamily="Century Gothic"
+                      Foreground="DarkGreen">
+            <StackPanel>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0"
+                               FontSize="35"
+                               Text="LOGIN"
+                               Margin="50"
+                               FontWeight="Bold"/>
+                    <TextBlock Grid.Row="1"
+                               FontSize="25"
+                               Text="Email"
+                               Margin="50 0 0 0"
+                              />
+                    <TextBox Grid.Row="2"
+                             FontSize="25"
+                             Margin="50 0 50 20"
+                             BorderThickness="0 0 0 4"
+                             BorderBrush="Yellow"
+                             />
+                    <PasswordBox Grid.Row="4"
+                                 FontSize="25"
+                                 Margin="50 0 50 20"
+                                 BorderThickness="0 0 0 4"
+                                  BorderBrush="Yellow"
+                                 />
+                    <Button Grid.Row="5"
+                            Margin="50 0 0 0"
+                            Content="Login"
+                            FontSize="21"
+                            Width="100"
+                            Height="50"
+                            Foreground="WhiteSmoke"
+                            Background="YellowGreen"
+                            CornerRadius="5"
+                            Padding="15 5 15 5"
+                            Extensions:Mouse.Cursor="Hand"
+                            />
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
+

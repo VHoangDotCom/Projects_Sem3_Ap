@@ -12,26 +12,26 @@
     <StackPanel>
         <StackPanel Orientation="Horizontal" Margin="10 " HorizontalAlignment="Left">
             <Image  Source="/Assets/Dogsmile.jpg" Width="80" Margin="10 0 0 0" AutomationProperties.Name="Slice"/>
-            <TextBlock x:ConnectionId='13' x:Name="titleText" FontSize="35" Style="{StaticResource Basic}" Margin="10 20 0 0" Text="Notepad 2.0"/>
+            <TextBlock x:ConnectionId='15' x:Name="titleText" FontSize="35" Style="{StaticResource Basic}" Margin="10 20 0 0" Text="Notepad 2.0"/>
         </StackPanel>
         <MenuBar>
             <MenuBarItem  Title="File" Margin="12 0 20 0">
-                <MenuFlyoutItem x:ConnectionId='9'  Text="New"                              Tag="new">
+                <MenuFlyoutItem x:ConnectionId='11'  Text="New"                              Tag="new">
                     <MenuFlyoutItem.KeyboardAccelerators>
                         <KeyboardAccelerator Modifiers="Control" Key="N"/>
                     </MenuFlyoutItem.KeyboardAccelerators>
                 </MenuFlyoutItem>
-                <MenuFlyoutItem x:ConnectionId='10' Text="Open..."                              Tag="open">
+                <MenuFlyoutItem x:ConnectionId='12' Text="Open..."                              Tag="open">
                     <MenuFlyoutItem.KeyboardAccelerators>
                         <KeyboardAccelerator Modifiers="Control" Key="O"/>
                     </MenuFlyoutItem.KeyboardAccelerators>
                 </MenuFlyoutItem>
-                <MenuFlyoutItem x:ConnectionId='11' Text="Save"                              Tag="save">
+                <MenuFlyoutItem x:ConnectionId='13' Text="Save"                              Tag="save">
                     <MenuFlyoutItem.KeyboardAccelerators>
                         <KeyboardAccelerator Modifiers="Control" Key="S"/>
                     </MenuFlyoutItem.KeyboardAccelerators>
                 </MenuFlyoutItem>
-                <MenuFlyoutItem x:ConnectionId='12' Text="Exit"                              Tag="exit">
+                <MenuFlyoutItem x:ConnectionId='14' Text="Exit"                              Tag="exit">
                     <MenuFlyoutItem.KeyboardAccelerators>
                         <KeyboardAccelerator Modifiers="Control" Key="E"/>
                     </MenuFlyoutItem.KeyboardAccelerators>
@@ -39,22 +39,22 @@
             </MenuBarItem>
 
             <MenuBarItem Margin="12 0 20 0" Title="Edit">
-                <MenuFlyoutItem x:ConnectionId='5'                                Text="Undo" Tag="undo">
+                <MenuFlyoutItem x:ConnectionId='7'                                Text="Undo" Tag="undo">
                     <MenuFlyoutItem.KeyboardAccelerators>
                         <KeyboardAccelerator Modifiers="Control" Key="Z"/>
                     </MenuFlyoutItem.KeyboardAccelerators>
                 </MenuFlyoutItem>
-                <MenuFlyoutItem x:ConnectionId='6'                                Text="Cut" Tag="cut">
+                <MenuFlyoutItem x:ConnectionId='8'                                Text="Cut" Tag="cut">
                     <MenuFlyoutItem.KeyboardAccelerators>
                         <KeyboardAccelerator Modifiers="Control" Key="X"/>
                     </MenuFlyoutItem.KeyboardAccelerators>
                 </MenuFlyoutItem>
-                <MenuFlyoutItem x:ConnectionId='7'                                Text="Copy" Tag="copy">
+                <MenuFlyoutItem x:ConnectionId='9'                                Text="Copy" Tag="copy">
                     <MenuFlyoutItem.KeyboardAccelerators>
                         <KeyboardAccelerator Modifiers="Control" Key="C"/>
                     </MenuFlyoutItem.KeyboardAccelerators>
                 </MenuFlyoutItem>
-                <MenuFlyoutItem x:ConnectionId='8'                                Text="Paste" Tag="paste">
+                <MenuFlyoutItem x:ConnectionId='10'                                Text="Paste" Tag="paste">
                     <MenuFlyoutItem.KeyboardAccelerators>
                         <KeyboardAccelerator Modifiers="Control" Key="V"/>
                     </MenuFlyoutItem.KeyboardAccelerators>
@@ -70,9 +70,14 @@
             </MenuBarItem>
             
             <MenuBarItem Margin="12 0 20 0" Title="Local">
-                <MenuFlyoutItem Text="Save to local">
+                <MenuFlyoutItem x:ConnectionId='5' Text="Save to local"                                Tag="local">
                     <MenuFlyoutItem.KeyboardAccelerators>
                         <KeyboardAccelerator Modifiers="Control" Key="L"/>
+                    </MenuFlyoutItem.KeyboardAccelerators>
+                </MenuFlyoutItem>
+                <MenuFlyoutItem x:ConnectionId='6' Text="Save to cloud"                                Tag="cloud">
+                    <MenuFlyoutItem.KeyboardAccelerators>
+                        <KeyboardAccelerator Modifiers="Control" Key="Q"/>
                     </MenuFlyoutItem.KeyboardAccelerators>
                 </MenuFlyoutItem>
             </MenuBarItem>

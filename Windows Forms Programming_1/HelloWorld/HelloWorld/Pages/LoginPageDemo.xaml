@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="HelloWorld.Pages.LoginPageDemo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloWorld.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock FontSize="30" HorizontalAlignment="Left" Height="72" Margin="97,80,0,0" Text="Email" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+        <TextBlock FontSize="30" HorizontalAlignment="Left" Height="72" Margin="97,164,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="62" Margin="321,80,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="401"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Height="62" Margin="321,164,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="401"/>
+        <Button Content="Login" Height="85" Background="AntiqueWhite" Margin="213,297,0,0" VerticalAlignment="Top" Width="167" Click="Button_Click"/>
+
+    </Grid>
+</Page>

@@ -8,16 +8,21 @@ namespace HelloWorld.Entity
 {
     public class Account
     {
-        public int Id { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public int id { get; set; }
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public string password { get; set; }
+        public string address { get; set; }
+        public string phone { get; set; }
+        public string avatar { get; set; }
+        public int gender { get; set; }
+        public string email { get; set; }
+        public string birthday { get; set; }
+        public string introduction { get; set; }
+        public string createdAt { get; set; }
+        public string updatedAt { get; set; }
+        public int status { get; set; }
 
-        public string Avatar { get; set; }
-        public int Status { get; set; }
-
-        public override string ToString()
-        {
-            return $"{Id} - {Username} - {Status}";
-        }
+       
     }
 }

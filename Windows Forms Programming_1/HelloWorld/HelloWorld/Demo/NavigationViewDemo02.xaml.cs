@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HelloWorld.Pages;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,12 @@ namespace HelloWorld.Demo
         public NavigationViewDemo02()
         {
             this.InitializeComponent();
+            Loaded += Page_Loaded;
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(LoginPage));
         }
     }
 }

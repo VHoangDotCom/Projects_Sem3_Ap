@@ -47,6 +47,10 @@
               "target": "Package",
               "version": "[6.2.12, )"
             },
+            "Microsoft.Toolkit.Uwp.UI": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
             "Microsoft.Xaml.Behaviors.Uwp.Managed": {
               "target": "Package",
               "version": "[2.0.1, )"

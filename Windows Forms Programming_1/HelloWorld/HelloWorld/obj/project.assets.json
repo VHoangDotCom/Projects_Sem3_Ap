@@ -103,6 +103,17 @@
           "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll": {}
         }
       },
+      "Microsoft.Identity.Client/1.0.304142221-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -302,6 +313,45 @@
         "build": {
           "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
+      "Microsoft.Toolkit/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "1.0.304142221-alpha",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.1",
+          "Microsoft.Toolkit": "2.1.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.UI/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "2.1.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
       "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.1": {
@@ -564,6 +614,17 @@
           "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll": {}
         }
       },
+      "Microsoft.Identity.Client/1.0.304142221-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -764,6 +825,45 @@
         "build": {
           "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
+      "Microsoft.Toolkit/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "1.0.304142221-alpha",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.1",
+          "Microsoft.Toolkit": "2.1.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.UI/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "2.1.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
       "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.1": {
@@ -1204,6 +1304,17 @@
           "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll": {}
         }
       },
+      "Microsoft.Identity.Client/1.0.304142221-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -1404,6 +1515,45 @@
         "build": {
           "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
+      "Microsoft.Toolkit/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "1.0.304142221-alpha",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.1",
+          "Microsoft.Toolkit": "2.1.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.UI/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "2.1.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
       "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.1": {
@@ -1845,6 +1995,17 @@
           "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll": {}
         }
       },
+      "Microsoft.Identity.Client/1.0.304142221-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -2045,6 +2206,45 @@
         "build": {
           "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
+      "Microsoft.Toolkit/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "1.0.304142221-alpha",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.1",
+          "Microsoft.Toolkit": "2.1.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.UI/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "2.1.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
       "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.1": {
@@ -2486,6 +2686,17 @@
           "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll": {}
         }
       },
+      "Microsoft.Identity.Client/1.0.304142221-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -2686,6 +2897,45 @@
         "build": {
           "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
+      "Microsoft.Toolkit/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "1.0.304142221-alpha",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.1",
+          "Microsoft.Toolkit": "2.1.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.UI/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "2.1.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
       "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.1": {
@@ -3126,6 +3376,17 @@
           "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll": {}
         }
       },
+      "Microsoft.Identity.Client/1.0.304142221-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -3326,6 +3587,45 @@
         "build": {
           "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
+      "Microsoft.Toolkit/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "1.0.304142221-alpha",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.1",
+          "Microsoft.Toolkit": "2.1.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.UI/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "2.1.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
       "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.1": {
@@ -3767,6 +4067,17 @@
           "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll": {}
         }
       },
+      "Microsoft.Identity.Client/1.0.304142221-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -3967,6 +4278,45 @@
         "build": {
           "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
+      "Microsoft.Toolkit/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "1.0.304142221-alpha",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.1",
+          "Microsoft.Toolkit": "2.1.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.UI/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "2.1.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
       "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.1": {
@@ -4407,6 +4757,17 @@
           "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll": {}
         }
       },
+      "Microsoft.Identity.Client/1.0.304142221-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.Identity.Client.Platform.dll": {},
+          "lib/netcore45/Microsoft.Identity.Client.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -4607,6 +4968,45 @@
         "build": {
           "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
+      "Microsoft.Toolkit/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "1.0.304142221-alpha",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.1",
+          "Microsoft.Toolkit": "2.1.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.UI/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "2.1.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
       "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.1": {
@@ -5088,6 +5488,39 @@
         "microsoft.extensions.webencoders.nuspec"
       ]
     },
+    "Microsoft.Identity.Client/1.0.304142221-alpha": {
+      "sha512": "T4kd4b5IFxWDOaGdYi5ipnj6kSAV3Ym4dj6lxVmWQ6lMoAdOBgiMT4K+LAG/G+14GFK2pbO75XgwJbgT3ol6eg==",
+      "type": "package",
+      "path": "microsoft.identity.client/1.0.304142221-alpha",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Microsoft.Identity.Client.Platform.dll",
+        "lib/MonoAndroid10/Microsoft.Identity.Client.Platform.xml",
+        "lib/MonoAndroid10/Microsoft.Identity.Client.dll",
+        "lib/MonoAndroid10/Microsoft.Identity.Client.xml",
+        "lib/Xamarin.iOS10/Microsoft.Identity.Client.Platform.dll",
+        "lib/Xamarin.iOS10/Microsoft.Identity.Client.Platform.xml",
+        "lib/Xamarin.iOS10/Microsoft.Identity.Client.dll",
+        "lib/Xamarin.iOS10/Microsoft.Identity.Client.xml",
+        "lib/dnxcore50/Microsoft.Identity.Client.Platform.dll",
+        "lib/dnxcore50/Microsoft.Identity.Client.Platform.xml",
+        "lib/dnxcore50/Microsoft.Identity.Client.dll",
+        "lib/dnxcore50/Microsoft.Identity.Client.xml",
+        "lib/net45/Microsoft.Identity.Client.Platform.dll",
+        "lib/net45/Microsoft.Identity.Client.Platform.xml",
+        "lib/net45/Microsoft.Identity.Client.dll",
+        "lib/net45/Microsoft.Identity.Client.xml",
+        "lib/netcore45/Microsoft.Identity.Client.Platform.dll",
+        "lib/netcore45/Microsoft.Identity.Client.Platform.xml",
+        "lib/netcore45/Microsoft.Identity.Client.dll",
+        "lib/netcore45/Microsoft.Identity.Client.xml",
+        "lib/portable-net45+win/Microsoft.Identity.Client.dll",
+        "lib/portable-net45+win/Microsoft.Identity.Client.xml",
+        "microsoft.identity.client.1.0.304142221-alpha.nupkg.sha512",
+        "microsoft.identity.client.nuspec"
+      ]
+    },
     "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
       "sha512": "RvrUhS53oMQfDRhz8CnV+d2RXnvyc7mqBJtcXpWhIHI36jEZwepOke4wLfbOQQzpyVauFWGu+jkQSzYNxpHJQA==",
       "type": "package",
@@ -5467,6 +5900,47 @@
         "ref/uap10.0.15138/mscorlib.dll",
         "ref/uap10.0.15138/netstandard.dll",
         "runtime.json"
+      ]
+    },
+    "Microsoft.Toolkit/2.1.1": {
+      "sha512": "x3od+T+YNUPacgtT989ka8AvQICB0GaTZP+ueL3tS7eQs3rAwEVe7h20ufhKBA2M4l+UKrrwgPfG9lbBxkE4RA==",
+      "type": "package",
+      "path": "microsoft.toolkit/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.4/Microsoft.Toolkit.dll",
+        "lib/netstandard1.4/Microsoft.Toolkit.xml",
+        "microsoft.toolkit.2.1.1.nupkg.sha512",
+        "microsoft.toolkit.nuspec"
+      ]
+    },
+    "Microsoft.Toolkit.Uwp/2.1.1": {
+      "sha512": "cnXhJnXUAFRgPGYrnYJbx1ZJNC/NCyK38WTJFrwjPpHSCaF+C40PBz/A9vmpK0RvQP5iAkNwbPpwjOnAnS3htQ==",
+      "type": "package",
+      "path": "microsoft.toolkit.uwp/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/uap10.0/Microsoft.Toolkit.Uwp.dll",
+        "lib/uap10.0/Microsoft.Toolkit.Uwp.pri",
+        "lib/uap10.0/Microsoft.Toolkit.Uwp.xml",
+        "microsoft.toolkit.uwp.2.1.1.nupkg.sha512",
+        "microsoft.toolkit.uwp.nuspec"
+      ]
+    },
+    "Microsoft.Toolkit.Uwp.UI/2.1.1": {
+      "sha512": "J0HK80epS1V0x0E+0oBfUDAofEdnuow0PNjPTEQaGwNglUQQInfO1OAakBjymCqAEIhTFg8P1c+bxxdjIADBTA==",
+      "type": "package",
+      "path": "microsoft.toolkit.uwp.ui/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.dll",
+        "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.pri",
+        "lib/uap10.0/Microsoft.Toolkit.Uwp.UI.xml",
+        "microsoft.toolkit.uwp.ui.2.1.1.nupkg.sha512",
+        "microsoft.toolkit.uwp.ui.nuspec"
       ]
     },
     "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.1": {
@@ -9703,6 +10177,7 @@
     "UAP,Version=v10.0.17763": [
       "CloudinaryDotNet >= 1.17.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.12",
+      "Microsoft.Toolkit.Uwp.UI >= 2.1.1",
       "Microsoft.Xaml.Behaviors.Uwp.Managed >= 2.0.1",
       "Newtonsoft.Json >= 13.0.1"
     ]
@@ -9754,6 +10229,10 @@
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "[6.2.12, )"
+          },
+          "Microsoft.Toolkit.Uwp.UI": {
+            "target": "Package",
+            "version": "[2.1.1, )"
           },
           "Microsoft.Xaml.Behaviors.Uwp.Managed": {
             "target": "Package",

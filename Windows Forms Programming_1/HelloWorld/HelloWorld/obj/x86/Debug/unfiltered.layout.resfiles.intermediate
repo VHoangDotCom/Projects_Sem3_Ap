@@ -1,6 +1,8 @@
 WinMetadata\Windows.winmd
 Assets\1.jpg
 Assets\Dogsmile.jpg
+Assets\Image\FrogLogin.png
+Assets\Image\niceFrog.jpg
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -20,6 +22,15 @@ Demo\NavigationViewDemo02.xbf
 Demo\SplitViewDemo.xbf
 HelloWorld.xr.xml
 MainPage.xbf
+Pages\AccountInformation.xbf
+Pages\CreateSong.xbf
+Pages\LoginFormStyle.xbf
 Pages\LoginPage.xbf
+Pages\LoginPageDemo.xbf
+Pages\MySong.xbf
+Pages\RegisterPage.xbf
 Pages\SettingPage.xbf
+Views\PassportRegister.xbf
+Views\UserSelection.xbf
+Views\Welcome.xbf
 Properties\Default.rd.xml

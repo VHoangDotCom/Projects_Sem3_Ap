@@ -23,30 +23,31 @@ namespace HelloWorld.Demo
     /// </summary>
     public sealed partial class ListViewDemo : Page
     {
+
         public ListViewDemo()
         {
             this.InitializeComponent();
             List<Account> accounts = new List<Account>() {
                 new Account(){
-                    Id = 1,
-                    Username = "hung01",
-                    Password = "123",
-                    Avatar = "https://icdn.dantri.com.vn/thumb_w/660/2021/09/08/316784x441-1631079051594.jpg",
-                    Status = 1
+                    id = 1,
+                    firstName = "hung01",
+                    password = "123",
+                    avatar = "https://icdn.dantri.com.vn/thumb_w/660/2021/09/08/316784x441-1631079051594.jpg",
+                    status = 1
                 },
                 new Account(){
-                    Id = 2,
-                    Username = "hung02",
-                    Password = "124",
-                    Avatar = "https://baoquocte.vn/stores/news_dataimages/trunghieu/082021/06/11/hon-300-con-meo-o-anh-chet-vi-mot-can-benh-la.jpg",
-                    Status = 1
+                    id = 2,
+                    firstName = "hung02",
+                    password = "124",
+                    avatar = "https://baoquocte.vn/stores/news_dataimages/trunghieu/082021/06/11/hon-300-con-meo-o-anh-chet-vi-mot-can-benh-la.jpg",
+                    status = 1
                 },
                 new Account(){
-                    Id = 3,
-                    Username = "hung03",
-                    Password = "125",
-                    Avatar = "https://dothobattrang.vn/wp-content/uploads/2018/05/con-meo-hoang-vao-nha-la-diem-bao-gi-hen.jpg",
-                    Status = 1
+                    id = 3,
+                    firstName = "hung03",
+                    password = "125",
+                    avatar = "https://dothobattrang.vn/wp-content/uploads/2018/05/con-meo-hoang-vao-nha-la-diem-bao-gi-hen.jpg",
+                    status = 1
                 }
             };
             MyListView.ItemsSource = accounts;
