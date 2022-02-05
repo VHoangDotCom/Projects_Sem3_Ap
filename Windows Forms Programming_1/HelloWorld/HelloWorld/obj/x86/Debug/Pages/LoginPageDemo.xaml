@@ -8,12 +8,24 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock FontSize="30" HorizontalAlignment="Left" Height="72" Margin="97,80,0,0" Text="Email" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
-        <TextBlock FontSize="30" HorizontalAlignment="Left" Height="72" Margin="97,164,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
-        <TextBox x:ConnectionId='2' x:Name="email" HorizontalAlignment="Left" Height="62" Margin="321,80,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="401"/>
-        <TextBox x:ConnectionId='3' x:Name="password" HorizontalAlignment="Left" Height="62" Margin="321,164,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="401"/>
-        <Button x:ConnectionId='4' Content="Login" Height="85" Background="AntiqueWhite" Margin="213,297,0,0" VerticalAlignment="Top" Width="167"                     />
+    <Grid  MaxWidth="300" MaxHeight="700">
+        <TextBlock  Text="Login " Margin="100,120,105,437" FontSize="28" Foreground="ForestGreen"/>
+        <StackPanel MaxWidth="300" MaxHeight="400"  Margin="0,205,16,235">
+            <TextBox x:ConnectionId='5'  x:Name="email" Header="Email:" PlaceholderText="Email"/>
+            <PasswordBox x:ConnectionId='6'  x:Name="password" Header="Password:" PlaceholderText="Password"/>
+
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,300,3,145" >
+            <Button x:ConnectionId='2' Content="Login" Tag="login" Margin="30 0 0 60"                     />
+            <Button x:ConnectionId='3' Content="Register" Tag="register" Margin="80 0 0 60"                        />
+            <ProgressRing x:ConnectionId='4' x:Name="progress1" Margin="310,725,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+        </StackPanel>
+
+
+
+
 
     </Grid>
 </Page>

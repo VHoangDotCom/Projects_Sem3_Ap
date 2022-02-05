@@ -11,6 +11,8 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
+using System.Text.RegularExpressions;
+using Windows.UI.Xaml.Controls;
 
 namespace HelloWorld.Service
 {
@@ -62,16 +64,19 @@ namespace HelloWorld.Service
                 }
                 else
                 {
-                    //bad case, show error to user
-                    Debug.WriteLine("Error 500");
-                    
+                    ContentDialog contentDialog = new ContentDialog();
+                    contentDialog.Title = "Login Fail";
+                    contentDialog.Content = "Incorrect Email or Password";
+                    contentDialog.CloseButtonText = "OK";
+                    contentDialog.ShowAsync();
+
                 }
 
             }
             return null;
         }
 
-        private async void SaveToken(string content)
+        private async Task SaveToken(string content)
         {
             Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
             Windows.Storage.StorageFile sampleFile = await storageFolder.CreateFileAsync(TokenFileName,
@@ -100,7 +105,7 @@ namespace HelloWorld.Service
                 var result = await httpClient.GetAsync($"{APIConfig.ApiDomain}/{APIConfig.AccountPath}");
                 var content = await result.Content.ReadAsStringAsync();
                 Debug.WriteLine($"Response {content} - {result.StatusCode}");
-                if (result.StatusCode == System.Net.HttpStatusCode.Created)
+                if (result.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     Account account = JsonConvert.DeserializeObject<Account>(content);
                     return account;
@@ -115,20 +120,22 @@ namespace HelloWorld.Service
 
         private async Task<Credential> LoadToken()
         {
-           
+            try
+            {
                 StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
                 // var item = await storageFolder.TryGetItemAsync(TokenFileName);
                 StorageFile storageFile = await storageFolder.GetFileAsync(TokenFileName);
-               
-                 if(storageFile == null)
-                {
-                    return null;
-                }
+
                 string tokenString = await FileIO.ReadTextAsync(storageFile);
                 Credential credential = JsonConvert.DeserializeObject<Credential>(tokenString);
                 return credential;
-           
-           
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
+
         }
 
     }

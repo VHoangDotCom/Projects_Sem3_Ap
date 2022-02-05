@@ -39,7 +39,7 @@ namespace HelloWorld
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override  void  OnLaunched(LaunchActivatedEventArgs e)
+        protected override async void   OnLaunched(LaunchActivatedEventArgs e)
         {
             Frame rootFrame = Window.Current.Content as Frame;
 
@@ -68,7 +68,7 @@ namespace HelloWorld
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                 /* Account account =   await  accountService.GetLoggedInAccount();
+                  Account account =   await  accountService.GetLoggedInAccount();
                     if(account == null)
                     {
                         rootFrame.Navigate(typeof(Pages.LoginPageDemo), e.Arguments);
@@ -76,9 +76,9 @@ namespace HelloWorld
                     else
                     {
                         currentLoggedIn = account;
-                        rootFrame.Navigate(typeof(Demo.NavigationViewDemo), e.Arguments);
-                    } */
-                    rootFrame.Navigate(typeof(Pages.LoginFormStyle), e.Arguments);
+                        rootFrame.Navigate(typeof(Demo.ListSongPage), e.Arguments);
+                    } 
+                   // rootFrame.Navigate(typeof(Demo.NavigationViewDemo02), e.Arguments);
 
                 }
                 // Ensure the current window is active

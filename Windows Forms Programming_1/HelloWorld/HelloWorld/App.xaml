@@ -6,7 +6,7 @@
      xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
  xmlns:core="using:Microsoft.Xaml.Interactions.Core"   >
 
-    <Application.Resources>
+  <!--  <Application.Resources>
         <Style  TargetType="Button">
             <Setter Property="Background" Value="White" />
             <Setter Property="Foreground" Value="DarkGreen" />
@@ -49,6 +49,6 @@
         
       
 
-    </Application.Resources>
+    </Application.Resources> -->
    
 </Application>

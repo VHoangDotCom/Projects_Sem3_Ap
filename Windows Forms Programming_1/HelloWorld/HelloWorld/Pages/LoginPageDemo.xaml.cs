@@ -24,29 +24,41 @@ namespace HelloWorld.Pages
     /// </summary>
     public sealed partial class LoginPageDemo : Page
     {
-        AccountService accountService = new AccountService();
+        private AccountService accountService = new AccountService();
         public LoginPageDemo()
         {
             this.InitializeComponent();
-            accountService = new AccountService();
+            //accountService = new AccountService();
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Login(object sender, RoutedEventArgs e)
         {
-            var loginInformation = new LoginViewModel
+
+            var loginInformation = new LoginViewModel()
             {
                 email = email.Text,
-                password = password.Text
+                password = password.Password.ToString()
+
             };
+
             Credential credential = await accountService.Login(loginInformation);
             Account account = await accountService.GetAccountInformation(credential.access_token);
-            if(account != null)
+            if (account != null)
             {
                 App.currentLoggedIn = account;
-                App.currentCredential = credential;
                 this.Frame.Navigate(typeof(Demo.NavigationViewDemo));
             }
-           
+
+
         }
+
+        private void Button_Register(object sender, RoutedEventArgs e)
+        {
+            Frame rootFrame = Window.Current.Content as Frame;
+
+            rootFrame.Navigate(typeof(Pages.RegisterPage));
+
+        }
+
     }
 }

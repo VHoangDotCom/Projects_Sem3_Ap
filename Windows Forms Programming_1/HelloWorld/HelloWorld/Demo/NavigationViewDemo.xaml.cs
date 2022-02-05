@@ -35,7 +35,7 @@ namespace HelloWorld.Demo
         public NavigationViewDemo() 
         {
             this.InitializeComponent();
-            this.Loaded += NavigationViewDemo_Loaded;
+           // this.Loaded += NavigationViewDemo_Loaded;
         }
 
         private void NavigationViewDemo_Loaded(object sender, RoutedEventArgs e)

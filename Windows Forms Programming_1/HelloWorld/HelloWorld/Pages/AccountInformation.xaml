@@ -10,8 +10,26 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="105,83,0,0" Text="FirstName" FontSize="30" TextWrapping="Wrap" VerticalAlignment="Top" Height="73" Width="142"/>
-        <TextBox x:Name="FirstName" HorizontalAlignment="Left" Margin="465,83,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="83" Width="414"/>
+        <StackPanel Margin="0,10,697,565">
+            <PersonPicture x:Name="avatarImage" ProfilePicture="https://docs.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.png" Margin="0 60 100 0" Width="200" Height="300" />
+            <TextBlock x:Name="txtFullName1" Text="" TextWrapping="Wrap" Width="200" TextAlignment="Center" FontSize="27" Margin="0,0,100,0"/>
+
+        </StackPanel>
+
+
+        <TextBlock  HorizontalAlignment="Left" Margin="465,70,0,0" Text="Full Name :"  TextWrapping="Wrap" VerticalAlignment="Top" Width="152" FontSize="28" Height="64" />
+        <TextBlock x:Name="txtFullName" HorizontalAlignment="Left" Margin="630,70,0,0" Text=""  TextWrapping="Wrap" VerticalAlignment="Top" Width="427" FontSize="24" Height="69"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="465,138,0,0" Text="Email :"  TextWrapping="Wrap" VerticalAlignment="Top" Width="152" FontSize="28" Height="64" />
+        <TextBlock x:Name="txtEmail" HorizontalAlignment="Left" Margin="630,138,0,0" Text=""  TextWrapping="Wrap" VerticalAlignment="Top" Width="427" FontSize="24" Height="69" />
+        <TextBlock  HorizontalAlignment="Left" Margin="468,206,0,0" Text="Address :"  TextWrapping="Wrap" VerticalAlignment="Top" Width="152" FontSize="28" Height="64" />
+        <TextBlock x:Name="txtAddress" HorizontalAlignment="Left" Margin="630,206,0,0" Text=""  TextWrapping="Wrap" VerticalAlignment="Top" Width="427" FontSize="24" Height="69"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="468,273,0,0" Text="Phone :"  TextWrapping="Wrap" VerticalAlignment="Top" Width="152" FontSize="28" Height="64"/>
+        <TextBlock x:Name="txtPhone" HorizontalAlignment="Left" Margin="630,273,0,0" Text=""  TextWrapping="Wrap" VerticalAlignment="Top" Width="427" FontSize="24" Height="69"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="465,344,0,0" Text="Gender :"  TextWrapping="Wrap" VerticalAlignment="Top" Width="152" FontSize="28" Height="64" />
+        <TextBlock x:Name="txtGender" HorizontalAlignment="Left" Margin="630,344,0,0" Text=""  TextWrapping="Wrap" VerticalAlignment="Top" Width="427" FontSize="24" Height="69"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="468,414,0,0" Text="Birthday :"  TextWrapping="Wrap" VerticalAlignment="Top" Width="152" FontSize="28" Height="64" />
+        <TextBlock x:Name="txtBirthday" HorizontalAlignment="Left" Margin="630,414,0,0" Text=""  TextWrapping="Wrap" VerticalAlignment="Top" Width="427" FontSize="24" Height="69" />
+
 
     </Grid>
 </Page>
