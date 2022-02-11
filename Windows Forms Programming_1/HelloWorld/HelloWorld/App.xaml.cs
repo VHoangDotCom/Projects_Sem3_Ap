@@ -68,7 +68,7 @@ namespace HelloWorld
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                  Account account =   await  accountService.GetLoggedInAccount();
+                 /* Account account =   await  accountService.GetLoggedInAccount();
                     if(account == null)
                     {
                         rootFrame.Navigate(typeof(Pages.LoginPageDemo), e.Arguments);
@@ -76,8 +76,8 @@ namespace HelloWorld
                     else
                     {
                         currentLoggedIn = account;
-                        rootFrame.Navigate(typeof(Demo.ListSongPage), e.Arguments);
-                    } 
+                        rootFrame.Navigate(typeof(Demo.NavigationViewDemo), e.Arguments);
+                    } */
                    // rootFrame.Navigate(typeof(Demo.NavigationViewDemo02), e.Arguments);
 
                 }

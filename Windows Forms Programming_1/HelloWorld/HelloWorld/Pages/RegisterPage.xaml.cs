@@ -313,7 +313,7 @@ namespace HelloWorld.Pages
         {
             Frame rootFrame = Window.Current.Content as Frame;
 
-            rootFrame.Navigate(typeof(Pages.LoginPage));
+            rootFrame.Navigate(typeof(Pages.LoginPageDemo));
         }
 
         private async void button_Register(object sender, RoutedEventArgs e)

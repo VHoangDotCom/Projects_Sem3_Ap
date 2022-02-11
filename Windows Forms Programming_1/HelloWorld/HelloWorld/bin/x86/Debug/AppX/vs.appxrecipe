@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-02-05T15:18:38.220</Modified>
+      <Modified>2022-02-06T13:39:06.080</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\HelloWorld.exe">
       <PackagePath>entrypoint\HelloWorld.exe</PackagePath>
-      <Modified>2022-02-05T15:18:36.948</Modified>
+      <Modified>2022-02-06T13:39:05.344</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\cloudinarydotnet\1.17.0\lib\netstandard2.0\CloudinaryDotNet.dll">
       <PackagePath>CloudinaryDotNet.dll</PackagePath>
@@ -274,7 +274,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\HelloWorld\bin\x86\Debug\Core\HelloWorld.exe">
       <PackagePath>HelloWorld.exe</PackagePath>
-      <Modified>2022-02-05T15:18:38.217</Modified>
+      <Modified>2022-02-06T13:39:06.075</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

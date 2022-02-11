@@ -478,6 +478,19 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "SQLitePCL/3.8.7.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/SQLitePCL.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/SQLitePCL.dll": {}
+        },
+        "build": {
+          "build/netcore451/SQLitePCL.props": {},
+          "build/netcore451/SQLitePCL.targets": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -1166,6 +1179,19 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "SQLitePCL/3.8.7.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/SQLitePCL.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/SQLitePCL.dll": {}
+        },
+        "build": {
+          "build/netcore451/SQLitePCL.props": {},
+          "build/netcore451/SQLitePCL.targets": {}
         }
       },
       "System.Memory/4.5.4": {
@@ -1859,6 +1885,19 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "SQLitePCL/3.8.7.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/SQLitePCL.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/SQLitePCL.dll": {}
+        },
+        "build": {
+          "build/netcore451/SQLitePCL.props": {},
+          "build/netcore451/SQLitePCL.targets": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -2550,6 +2589,19 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "SQLitePCL/3.8.7.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/SQLitePCL.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/SQLitePCL.dll": {}
+        },
+        "build": {
+          "build/netcore451/SQLitePCL.props": {},
+          "build/netcore451/SQLitePCL.targets": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -3238,6 +3290,19 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "SQLitePCL/3.8.7.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/SQLitePCL.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/SQLitePCL.dll": {}
+        },
+        "build": {
+          "build/netcore451/SQLitePCL.props": {},
+          "build/netcore451/SQLitePCL.targets": {}
         }
       },
       "System.Memory/4.5.4": {
@@ -3931,6 +3996,19 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "SQLitePCL/3.8.7.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/SQLitePCL.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/SQLitePCL.dll": {}
+        },
+        "build": {
+          "build/netcore451/SQLitePCL.props": {},
+          "build/netcore451/SQLitePCL.targets": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -4619,6 +4697,19 @@
         },
         "native": {
           "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll": {}
+        }
+      },
+      "SQLitePCL/3.8.7.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/SQLitePCL.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/SQLitePCL.dll": {}
+        },
+        "build": {
+          "build/netcore451/SQLitePCL.props": {},
+          "build/netcore451/SQLitePCL.targets": {}
         }
       },
       "System.Memory/4.5.4": {
@@ -5310,6 +5401,19 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "SQLitePCL/3.8.7.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/SQLitePCL.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/SQLitePCL.dll": {}
+        },
+        "build": {
+          "build/netcore451/SQLitePCL.props": {},
+          "build/netcore451/SQLitePCL.targets": {}
         }
       },
       "System.Memory/4.5.4": {
@@ -10091,6 +10195,86 @@
         "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
     },
+    "SQLitePCL/3.8.7.2": {
+      "sha512": "Vi2/IJKPV4Web9GX+wn42foALVjFM68uTEoIOY6Ir8keF5OkniMB/iXCg3N2GWgj5ex7dCAsJmhv1sX84Fj9dQ==",
+      "type": "package",
+      "path": "sqlitepcl/3.8.7.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid/_._",
+        "build/MonoTouch/_._",
+        "build/Xamarin.iOS10/_._",
+        "build/net45/SQLitePCL.Ext.dll",
+        "build/net45/SQLitePCL.props",
+        "build/net45/SQLitePCL.targets",
+        "build/netcore45/SQLitePCL.Ext.dll",
+        "build/netcore45/SQLitePCL.Ext.pri",
+        "build/netcore45/SQLitePCL.props",
+        "build/netcore45/SQLitePCL.targets",
+        "build/netcore451/SQLitePCL.Ext.dll",
+        "build/netcore451/SQLitePCL.Ext.pri",
+        "build/netcore451/SQLitePCL.props",
+        "build/netcore451/SQLitePCL.targets",
+        "build/portable-net45+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/_._",
+        "build/wp8/ARM/SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.dll",
+        "build/wp8/ARM/SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.winmd",
+        "build/wp8/ARM/SQLitePCL.Ext.dll",
+        "build/wp8/SQLitePCL.props",
+        "build/wp8/SQLitePCL.targets",
+        "build/wp8/x86/SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.dll",
+        "build/wp8/x86/SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.winmd",
+        "build/wp8/x86/SQLitePCL.Ext.dll",
+        "build/wp81/ARM/SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.dll",
+        "build/wp81/ARM/SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.winmd",
+        "build/wp81/ARM/SQLitePCL.Ext.dll",
+        "build/wp81/SQLitePCL.props",
+        "build/wp81/SQLitePCL.targets",
+        "build/wp81/x86/SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.dll",
+        "build/wp81/x86/SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.winmd",
+        "build/wp81/x86/SQLitePCL.Ext.dll",
+        "build/wpa81/SQLitePCL.Ext.dll",
+        "build/wpa81/SQLitePCL.Ext.pri",
+        "build/wpa81/SQLitePCL.props",
+        "build/wpa81/SQLitePCL.targets",
+        "lib/MonoAndroid/SQLitePCL.Ext.dll",
+        "lib/MonoAndroid/SQLitePCL.dll",
+        "lib/MonoTouch/SQLitePCL.Ext.dll",
+        "lib/MonoTouch/SQLitePCL.dll",
+        "lib/Xamarin.iOS10/SQLitePCL.Ext.dll",
+        "lib/Xamarin.iOS10/SQLitePCL.dll",
+        "lib/net45/SQLitePCL.dll",
+        "lib/netcore45/SQLitePCL.dll",
+        "lib/netcore451/SQLitePCL.dll",
+        "lib/portable-net45+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/SQLitePCL.dll",
+        "lib/wp8/SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.dll",
+        "lib/wp8/SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.winmd",
+        "lib/wp8/SQLitePCL.dll",
+        "lib/wp81/SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.dll",
+        "lib/wp81/SQLitePCL.Ext.WindowsPhone8.RuntimeProxy.winmd",
+        "lib/wp81/SQLitePCL.dll",
+        "lib/wpa81/SQLitePCL.dll",
+        "readme.txt",
+        "sqlitepcl.3.8.7.2.nupkg.sha512",
+        "sqlitepcl.nuspec",
+        "tools/MonoAndroid/install.ps1",
+        "tools/MonoTouch/install.ps1",
+        "tools/Xamarin.iOS10/install.ps1",
+        "tools/net45/install.ps1",
+        "tools/netcore45/install.ps1",
+        "tools/netcore45/uninstall.ps1",
+        "tools/netcore451/install.ps1",
+        "tools/netcore451/uninstall.ps1",
+        "tools/portable-net45+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/install.ps1",
+        "tools/wp8/install.ps1",
+        "tools/wp8/uninstall.ps1",
+        "tools/wp81/install.ps1",
+        "tools/wp81/uninstall.ps1",
+        "tools/wpa81/install.ps1",
+        "tools/wpa81/uninstall.ps1"
+      ]
+    },
     "System.Memory/4.5.4": {
       "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
       "type": "package",
@@ -10179,7 +10363,8 @@
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.12",
       "Microsoft.Toolkit.Uwp.UI >= 2.1.1",
       "Microsoft.Xaml.Behaviors.Uwp.Managed >= 2.0.1",
-      "Newtonsoft.Json >= 13.0.1"
+      "Newtonsoft.Json >= 13.0.1",
+      "SQLitePCL >= 3.8.7.2"
     ]
   },
   "packageFolders": {
@@ -10241,6 +10426,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.1, )"
+          },
+          "SQLitePCL": {
+            "target": "Package",
+            "version": "[3.8.7.2, )"
           }
         },
         "imports": [

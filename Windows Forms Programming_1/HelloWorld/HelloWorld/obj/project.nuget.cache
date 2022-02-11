@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TdA5iBmIy6K9+BK9mO5SQqcwGqL+vqb5jgLgzngDIX3zCZVzES+xWBihRuaZSgDlAdHIgnZuSv7FzusUHOLUGA==",
+  "dgSpecHash": "aBgyxJYx6ujhBWkf4Wezn2d1uNCLd1BszNK9sk56Yy5dsU/DUPD+gZHqEMRbtYlvfV7t9FQ0mfsmKL3Zwqj+wA==",
   "success": true,
   "projectFilePath": "D:\\epc\\Ap-Sem3\\Windows Forms Programming\\Test\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,7 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.8-rel-29722-00\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.8-rel-29722-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.12\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.12.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.12\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.12.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\sqlitepcl\\3.8.7.2\\sqlitepcl.3.8.7.2.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512"
