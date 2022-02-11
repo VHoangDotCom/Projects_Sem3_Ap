@@ -23,7 +23,7 @@
                 <!-- ID -->
                 <StackPanel Orientation="Horizontal" Margin="100 50 0 10">
                     <TextBlock Text="No. :" Margin="10 0 180 0"/>
-                    <TextBox x:Name="ID" Width="250"></TextBox>
+                    <TextBox  x:Name="ID" Width="250"></TextBox>
                 </StackPanel>
 
                 <!-- Name -->

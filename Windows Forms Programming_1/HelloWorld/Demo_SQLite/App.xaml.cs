@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLitePCL;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,10 +23,7 @@ namespace Demo_SQLite
     /// </summary>
     sealed partial class App : Application
     {
-        /// <summary>
-        /// Initializes the singleton application object.  This is the first line of authored code
-        /// executed, and as such is the logical equivalent of main() or WinMain().
-        /// </summary>
+        
         public App()
         {
             this.InitializeComponent();
@@ -67,7 +65,7 @@ namespace Demo_SQLite
                     // configuring the new page by passing required information as a navigation
                     // parameter
                     Demo.DatabaseInitialize.CreateTables();
-                    rootFrame.Navigate(typeof(Demo.OrderDemo), e.Arguments);
+                    rootFrame.Navigate(typeof(Pages.CreateTransactionPage), e.Arguments);
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();
