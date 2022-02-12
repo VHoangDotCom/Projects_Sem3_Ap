@@ -112,3 +112,11 @@ D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\obj\x86\Deb
 D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\obj\x86\Debug\FxResources.System.Text.Json.SR.resw
 D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_637214534760000000.json
 D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\obj\x86\Debug\Demo_SQLite.csproj.AssemblyReference.cache
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\obj\x86\Debug\Pages\ListTransactionPage.g.i.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\obj\x86\Debug\Pages\ListTransactionPage.g.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\obj\x86\Debug\Pages\ListTransactionPage.xaml
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\obj\x86\Debug\Pages\ListTransactionPage.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Pages\ListTransactionPage.xbf
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\SQLite.Interop.dll
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\System.Data.SQLite.dll
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\obj\x86\Debug\System.Data.SQLite\en\System.Data.SQLite.SR.resw

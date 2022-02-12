@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-02-11T14:44:05.998</Modified>
+      <Modified>2022-02-12T03:17:27.266</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Demo_SQLite.exe">
       <PackagePath>entrypoint\Demo_SQLite.exe</PackagePath>
-      <Modified>2022-02-11T14:44:02.569</Modified>
+      <Modified>2022-02-12T03:17:26.427</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -102,6 +102,14 @@
       <PackagePath>SQLitePCL.dll</PackagePath>
       <Modified>2014-12-09T11:04:52.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.115.5\runtimes\win-x86\native\SQLite.Interop.dll">
+      <PackagePath>SQLite.Interop.dll</PackagePath>
+      <Modified>2021-11-02T17:47:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.115.5\lib\netstandard2.0\System.Data.SQLite.dll">
+      <PackagePath>System.Data.SQLite.dll</PackagePath>
+      <Modified>2021-11-02T17:48:14.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\system.runtime.compilerservices.unsafe\5.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
       <Modified>2020-10-19T18:46:44.000</Modified>
@@ -154,9 +162,9 @@
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Media\Microsoft.Toolkit.Uwp.UI.Controls.Media.xr.xml</PackagePath>
       <Modified>2021-11-18T21:55:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2022-02-10T12:35:06.764</Modified>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Assets\Images\madPepe.png">
+      <PackagePath>Assets\Images\madPepe.png</PackagePath>
+      <Modified>2022-02-12T01:03:33.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -192,25 +200,33 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-08T12:18:49.899</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2022-02-10T12:35:06.764</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Demo_SQLite.xr.xml">
       <PackagePath>Demo_SQLite.xr.xml</PackagePath>
-      <Modified>2022-02-11T14:44:02.324</Modified>
+      <Modified>2022-02-12T03:17:26.312</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-02-11T14:44:02.429</Modified>
+      <Modified>2022-02-12T03:17:26.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Demo\OrderDemo.xbf">
       <PackagePath>Demo\OrderDemo.xbf</PackagePath>
-      <Modified>2022-02-11T14:44:02.429</Modified>
+      <Modified>2022-02-12T03:17:26.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-02-11T14:44:02.429</Modified>
+      <Modified>2022-02-12T03:17:26.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Pages\CreateTransactionPage.xbf">
       <PackagePath>Pages\CreateTransactionPage.xbf</PackagePath>
-      <Modified>2022-02-11T14:44:02.430</Modified>
+      <Modified>2022-02-12T03:17:26.335</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Pages\ListTransactionPage.xbf">
+      <PackagePath>Pages\ListTransactionPage.xbf</PackagePath>
+      <Modified>2022-02-12T03:17:26.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -222,11 +238,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-02-11T10:18:52.992</Modified>
+      <Modified>2022-02-12T03:12:21.354</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Core\Demo_SQLite.exe">
       <PackagePath>Demo_SQLite.exe</PackagePath>
-      <Modified>2022-02-11T14:44:05.992</Modified>
+      <Modified>2022-02-12T03:17:27.259</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>

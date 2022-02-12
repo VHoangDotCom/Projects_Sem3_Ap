@@ -12,6 +12,13 @@
     <RootPropertyPathName Name="ShippedDate" />
     <RootPropertyPathName Name="OrderDate" />
     <RootPropertyPathName Name="OrderID" />
+    <RootPropertyPathName Name="Persons" />
+    <RootPropertyPathName Name="Category" />
+    <RootPropertyPathName Name="CreatedDate" />
+    <RootPropertyPathName Name="Money" />
+    <RootPropertyPathName Name="Description" />
+    <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="ID" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
@@ -20,6 +27,7 @@
       <RootProperty Name="Content" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
@@ -50,7 +58,9 @@
       <RootProperty Name="Binding" />
       <RootProperty Name="IsReadOnly" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
+    </RootType>
     <RootType FullName="Demo_SQLite.Demo.OrderDemo" />
     <RootType FullName="Demo_SQLite.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Border">
@@ -79,8 +89,17 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Width" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
+      <RootEvent Name="SelectedDateChanged" />
+    </RootType>
     <RootType FullName="Demo_SQLite.Pages.CreateTransactionPage" />
+    <RootType FullName="Demo_SQLite.Pages.ListTransactionPage" />
   </Roots.RootTypes>
 </Roots>

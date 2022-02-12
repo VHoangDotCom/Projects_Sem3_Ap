@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vgETagMsnM0Z/dReetUbXLsOrKrawDgfIqi8hxr4h4YyijutGy0n3STWeCOvy5tLzqcoRQBXcUAuTgRXZaDxHg==",
+  "dgSpecHash": "h3gEorgWJ4WT3rHLtlM3PUJNlHOHFn+1dDNbXCRzyt+5EaR1AiqgKTuCUL73h7XrlaP2UxHk9tw05Ad+4QMQfg==",
   "success": true,
   "projectFilePath": "D:\\epc\\Ap-Sem3\\Windows Forms Programming\\Test\\HelloWorld\\Demo_SQLite\\Demo_SQLite.csproj",
   "expectedPackageFiles": [
@@ -44,6 +44,8 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.12\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.12.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\sqlitepcl\\3.8.7.2\\sqlitepcl.3.8.7.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.115.5\\stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.data.sqlite.core\\1.0.115.5\\system.data.sqlite.core.1.0.115.5.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.text.encodings.web\\5.0.1\\system.text.encodings.web.5.0.1.nupkg.sha512",

@@ -1,6 +1,7 @@
 WinMetadata\Windows.winmd
 SQLitePCL.Ext.dll
 SQLitePCL.Ext.pri
+Assets\Images\madPepe.png
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -13,4 +14,5 @@ Demo\OrderDemo.xbf
 Demo_SQLite.xr.xml
 MainPage.xbf
 Pages\CreateTransactionPage.xbf
+Pages\ListTransactionPage.xbf
 Properties\Default.rd.xml

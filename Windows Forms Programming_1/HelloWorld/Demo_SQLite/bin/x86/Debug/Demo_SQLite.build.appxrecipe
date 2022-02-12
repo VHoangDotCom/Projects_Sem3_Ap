@@ -76,6 +76,12 @@
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\sqlitepcl\3.8.7.2\lib\netcore451\SQLitePCL.dll">
       <PackagePath>SQLitePCL.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.115.5\runtimes\win-x86\native\SQLite.Interop.dll">
+      <PackagePath>SQLite.Interop.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.115.5\lib\netstandard2.0\System.Data.SQLite.dll">
+      <PackagePath>System.Data.SQLite.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\system.runtime.compilerservices.unsafe\5.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
     </AppxPackagedFile>
@@ -115,8 +121,8 @@
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.toolkit.uwp.ui.controls.media\7.1.2\lib\uap10.0.17763\Microsoft.Toolkit.Uwp.UI.Controls.Media\Microsoft.Toolkit.Uwp.UI.Controls.Media.xr.xml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Media\Microsoft.Toolkit.Uwp.UI.Controls.Media.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Assets\Images\madPepe.png">
+      <PackagePath>Assets\Images\madPepe.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -145,6 +151,9 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Demo_SQLite.xr.xml">
       <PackagePath>Demo_SQLite.xr.xml</PackagePath>
     </AppxPackagedFile>
@@ -159,6 +168,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Pages\CreateTransactionPage.xbf">
       <PackagePath>Pages\CreateTransactionPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Pages\ListTransactionPage.xbf">
+      <PackagePath>Pages\ListTransactionPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
