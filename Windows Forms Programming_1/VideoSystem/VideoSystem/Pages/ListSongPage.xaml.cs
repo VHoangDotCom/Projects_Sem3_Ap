@@ -33,25 +33,33 @@ namespace VideoSystem.Pages
         {
             this.InitializeComponent();
             this.songService = new SongService();
-            //Loaded += ListSongPage_Loaded;
+            Loaded += ListSongPage_LoadedAsync;
         }
-
-        private async void ListSongPage_Loaded(object sender, RoutedEventArgs e)
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            base.OnNavigatedFrom(e);
+        }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+        }
+        private async void ListSongPage_LoadedAsync(object sender, RoutedEventArgs e)
         {
             List<Song> list = await this.songService.GetMyList();
-            ObservableCollection<Song> observableSong = new ObservableCollection<Song>();
-            Debug.WriteLine(list.Count);
-            MyListSong.ItemsSource = observableSong;
+            ObservableCollection<Song> observabSongs = new ObservableCollection<Song>(list);
+            MyListSong.ItemsSource = observabSongs;
 
         }
 
         private void MyListSong_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var currentSong = MyListSong.SelectedItem as Song;
-            Debug.WriteLine("SelectionChanged: " + currentSong.name);
-            Debug.WriteLine("SelectionChanged: " + currentSong.link);
+            Debug.WriteLine(currentSong.name);
+            Debug.WriteLine(currentSong.link);
             MyMediaPlayer.MediaPlayer.Source = MediaSource.CreateFromUri(new Uri(currentSong.link));
             MyMediaPlayer.MediaPlayer.Play();
+
+
         }
 
         private void MyListSong_ItemClick(object sender, ItemClickEventArgs e)
@@ -61,16 +69,6 @@ namespace VideoSystem.Pages
             Debug.WriteLine(currentSong.link);
         }
 
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
-        {
-            MyMediaPlayer.MediaPlayer.Pause();
-            base.OnNavigatedFrom(e);
-        }
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-
-            base.OnNavigatedTo(e);
-        } 
+      
     }
 }

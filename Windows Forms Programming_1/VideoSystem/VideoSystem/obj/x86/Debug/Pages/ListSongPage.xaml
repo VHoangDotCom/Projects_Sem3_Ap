@@ -16,7 +16,7 @@
                     <ColumnDefinition Width="Auto" MinWidth="150"/>
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image x:ConnectionId='4'                             MaxHeight="100" Stretch="Fill"/>
+                <Image x:ConnectionId='4'                             MaxHeight="100" Width="150" Height="150" Stretch="Fill"/>
 
                 <StackPanel Margin="12,0,0,0" Grid.Column="1" >
                     <TextBlock x:ConnectionId='5'                      FontSize="14" FontWeight="SemiBold" Style="{ThemeResource BaseTextBlockStyle}"
@@ -24,25 +24,28 @@
                     <TextBlock x:ConnectionId='6'                             FontFamily="Segoe UI" FontWeight="Normal" Style="{ThemeResource BodyTextBlockStyle}"
                         TextTrimming="CharacterEllipsis" Width="350" MaxLines="1"/>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="20" HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}" Margin="0,0,0,0"/>
+                        <TextBlock Text="10" HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}" Margin="0,0,0,0"/>
                         <TextBlock Text=" Views " HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}"/>
-                        <TextBlock Text=" 0" FontFamily="Segoe UI" FontSize="12" FontWeight="Bold"
+                        <TextBlock Text=" ⋅ " FontFamily="Segoe UI" FontSize="12" FontWeight="Bold"
                             HorizontalAlignment="Left"/>
-                        <TextBlock Text="20" HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}" Margin="5,0,0,0"/>
+                        <TextBlock Text="30" HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}" Margin="5,0,0,0"/>
                         <TextBlock Text=" Likes" HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}"/>
                     </StackPanel>
                 </StackPanel>
             </Grid>
         </DataTemplate>
     </Page.Resources>
-    
     <ScrollViewer>
         <StackPanel>
+
             <ListView x:ConnectionId='7' x:Name="MyListSong"
+                      SelectionMode="Single"
+                                                                   
+                      
                       ItemTemplate="{StaticResource SongTemplate}"
-     Height="400"
-     MinWidth="550"
-     BorderThickness="1"
+     Height="570"
+     MinWidth="0"
+     
      BorderBrush="{ThemeResource SystemControlForegroundBaseMediumLowBrush}">
 
                 <!-- Data Template Used: -->
@@ -51,8 +54,10 @@
 
 
             </ListView>
-            <MediaPlayerElement x:ConnectionId='8' x:Name="MyMediaPlayer" AreTransportControlsEnabled="True" AutoPlay="False"/>
+            <MediaPlayerElement x:ConnectionId='8' x:Name="MyMediaPlayer" AreTransportControlsEnabled="True" AutoPlay="False" />
+
         </StackPanel>
+
     </ScrollViewer>
 </Page>
 

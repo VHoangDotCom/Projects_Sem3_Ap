@@ -1,0 +1,16 @@
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.exe
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.deps.json
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.runtimeconfig.json
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.runtimeconfig.dev.json
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.dll
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\ConsoleApp1\bin\Debug\net5.0\ref\ConsoleApp1.dll
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.pdb
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.csproj.AssemblyReference.cache
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.AssemblyInfoInputs.cache
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.AssemblyInfo.cs
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.dll
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\ConsoleApp1\obj\Debug\net5.0\ref\ConsoleApp1.dll
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.pdb
+D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.genruntimeconfig.cache

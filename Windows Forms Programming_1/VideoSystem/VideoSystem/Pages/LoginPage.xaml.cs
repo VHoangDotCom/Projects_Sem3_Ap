@@ -13,9 +13,10 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using VideoSystem.Services;
 using System.Diagnostics;
 using VideoSystem.Views;
+using VideoSystem.Services;
+using VideoSystem.Entity;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -24,17 +25,32 @@ namespace VideoSystem.Pages
    
     public sealed partial class LoginPage : Page
     {
-        private AccountGallery _account;
-        private bool _isExistingAccount;
+        private AccountSevice accountService = new AccountSevice();
+
+        //private bool _isExistingAccount;
         public LoginPage()
         {
             this.InitializeComponent();
         }
 
-        private void btnSignIn_Click(object sender, RoutedEventArgs e)
+        private async void btnSignIn_Click(object sender, RoutedEventArgs e)
         {
-            ErrorMessage.Text = "";
-            SignInPassport();
+            //ErrorMessage.Text = "";
+            //SignInPassport();
+            var loginInformation = new LoginViewModel()
+            {
+                email = txtEmail.Text,
+                password = txtPassword.Password.ToString()
+
+            };
+
+            Credential credential = await accountService.Login(loginInformation);
+            Account account = await accountService.GetAccountInformation(credential.access_token);
+            if (account != null)
+            {
+                App.currentLoggedIn = account;
+                this.Frame.Navigate(typeof(Pages.NavigationListSong));
+            }
         }
 
         private void RegisterButtonTextBlock_PointerPressed(object sender, PointerRoutedEventArgs e)
@@ -65,7 +81,7 @@ namespace VideoSystem.Pages
             }
         }  */
 
-        private async void SignInPassport()
+      /*  private async void SignInPassport()
         {
             if (_isExistingAccount)
             {
@@ -91,7 +107,7 @@ namespace VideoSystem.Pages
                 ErrorMessage.Text = "Invalid Credentials";
             }
         }
-
+        */
 
         private void RegisterButtonTextBlock_PointerEntered(object sender, PointerRoutedEventArgs e)
         {

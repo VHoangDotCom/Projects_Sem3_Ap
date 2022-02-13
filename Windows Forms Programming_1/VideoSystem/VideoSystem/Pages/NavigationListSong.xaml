@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="VideoSystem.Pages.NavigationListSong"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VideoSystem.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <NavigationView x:Name="NavView" Loaded="NavView_Loaded" 
+                        ItemInvoked="NavView_ItemInvoked">
+
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="My Music" Tag="listSong" Icon="Audio"  />
+                <NavigationViewItem   Content="Account" Tag="account"  Icon="AddFriend"  />
+
+
+
+
+            </NavigationView.MenuItems>
+
+
+
+
+            <NavigationView.AutoSuggestBox>
+                <AutoSuggestBox  x:Name="NavViewSearchBox" QueryIcon="Find"/>
+            </NavigationView.AutoSuggestBox>
+            <ScrollViewer>
+                <Frame x:Name="MainContent" Margin="5" Padding="5" />
+            </ScrollViewer>
+        </NavigationView>
+
+
+    </Grid>
+</Page>

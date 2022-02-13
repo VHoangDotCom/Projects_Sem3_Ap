@@ -11,6 +11,7 @@ using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using Windows.Storage;
+using Windows.UI.Xaml.Controls;
 
 namespace VideoSystem.Services
 {
@@ -28,7 +29,7 @@ namespace VideoSystem.Services
             HttpClient httpClient = new HttpClient();
             //httpClient.BaseAddress = new Uri(ApiUrl);
             HttpContent contentToSend = new StringContent(jsonString, Encoding.UTF8, APIConfig.MediaType);
-            var result = await httpClient.PostAsync($"{APIConfig.ApiDomain}/{APIConfig.AccountPath}", contentToSend);
+            var result = await httpClient.PostAsync($"{APIConfig.ApiDomain}{APIConfig.AccountPath}", contentToSend);
             if (result.StatusCode == System.Net.HttpStatusCode.Created)
             {
                 //good case
@@ -62,8 +63,11 @@ namespace VideoSystem.Services
                 }
                 else
                 {
-                    //bad case, show error to user
-                    Debug.WriteLine("Error 500");
+                    ContentDialog contentDialog = new ContentDialog();
+                    contentDialog.Title = "Login Fail";
+                    contentDialog.Content = "Incorrect Email or Password";
+                    contentDialog.CloseButtonText = "OK";
+                    contentDialog.ShowAsync();
 
                 }
 
@@ -97,10 +101,10 @@ namespace VideoSystem.Services
             using (HttpClient httpClient = new HttpClient())
             {
                 httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
-                var result = await httpClient.GetAsync($"{APIConfig.ApiDomain}/{APIConfig.AccountPath}");
+                var result = await httpClient.GetAsync($"{APIConfig.ApiDomain}{APIConfig.AccountPath}");
                 var content = await result.Content.ReadAsStringAsync();
                 Debug.WriteLine($"Response {content} - {result.StatusCode}");
-                if (result.StatusCode == System.Net.HttpStatusCode.Created)
+                if (result.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     Account account = JsonConvert.DeserializeObject<Account>(content);
                     return account;
@@ -115,21 +119,31 @@ namespace VideoSystem.Services
 
         private async Task<Credential> LoadToken()
         {
+            try
+            {
+                StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+                // var item = await storageFolder.TryGetItemAsync(TokenFileName);
+                StorageFile storageFile = await storageFolder.GetFileAsync(TokenFileName);
 
-            StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
-            // var item = await storageFolder.TryGetItemAsync(TokenFileName);
-            StorageFile storageFile = await storageFolder.GetFileAsync(TokenFileName);
-
-            if (storageFile == null)
+                string tokenString = await FileIO.ReadTextAsync(storageFile);
+                Credential credential = JsonConvert.DeserializeObject<Credential>(tokenString);
+                return credential;
+            }
+            catch(Exception ex)
             {
                 return null;
-            }
-            string tokenString = await FileIO.ReadTextAsync(storageFile);
-            Credential credential = JsonConvert.DeserializeObject<Credential>(tokenString);
-            return credential;
+            }           
+        }
 
+        public async void logOut()
+        {
+
+            StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+            StorageFile storageFile = await storageFolder.GetFileAsync(TokenFileName);
+            storageFile.DeleteAsync();
 
         }
+
 
     }
 }

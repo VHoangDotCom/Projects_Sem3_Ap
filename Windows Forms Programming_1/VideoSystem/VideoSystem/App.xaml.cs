@@ -27,6 +27,13 @@ namespace VideoSystem
         private AccountSevice accountService;
         public static Account currentLoggedIn;
         public static Credential currentCredential;
+
+        // Connection string for using Windows Authentication.
+        private string connectionString =
+            @"Data Source=DESKTOP-ULU1CBF;Initial Catalog=Northwind;Integrated Security=True";//Integrated Security=True
+        //     @"Data Source=YourServerName\YourInstanceName;Initial Catalog=DatabaseName; User Id=XXXXX; Password=XXXXX";
+        public string ConnectionString { get => connectionString; set => connectionString = value; }
+
         public App()
         {
             this.InitializeComponent();
@@ -39,7 +46,7 @@ namespace VideoSystem
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override  void OnLaunched(LaunchActivatedEventArgs e)
+        protected override async  void OnLaunched(LaunchActivatedEventArgs e)
         {
             Frame rootFrame = Window.Current.Content as Frame;
 
@@ -68,7 +75,7 @@ namespace VideoSystem
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                  /*  Account account = await accountService.GetLoggedInAccount();
+                   /* Account account = await accountService.GetLoggedInAccount();
                     if (account == null)
                     {
                         rootFrame.Navigate(typeof(Pages.LoginPage), e.Arguments);
@@ -77,9 +84,9 @@ namespace VideoSystem
                     {
                         currentLoggedIn = account;
                         rootFrame.Navigate(typeof(Pages.NavigationView), e.Arguments);
-                    } */
+                    }  */
 
-                    rootFrame.Navigate(typeof(Pages.ListSongPage), e.Arguments);
+                    rootFrame.Navigate(typeof(Pages.NavigationListSong), e.Arguments);
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();
