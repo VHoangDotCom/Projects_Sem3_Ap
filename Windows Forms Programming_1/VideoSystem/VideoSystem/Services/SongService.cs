@@ -18,7 +18,7 @@ namespace VideoSystem.Services
 
         }
 
-        public async Task<List<Song>> GetList()
+        public async Task<List<Song>> GetListAsync()
         {
             List<Song> listSong = new List<Song>();
             using (HttpClient httpClient = new HttpClient())
@@ -37,7 +37,7 @@ namespace VideoSystem.Services
             }
             return listSong;
         }
-        public async Task<List<Song>> GetMyList()
+      /*  public async Task<List<Song>> GetMyList()
         {
             List<Song> listSong = new List<Song>();
             using (HttpClient httpClient = new HttpClient())
@@ -60,6 +60,6 @@ namespace VideoSystem.Services
 
             }
             return new List<Song>();
-        }
+        }*/
     }
 }

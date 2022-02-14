@@ -17,18 +17,35 @@ using Windows.UI.Xaml.Navigation;
 using VideoSystem.Models;
 using VideoSystem.Services;
 using Windows.UI.Xaml.Media.Imaging;
+using CloudinaryDotNet;
+using CloudinaryDotNet.Actions;
+using System.Diagnostics;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace VideoSystem.Views
 {
    
-    public sealed partial class RegisterPage : Page
+    public sealed partial class RegisterPage : Windows.UI.Xaml.Controls.Page
     {
-        private AccountGallery _account;
+        //private AccountGallery _account;
+        private Account account;
+        private Cloudinary cloudinary;
+        private Stream fileOpen;
+        private string imageAvatar;
+        private int valiGender;
+        private ImageUploadResult AvatarUpload;
+        private AccountSevice accountService = new AccountSevice();
         public RegisterPage()
         {
             this.InitializeComponent();
+            account = new Account(
+                  "fpt-aptech-h-n-i",
+           "514442515681342",
+           "qKZnynooHuNUn0u7BdNE-y8-UIA"
+                );
+            cloudinary = new Cloudinary(account);
+            cloudinary.Api.Secure = true;
         }
 
         //Validate
@@ -128,6 +145,7 @@ namespace VideoSystem.Views
             //Password
             var input = password.Text;
             var hasNumber = new Regex(@"[0-9]+");
+            var hasPhone = new Regex(@"^([0-9]{10,12})$");
             var hasUpperChar = new Regex(@"[A-Z]+");
             var hasLowerChar = new Regex(@"[a-z]+");
             var hasMinimum8Chars = new Regex(@".{8,}");
@@ -182,7 +200,12 @@ namespace VideoSystem.Views
             else if (!hasNumber.IsMatch(phone.Text))
             {
                 image3.Source = WarningImage();
-                phoneErr.Text = "Phone number must be number type (10-12).";
+                phoneErr.Text = "Phone number must be number type !";
+                return false;
+            }else if (!hasPhone.IsMatch(phone.Text))
+            {
+                image3.Source = WarningImage();
+                phoneErr.Text = "Phone number with 10 to 12 digits!";
                 return false;
             }
             //Address
@@ -239,7 +262,33 @@ namespace VideoSystem.Views
             return true;
 
         }
-        private void ClearData()
+
+        private void HandleCheck(object sender, RoutedEventArgs e)
+        {
+            RadioButton rb = sender as RadioButton;
+            if (String.IsNullOrEmpty(rb.Name))
+            {
+                valiGender = 0;
+            }
+            else
+            {
+                switch (rb.Name)
+                {
+                    case "male":
+                        valiGender = 1;
+                        break;
+                    case "female":
+                        valiGender = 2;
+                        break;
+                    case "other":
+                        valiGender = 3;
+                        break;
+
+                }
+            }
+        }
+
+            private void ClearData()
         {
             lName.Text = string.Empty;
             fName.Text = string.Empty;
@@ -253,46 +302,71 @@ namespace VideoSystem.Views
             female.IsChecked = false;
             birthday.SelectedDate = null;
         }
-        private async void ShowDialog()
+
+        //Add Avatar
+        private async void OpenFileAvatar(object sender, RoutedEventArgs e)
         {
 
-            string infoGender;
-            if(male.IsChecked == true)
+            var picker = new Windows.Storage.Pickers.FileOpenPicker();
+            picker.ViewMode = Windows.Storage.Pickers.PickerViewMode.Thumbnail;
+            picker.SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.PicturesLibrary;
+            picker.FileTypeFilter.Add(".jpg");
+            picker.FileTypeFilter.Add(".jpge");
+            picker.FileTypeFilter.Add(".jpeg");
+            picker.FileTypeFilter.Add(".png");
+            picker.FileTypeFilter.Add(".jfif");
+
+
+            Windows.Storage.StorageFile file = await picker.PickSingleFileAsync();
+            imageAvatar = file.Name;
+            fileOpen = await file.OpenStreamForReadAsync();
+
+            if (file != null)
             {
-                infoGender = "Male";
+                avatar.Text = file.Name;
             }
             else
             {
-                infoGender = "Female";
+                ContentDialog contentDialog = new ContentDialog();
+                contentDialog.Title = "Action fails!";
+                contentDialog.Content = "Please chosse a file to save!";
+                contentDialog.CloseButtonText = "OK";
+                contentDialog.ShowAsync();
             }
 
-            var account = new Models.AccountGallery()
+        }
+        private async void ShowDialog()
+        {
+
+            var account = new Entity.Account()
             {
                // id = 1,
                 firstName = fName.Text,
                 lastName = lName.Text,
                 password = password.Text,
                 address = address.Text,
-                gender = infoGender,
+                gender = valiGender,
                 phone = phone.Text,
-                avatar = avatar.Text,
+                avatar = AvatarUpload.SecureUrl.ToString(),
                 email = email.Text,
                 birthday = birthday.SelectedDate.ToString(),
                 introduction = intro.Text,
 
             };
+            var result1 = await accountService.RegisterAsync(account);
             var jsonString = JsonConvert.SerializeObject(account.ToString());
             ContentDialog dialog = new ContentDialog();
             dialog.Title = " Welcome " + fName.Text + " " + lName.Text + " !";
             dialog.Foreground = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 71, 101, 10));
 
-            dialog.Content = "Here is your info: \n" + jsonString;
+            dialog.Content = "Here is your info: \n" + jsonString + " :)";
             //Info here
 
             dialog.PrimaryButtonText = "Save";
             dialog.SecondaryButtonText = "Don't Save";
             dialog.CloseButtonText = "Cancel";
             var result = await dialog.ShowAsync();
+           
 
          /*   if (result == ContentDialogResult.Primary)
             {
@@ -305,45 +379,41 @@ namespace VideoSystem.Views
 
         }
 
-        //Set color
-      /*  public SolidColorBrush GetSolidColorBrush(string hex)
-        {
-            hex = hex.Replace("#", string.Empty);
-            byte a = (byte)(Convert.ToUInt32(hex.Substring(0, 2), 16));
-            byte r = (byte)(Convert.ToUInt32(hex.Substring(2, 2), 16));
-            byte g = (byte)(Convert.ToUInt32(hex.Substring(4, 2), 16));
-            byte b = (byte)(Convert.ToUInt32(hex.Substring(6, 2), 16));
-            SolidColorBrush myBrush = new SolidColorBrush(Windows.UI.Color.FromArgb(a, r, g, b));
-            return myBrush;
-        } */
 
         private async void Button_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
+        {          
                 if (Validate() == true)
                 {
-                    //Register a new account
-                    _account = AccountHelper.AddAccount(fName.Text, lName.Text, email.Text, password.Text, phone.Text, address.Text, avatar.Text, birthday.SelectedDate.ToString(), intro.Text);
-                    //Register new account with MSPassword
-                    await LoginHelper.CreatePassportKeyAsync(_account.email, _account.password);
-                    //Navigate to the Welcome Screen. 
-                    Frame.Navigate(typeof(Welcome), _account);
+                    ShowLoading(true);
+                    ImageUploadParams imageUpload = new ImageUploadParams()
+                    {
+                        File = new FileDescription(imageAvatar, fileOpen),
+                    };
+                    AvatarUpload = await cloudinary.UploadAsync(imageUpload);
+                    Debug.WriteLine(AvatarUpload.Url);
+                                       
+                    ShowLoading(false);
                     ShowDialog();
+                    Frame.Navigate(typeof(Pages.LoginPage));
                     ClearData();
                 }
                 else
                 {
 
                 }
-            }
-            catch
-            {
+        }
 
-            }
-            finally
+        private void ShowLoading(bool load)
+        {
+            if (load)
             {
-
+                progress1.IsActive = true;
+                progress1.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                progress1.IsActive = false;
+                progress1.Visibility = Visibility.Collapsed;
             }
         }
 

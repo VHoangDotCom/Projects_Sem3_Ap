@@ -30,13 +30,45 @@
     <AppXManifest Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-02-13T15:48:50.244</Modified>
+      <Modified>2022-02-14T08:22:10.030</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\VideoSystem.exe">
       <PackagePath>entrypoint\VideoSystem.exe</PackagePath>
-      <Modified>2022-02-13T15:48:47.367</Modified>
+      <Modified>2022-02-14T08:22:08.976</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\cloudinarydotnet\1.17.0\lib\netstandard2.0\CloudinaryDotNet.dll">
+      <PackagePath>CloudinaryDotNet.dll</PackagePath>
+      <Modified>2022-01-17T14:09:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.aspnetcore.html.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Html.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Html.Abstractions.dll</PackagePath>
+      <Modified>2018-11-12T17:28:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.aspnetcore.http.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.Abstractions.dll</PackagePath>
+      <Modified>2018-11-12T17:29:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.aspnetcore.http.features\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.Features.dll</PackagePath>
+      <Modified>2018-11-12T17:28:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\5.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
+      <Modified>2020-10-19T18:48:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.extensions.options\5.0.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll">
+      <PackagePath>Microsoft.Extensions.Options.dll</PackagePath>
+      <Modified>2020-10-19T18:48:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.extensions.primitives\5.0.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll">
+      <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
+      <Modified>2020-10-19T18:48:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.extensions.webencoders\5.0.3\lib\netstandard2.0\Microsoft.Extensions.WebEncoders.dll">
+      <PackagePath>Microsoft.Extensions.WebEncoders.dll</PackagePath>
+      <Modified>2021-01-23T12:35:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.toolkit\7.1.2\lib\netstandard2.0\Microsoft.Toolkit.dll">
       <PackagePath>Microsoft.Toolkit.dll</PackagePath>
@@ -82,9 +114,13 @@
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2021-02-04T18:15:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\system.runtime.compilerservices.unsafe\5.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
-      <Modified>2020-02-19T10:05:16.000</Modified>
+      <Modified>2020-10-19T18:46:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\system.text.encodings.web\5.0.0\lib\netstandard2.0\System.Text.Encodings.Web.dll">
+      <PackagePath>System.Text.Encodings.Web.dll</PackagePath>
+      <Modified>2020-10-19T18:40:38.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\win2d.uwp\1.25.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
@@ -170,59 +206,59 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\VideoSystem.xr.xml">
       <PackagePath>VideoSystem.xr.xml</PackagePath>
-      <Modified>2022-02-13T15:47:56.224</Modified>
+      <Modified>2022-02-14T08:01:52.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-02-13T15:48:47.092</Modified>
+      <Modified>2022-02-14T08:21:07.592</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-02-13T15:48:47.092</Modified>
+      <Modified>2022-02-14T08:21:07.592</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\CameraPreview.xbf">
       <PackagePath>Pages\CameraPreview.xbf</PackagePath>
-      <Modified>2022-02-13T15:48:47.093</Modified>
+      <Modified>2022-02-14T08:21:07.592</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\ListSongPage.xbf">
       <PackagePath>Pages\ListSongPage.xbf</PackagePath>
-      <Modified>2022-02-13T15:48:47.093</Modified>
+      <Modified>2022-02-14T08:21:07.592</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\LoginPage.xbf">
       <PackagePath>Pages\LoginPage.xbf</PackagePath>
-      <Modified>2022-02-13T15:48:47.093</Modified>
+      <Modified>2022-02-14T08:21:07.592</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\NavigationListSong.xbf">
       <PackagePath>Pages\NavigationListSong.xbf</PackagePath>
-      <Modified>2022-02-13T15:48:47.093</Modified>
+      <Modified>2022-02-14T08:21:07.592</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\SettingPage.xbf">
       <PackagePath>Pages\SettingPage.xbf</PackagePath>
-      <Modified>2022-02-13T15:48:47.093</Modified>
+      <Modified>2022-02-14T08:21:07.592</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\SQLDemo.xbf">
       <PackagePath>Pages\SQLDemo.xbf</PackagePath>
-      <Modified>2022-02-13T15:48:47.093</Modified>
+      <Modified>2022-02-14T08:21:07.592</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\UserPage.xbf">
       <PackagePath>Pages\UserPage.xbf</PackagePath>
-      <Modified>2022-02-13T15:48:47.093</Modified>
+      <Modified>2022-02-14T08:21:07.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Views\CustomerListPage.xbf">
       <PackagePath>Views\CustomerListPage.xbf</PackagePath>
-      <Modified>2022-02-13T15:48:47.094</Modified>
+      <Modified>2022-02-14T08:21:07.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Views\RegisterPage.xbf">
       <PackagePath>Views\RegisterPage.xbf</PackagePath>
-      <Modified>2022-02-13T15:48:47.090</Modified>
+      <Modified>2022-02-14T08:21:07.589</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Views\UserSelection.xbf">
       <PackagePath>Views\UserSelection.xbf</PackagePath>
-      <Modified>2022-02-13T15:48:47.094</Modified>
+      <Modified>2022-02-14T08:21:07.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Views\Welcome.xbf">
       <PackagePath>Views\Welcome.xbf</PackagePath>
-      <Modified>2022-02-13T15:48:47.094</Modified>
+      <Modified>2022-02-14T08:21:07.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -234,11 +270,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-02-13T15:48:48.688</Modified>
+      <Modified>2022-02-14T03:11:25.071</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Core\VideoSystem.exe">
       <PackagePath>VideoSystem.exe</PackagePath>
-      <Modified>2022-02-13T15:48:50.240</Modified>
+      <Modified>2022-02-14T08:22:10.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>

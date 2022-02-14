@@ -51,7 +51,6 @@ namespace VideoSystem.Pages
                 var selectedItem = sender.SelectedItem as NavigationViewItem;
                 var item = _pages.First(p => p.Tag.Equals(selectedItem.Tag));
                 MainContent.Navigate(item.Page);
-
             }
 
         }

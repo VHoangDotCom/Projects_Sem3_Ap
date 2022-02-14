@@ -51,9 +51,6 @@ namespace VideoSystem.Pages
                 case 2:
                     txtGender.Text = "Female";
                     break;
-                case 3:
-                    txtGender.Text = "Other";
-                    break;
 
             }
 
@@ -81,9 +78,7 @@ namespace VideoSystem.Pages
         private void ContentDialog_PrimaryButtonClickAsync(ContentDialog sender, ContentDialogButtonClickEventArgs args)
         {
             accountService.logOut();
-
-            Frame rootFrame = Window.Current.Content as Frame;
-            rootFrame.Navigate(typeof(Pages.LoginPage));
+            Frame.Navigate(typeof(Pages.LoginPage));
         }
 
     }

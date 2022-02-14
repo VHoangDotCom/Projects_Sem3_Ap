@@ -8,147 +8,150 @@
 
     mc:Ignorable="d"
      FontSize="20"
-    Width="800" Height="700"
     
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Background="White" Margin="5">
-        <Border BorderBrush="GreenYellow" BorderThickness="2" CornerRadius="40">
+    <ScrollViewer  VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto" HorizontalAlignment="Center">
+        <Grid HorizontalAlignment="Center" Background="White" Margin="5">
+            <Border Width="800" BorderBrush="GreenYellow" BorderThickness="2" CornerRadius="40">
 
-            <StackPanel>
-                <StackPanel  Orientation="Horizontal"  HorizontalAlignment="Center">
-                    <TextBlock x:ConnectionId='34' x:Name="signIn" Foreground="DarkBlue"                                         FontSize="30" Text="SIGN IN /" Margin="0 5 0 10"                       />
-                    <TextBlock x:ConnectionId='35' x:Name="register" Foreground="YellowGreen" FontSize="30" Text=" REGISTER " Margin="0 5 10 10"/>
+                <StackPanel>
+                    <StackPanel  Orientation="Horizontal"  HorizontalAlignment="Center">
+                        <TextBlock x:ConnectionId='36' x:Name="signIn" Foreground="DarkBlue"                                         FontSize="30" Text="SIGN IN /" Margin="0 5 0 10"                       />
+                        <TextBlock x:ConnectionId='37' x:Name="register" Foreground="YellowGreen" FontSize="30" Text=" REGISTER " Margin="0 5 10 10"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="40 10 0 10">
+
+                        <!-- First name-->
+                        <StackPanel Orientation="Vertical" Margin="20 0 20 0">
+                            <TextBlock Style="{StaticResource Basic}" Text="First Name:" Margin="10 0 80 0"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:ConnectionId='34' x:Name="image" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
+                                <TextBlock x:ConnectionId='35' Style="{StaticResource Warning}" x:Name="fNameErr"   Margin="10 0 0 0"/>
+                            </StackPanel>
+                            <TextBox x:ConnectionId='33'  x:Name="fName" Width="250"                                                                                  ></TextBox>
+                        </StackPanel>
+                        <!-- Last name-->
+                        <StackPanel Orientation="Vertical" Margin="70 0 0 0 ">
+                            <TextBlock Style="{StaticResource Basic}" Text="Last Name:" Margin="10 0 80 0"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:ConnectionId='31' x:Name="image1" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
+                                <TextBlock x:ConnectionId='32' Style="{StaticResource Warning}" x:Name="lNameErr"   Margin="10 0 0 0"/>
+                            </StackPanel>
+                            <TextBox x:ConnectionId='30' x:Name="lName" Width="250"                                            ></TextBox>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="40 10 0 10">
+
+                        <!-- Password-->
+                        <StackPanel Orientation="Vertical" Margin="20 0 20 0">
+                            <TextBlock Style="{StaticResource Basic}" Text="Password:" Margin="10 0 80 0"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:ConnectionId='28' x:Name="image2" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
+                                <TextBlock x:ConnectionId='29' Style="{StaticResource Warning}" x:Name="passwordErr"   Margin="10 0 0 0"/>
+                            </StackPanel>
+                            <TextBox x:ConnectionId='27' x:Name="password" Width="250" AutomationProperties.Name="Simple PasswordBox"                                              />
+                        </StackPanel>
+                        <!-- Phone-->
+                        <StackPanel Orientation="Vertical" Margin="70 0 0 0">
+                            <TextBlock Style="{StaticResource Basic}" Text="Phone:" Margin="10 0 80 0"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:ConnectionId='25' x:Name="image3" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
+                                <TextBlock x:ConnectionId='26' Style="{StaticResource Warning}" x:Name="phoneErr"   Margin="10 0 0 0"/>
+                            </StackPanel>
+                            <TextBox x:ConnectionId='24' x:Name="phone" Width="250"                                          ></TextBox>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="40 10 0 10">
+                        <!-- Address-->
+                        <StackPanel Orientation="Vertical" Margin="20 0 20 0 ">
+                            <TextBlock Style="{StaticResource Basic}" Text="Address:" Margin="10 0 80 0"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:ConnectionId='22' x:Name="image4" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
+                                <TextBlock x:ConnectionId='23' Style="{StaticResource Warning}" x:Name="addressErr"   Margin="10 0 0 0"/>
+                            </StackPanel>
+                            <TextBox x:ConnectionId='21' x:Name="address" Width="250"                                            ></TextBox>
+                        </StackPanel>
+                        <!-- Avatar-->
+                        <StackPanel Orientation="Vertical" Margin="70 0 0 0 ">
+                            <TextBlock Style="{StaticResource Basic}" Text="Avatar:" Margin="10 0 80 0"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:ConnectionId='19' x:Name="image5" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
+                                <TextBlock x:ConnectionId='20' Style="{StaticResource Warning}" x:Name="avatarErr"   Margin="10 0 0 0"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBox x:ConnectionId='17' x:Name="avatar" Width="180"                                 ></TextBox>
+                                <Button x:ConnectionId='18' Content="Upload Image" Style="{StaticResource BasicBtn}"                        Width="70"></Button>
+                            </StackPanel>
+                            
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="40 10 0 10">
+                        <!-- Gender-->
+                        <StackPanel Orientation="Vertical" Margin="20 0 0 0">
+                            <TextBlock Style="{StaticResource Basic}" Text="Gender:" Margin="10 0 10 0"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:ConnectionId='15' x:Name="image6" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
+                                <TextBlock x:ConnectionId='16' Style="{StaticResource Warning}"  x:Name="genderErr"     Margin="10 0 0 0"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton x:ConnectionId='13' x:Name="male" Content="Male"                       Margin="20 0 0 10"                    />
+                                <RadioButton x:ConnectionId='14' x:Name="female" Content="Female"                       Margin="-30 0 0 10"                      />
+                            </StackPanel>
+                        </StackPanel>
+                        <!-- Email-->
+                        <StackPanel Orientation="Vertical" Margin="110 0 0 0 ">
+                            <TextBlock Style="{StaticResource Basic}" Text="Email:" Margin="10 0 80 0"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:ConnectionId='11' x:Name="image7" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
+                                <TextBlock x:ConnectionId='12' Style="{StaticResource Warning}" x:Name="emailErr"    Margin="10 0 0 0"/>
+                            </StackPanel>
+                            <TextBox x:ConnectionId='10' x:Name="email" Width="250"                                ></TextBox>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="40 10 0 10">
+                        <!-- Birthday-->
+                        <StackPanel Orientation="Vertical" Margin="20 -5 20 0">
+                            <TextBlock Style="{StaticResource Basic}" Text="Birthday:" Margin="10 0 80 0"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:ConnectionId='8' x:Name="image8" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
+                                <TextBlock x:ConnectionId='9' Style="{StaticResource Warning}" x:Name="birthdayErr"   Margin="10 0 0 0"/>
+                            </StackPanel>
+                            <DatePicker x:ConnectionId='7' x:Name="birthday" Width="280"                                              Margin="-30 0 0 0"                                          />
+                        </StackPanel>
+                        <!-- Introduction-->
+                        <StackPanel Orientation="Vertical" Margin="70 0 0 0 ">
+                            <TextBlock Style="{StaticResource Basic}" Text="Introduction:" Margin="10 0 80 0"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:ConnectionId='5' x:Name="image9" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
+                                <TextBlock x:ConnectionId='6' Style="{StaticResource Warning}" x:Name="intrErr"    Margin="10 0 0 0"/>
+                            </StackPanel>
+                            <TextBox x:ConnectionId='4' x:Name="intro" Width="300" Height="100"  ></TextBox>
+                        </StackPanel>
+
+
+                    </StackPanel>
+                    <StackPanel  Margin=" 95 10 15 40">
+                        <Button x:ConnectionId='3'  Width="110" Height="80" x:Name="login"                      AutomationProperties.Name="Pie">
+                            <Image Source="/Assets/1.jpg" Width="100"   AutomationProperties.Name="Slice"/>
+                        </Button>
+                        <Image Source="/Assets/talk.png" Margin="-330 -120 70 70" Width="100" Height="75" AutomationProperties.Name="Slice"/>
+                    </StackPanel>
+                    <ProgressRing x:ConnectionId='2' x:Name="progress1" Width="80" Height="80" Margin="0 -500 90 0" HorizontalAlignment="Center" VerticalAlignment="Top" />
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal" Margin="40 10 0 10">
-
-                    <!-- First name-->
-                    <StackPanel Orientation="Vertical" Margin="20 0 20 0">
-                        <TextBlock Style="{StaticResource Basic}" Text="First Name:" Margin="10 0 80 0"/>
-                        <StackPanel Orientation="Horizontal">
-                            <Image x:ConnectionId='32' x:Name="image" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
-                            <TextBlock x:ConnectionId='33' Style="{StaticResource Warning}" x:Name="fNameErr"   Margin="10 0 0 0"/>
-                        </StackPanel>
-                        <TextBox x:ConnectionId='31'  x:Name="fName" Width="250"                                                                                  ></TextBox>
-                    </StackPanel>
-                    <!-- Last name-->
-                    <StackPanel Orientation="Vertical" Margin="70 0 0 0 ">
-                        <TextBlock Style="{StaticResource Basic}" Text="Last Name:" Margin="10 0 80 0"/>
-                        <StackPanel Orientation="Horizontal">
-                            <Image x:ConnectionId='29' x:Name="image1" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
-                            <TextBlock x:ConnectionId='30' Style="{StaticResource Warning}" x:Name="lNameErr"   Margin="10 0 0 0"/>
-                        </StackPanel>
-                        <TextBox x:ConnectionId='28' x:Name="lName" Width="250"                                            ></TextBox>
-                    </StackPanel>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="40 10 0 10">
-
-                    <!-- Password-->
-                    <StackPanel Orientation="Vertical" Margin="20 0 20 0">
-                        <TextBlock Style="{StaticResource Basic}" Text="Password:" Margin="10 0 80 0"/>
-                        <StackPanel Orientation="Horizontal">
-                            <Image x:ConnectionId='26' x:Name="image2" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
-                            <TextBlock x:ConnectionId='27' Style="{StaticResource Warning}" x:Name="passwordErr"   Margin="10 0 0 0"/>
-                        </StackPanel>
-                        <TextBox x:ConnectionId='25' x:Name="password" Width="250" AutomationProperties.Name="Simple PasswordBox"                                              />
-                    </StackPanel>
-                    <!-- Phone-->
-                    <StackPanel Orientation="Vertical" Margin="70 0 0 0">
-                        <TextBlock Style="{StaticResource Basic}" Text="Phone:" Margin="10 0 80 0"/>
-                        <StackPanel Orientation="Horizontal">
-                            <Image x:ConnectionId='23' x:Name="image3" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
-                            <TextBlock x:ConnectionId='24' Style="{StaticResource Warning}" x:Name="phoneErr"   Margin="10 0 0 0"/>
-                        </StackPanel>
-                        <TextBox x:ConnectionId='22' x:Name="phone" Width="250"                                          ></TextBox>
-                    </StackPanel>
-                </StackPanel>
-
-                <StackPanel Orientation="Horizontal" Margin="40 10 0 10">
-                    <!-- Address-->
-                    <StackPanel Orientation="Vertical" Margin="20 0 20 0 ">
-                        <TextBlock Style="{StaticResource Basic}" Text="Address:" Margin="10 0 80 0"/>
-                        <StackPanel Orientation="Horizontal">
-                            <Image x:ConnectionId='20' x:Name="image4" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
-                            <TextBlock x:ConnectionId='21' Style="{StaticResource Warning}" x:Name="addressErr"   Margin="10 0 0 0"/>
-                        </StackPanel>
-                        <TextBox x:ConnectionId='19' x:Name="address" Width="250"                                            ></TextBox>
-                    </StackPanel>
-                    <!-- Avatar-->
-                    <StackPanel Orientation="Vertical" Margin="70 0 0 0 ">
-                        <TextBlock Style="{StaticResource Basic}" Text="Avatar:" Margin="10 0 80 0"/>
-                        <StackPanel Orientation="Horizontal">
-                            <Image x:ConnectionId='17' x:Name="image5" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
-                            <TextBlock x:ConnectionId='18' Style="{StaticResource Warning}" x:Name="avatarErr"   Margin="10 0 0 0"/>
-                        </StackPanel>
-                        <TextBox x:ConnectionId='16' x:Name="avatar" Width="250"                                 ></TextBox>
-                    </StackPanel>
-                </StackPanel>
-
-                <StackPanel Orientation="Horizontal" Margin="40 10 0 10">
-                    <!-- Gender-->
-                    <StackPanel Orientation="Vertical" Margin="20 0 0 0">
-                        <TextBlock Style="{StaticResource Basic}" Text="Gender:" Margin="10 0 10 0"/>
-                        <StackPanel Orientation="Horizontal">
-                            <Image x:ConnectionId='14' x:Name="image6" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
-                            <TextBlock x:ConnectionId='15' Style="{StaticResource Warning}"  x:Name="genderErr"     Margin="10 0 0 0"/>
-                        </StackPanel>
-
-                        <StackPanel Orientation="Horizontal">
-                            <RadioButton x:ConnectionId='12' x:Name="male" Content="Male" Margin="20 0 0 10"                    />
-                            <RadioButton x:ConnectionId='13' x:Name="female" Content="Female" Margin="-30 0 0 10"                      />
-                        </StackPanel>
-                    </StackPanel>
-                    <!-- Email-->
-                    <StackPanel Orientation="Vertical" Margin="110 0 0 0 ">
-                        <TextBlock Style="{StaticResource Basic}" Text="Email:" Margin="10 0 80 0"/>
-                        <StackPanel Orientation="Horizontal">
-                            <Image x:ConnectionId='10' x:Name="image7" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
-                            <TextBlock x:ConnectionId='11' Style="{StaticResource Warning}" x:Name="emailErr"    Margin="10 0 0 0"/>
-                        </StackPanel>
-                        <TextBox x:ConnectionId='9' x:Name="email" Width="250"                                ></TextBox>
-                    </StackPanel>
-                </StackPanel>
-
-                <StackPanel Orientation="Horizontal" Margin="40 10 0 10">
-                    <!-- Birthday-->
-                    <StackPanel Orientation="Vertical" Margin="20 -5 20 0">
-                        <TextBlock Style="{StaticResource Basic}" Text="Birthday:" Margin="10 0 80 0"/>
-                        <StackPanel Orientation="Horizontal">
-                            <Image x:ConnectionId='7' x:Name="image8" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
-                            <TextBlock x:ConnectionId='8' Style="{StaticResource Warning}" x:Name="birthdayErr"   Margin="10 0 0 0"/>
-                        </StackPanel>
-                        <DatePicker x:ConnectionId='6' x:Name="birthday" Width="280"                                              Margin="-30 0 0 0"                                          />
-                    </StackPanel>
-                    <!-- Introduction-->
-                    <StackPanel Orientation="Vertical" Margin="70 0 0 0 ">
-                        <TextBlock Style="{StaticResource Basic}" Text="Introduction:" Margin="10 0 80 0"/>
-                        <StackPanel Orientation="Horizontal">
-                            <Image x:ConnectionId='4' x:Name="image9" Margin="-10 0 0 0" Width="30" Height="30" AutomationProperties.Name="Slice"/>
-                            <TextBlock x:ConnectionId='5' Style="{StaticResource Warning}" x:Name="intrErr"    Margin="10 0 0 0"/>
-                        </StackPanel>
-                        <TextBox x:ConnectionId='3' x:Name="intro" Width="300" Height="100"  ></TextBox>
-                    </StackPanel>
-
-
-                </StackPanel>
-                <StackPanel  Margin=" 95 -60 15 40">
-                    <Button x:ConnectionId='2'  Width="110" Height="80" x:Name="login"                      AutomationProperties.Name="Pie">
-                        <Image Source="/Assets/1.jpg" Width="100"   AutomationProperties.Name="Slice"/>
-
-                    </Button>
-
-                    <Image Source="/Assets/talk.png" Margin="-300 -100 70 70" Width="100" Height="75" AutomationProperties.Name="Slice"/>
-
-                </StackPanel>
-
-            </StackPanel>
-
-        </Border>
+            </Border>
 
 
 
 
-    </Grid>
+        </Grid>
+    </ScrollViewer>
+   
 </Page>
 

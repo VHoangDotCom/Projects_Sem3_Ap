@@ -45,7 +45,7 @@ namespace VideoSystem.Pages
         }
         private async void ListSongPage_LoadedAsync(object sender, RoutedEventArgs e)
         {
-            List<Song> list = await this.songService.GetMyList();
+            List<Song> list = await this.songService.GetListAsync();
             ObservableCollection<Song> observabSongs = new ObservableCollection<Song>(list);
             MyListSong.ItemsSource = observabSongs;
 
@@ -60,13 +60,6 @@ namespace VideoSystem.Pages
             MyMediaPlayer.MediaPlayer.Play();
 
 
-        }
-
-        private void MyListSong_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            Song currentSong = sender as Song;
-            Debug.WriteLine(currentSong.name);
-            Debug.WriteLine(currentSong.link);
         }
 
       

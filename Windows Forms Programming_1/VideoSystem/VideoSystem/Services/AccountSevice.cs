@@ -12,11 +12,13 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using Windows.Storage;
 using Windows.UI.Xaml.Controls;
+using VideoSystem.Pages;
 
 namespace VideoSystem.Services
 {
     public class AccountSevice
     {
+        
         private const string TokenFileName = "credential.txt";
         public async Task<bool> RegisterAsync(Account account)
         {
@@ -32,9 +34,7 @@ namespace VideoSystem.Services
             var result = await httpClient.PostAsync($"{APIConfig.ApiDomain}{APIConfig.AccountPath}", contentToSend);
             if (result.StatusCode == System.Net.HttpStatusCode.Created)
             {
-                //good case
-                //var content = await result.Content.ReadAsStringAsync();
-                //Account returnAccount = JsonConvert.DeserializeObject<Account>(content);
+                
                 return true;
             }
             else
@@ -57,25 +57,20 @@ namespace VideoSystem.Services
                 if (result.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     //good case
-                    SaveToken(content);
-                    Credential credential = JsonConvert.DeserializeObject<Credential>(content);
-                    return credential;
+                    SaveTokenAsync(content);
+                    return JsonConvert.DeserializeObject<Credential>(content);
                 }
                 else
                 {
-                    ContentDialog contentDialog = new ContentDialog();
-                    contentDialog.Title = "Login Fail";
-                    contentDialog.Content = "Incorrect Email or Password";
-                    contentDialog.CloseButtonText = "OK";
-                    contentDialog.ShowAsync();
-
+                  
+                   
                 }
 
             }
             return null;
         }
 
-        private async void SaveToken(string content)
+        private async void SaveTokenAsync(string content)
         {
             Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.TemporaryFolder;
             Windows.Storage.StorageFile sampleFile = await storageFolder.CreateFileAsync(TokenFileName,
@@ -83,7 +78,7 @@ namespace VideoSystem.Services
             await FileIO.WriteTextAsync(sampleFile, content);
         }
 
-        public async Task<Account> GetLoggedInAccount()
+        public async Task<Account> GetLoggedAccountAsync()
         {
             Account account ;
             Credential credential = await LoadToken();

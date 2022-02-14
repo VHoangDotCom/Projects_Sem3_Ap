@@ -25,12 +25,14 @@ namespace VideoSystem.Pages
    
     public sealed partial class LoginPage : Page
     {
+        //public string ErrMess;
         private AccountSevice accountService = new AccountSevice();
 
         //private bool _isExistingAccount;
         public LoginPage()
         {
             this.InitializeComponent();
+           
         }
 
         private async void btnSignIn_Click(object sender, RoutedEventArgs e)
@@ -50,6 +52,10 @@ namespace VideoSystem.Pages
             {
                 App.currentLoggedIn = account;
                 this.Frame.Navigate(typeof(Pages.NavigationListSong));
+            }
+            else
+            {
+                ErrorMessage.Text = "Username or Password is invalid";
             }
         }
 

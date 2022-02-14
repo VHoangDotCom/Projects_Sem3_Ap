@@ -10,8 +10,6 @@
             <Setter Property="FontSize" Value="30" />
             <Setter Property="FontWeight" Value="Bold" />
 
-
-
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
@@ -25,7 +23,12 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-
+        </Style>
+        <Style TargetType="Button" x:Key="BasicBtn">
+            <Setter Property="Background" Value="DarkSeaGreen" />
+            <Setter Property="Foreground" Value="WhiteSmoke" />
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="FontWeight" Value="Bold" />
         </Style>
         <Style TargetType="TextBlock" x:Key="Basic">
             <Setter Property="FontSize" Value="20"/>
