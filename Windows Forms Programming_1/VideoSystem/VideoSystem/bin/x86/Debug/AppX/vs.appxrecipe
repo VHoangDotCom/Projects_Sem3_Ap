@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-02-17T11:19:35.398</Modified>
+      <Modified>2022-02-17T13:20:06.534</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\VideoSystem.exe">
       <PackagePath>entrypoint\VideoSystem.exe</PackagePath>
-      <Modified>2022-02-17T11:19:32.374</Modified>
+      <Modified>2022-02-17T13:20:04.229</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\cloudinarydotnet\1.17.0\lib\netstandard2.0\CloudinaryDotNet.dll">
       <PackagePath>CloudinaryDotNet.dll</PackagePath>
@@ -240,63 +240,63 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-02-17T11:19:32.153</Modified>
+      <Modified>2022-02-17T11:44:44.633</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-02-17T11:19:32.153</Modified>
+      <Modified>2022-02-17T11:44:44.633</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\CameraPreview.xbf">
       <PackagePath>Pages\CameraPreview.xbf</PackagePath>
-      <Modified>2022-02-17T11:19:32.158</Modified>
+      <Modified>2022-02-17T11:44:44.633</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\CreateSong.xbf">
       <PackagePath>Pages\CreateSong.xbf</PackagePath>
-      <Modified>2022-02-17T11:19:32.170</Modified>
+      <Modified>2022-02-17T11:44:44.634</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\ListSongPage.xbf">
       <PackagePath>Pages\ListSongPage.xbf</PackagePath>
-      <Modified>2022-02-17T11:19:32.170</Modified>
+      <Modified>2022-02-17T11:44:44.645</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\LoginPage.xbf">
       <PackagePath>Pages\LoginPage.xbf</PackagePath>
-      <Modified>2022-02-17T11:19:32.170</Modified>
+      <Modified>2022-02-17T11:44:44.645</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\MySongPage.xbf">
       <PackagePath>Pages\MySongPage.xbf</PackagePath>
-      <Modified>2022-02-17T11:19:32.181</Modified>
+      <Modified>2022-02-17T11:44:44.656</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\NavigationListSong.xbf">
       <PackagePath>Pages\NavigationListSong.xbf</PackagePath>
-      <Modified>2022-02-17T11:19:32.181</Modified>
+      <Modified>2022-02-17T11:44:44.657</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\SettingPage.xbf">
       <PackagePath>Pages\SettingPage.xbf</PackagePath>
-      <Modified>2022-02-17T11:19:32.182</Modified>
+      <Modified>2022-02-17T11:44:44.668</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\SQLDemo.xbf">
       <PackagePath>Pages\SQLDemo.xbf</PackagePath>
-      <Modified>2022-02-17T11:19:32.182</Modified>
+      <Modified>2022-02-17T11:44:44.668</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\UserPage.xbf">
       <PackagePath>Pages\UserPage.xbf</PackagePath>
-      <Modified>2022-02-17T11:19:32.182</Modified>
+      <Modified>2022-02-17T11:44:44.668</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Views\CustomerListPage.xbf">
       <PackagePath>Views\CustomerListPage.xbf</PackagePath>
-      <Modified>2022-02-17T11:19:32.182</Modified>
+      <Modified>2022-02-17T11:44:44.668</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Views\RegisterPage.xbf">
       <PackagePath>Views\RegisterPage.xbf</PackagePath>
-      <Modified>2022-02-17T11:19:32.144</Modified>
+      <Modified>2022-02-17T11:44:44.631</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Views\UserSelection.xbf">
       <PackagePath>Views\UserSelection.xbf</PackagePath>
-      <Modified>2022-02-17T11:19:32.182</Modified>
+      <Modified>2022-02-17T11:44:44.669</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Views\Welcome.xbf">
       <PackagePath>Views\Welcome.xbf</PackagePath>
-      <Modified>2022-02-17T11:19:32.192</Modified>
+      <Modified>2022-02-17T11:44:44.669</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -312,7 +312,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Core\VideoSystem.exe">
       <PackagePath>VideoSystem.exe</PackagePath>
-      <Modified>2022-02-17T11:19:35.376</Modified>
+      <Modified>2022-02-17T13:20:06.524</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>

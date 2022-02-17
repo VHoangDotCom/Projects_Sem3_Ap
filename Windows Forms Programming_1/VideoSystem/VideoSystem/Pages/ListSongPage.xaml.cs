@@ -23,11 +23,9 @@ using Windows.Media.Playback;
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace VideoSystem.Pages
-{
-   
+{ 
     public sealed partial class ListSongPage : Page
-    {
-      
+    {    
         private SongService songService;
         int indexSong;
         MediaPlaybackList _mediaPlaybackList;
@@ -70,11 +68,9 @@ namespace VideoSystem.Pages
             }
             _mediaPlaybackList.CurrentItemChanged += MediaPlaybackList_CurrentItemChanged;
 
-
             var _mediaPlayer = new MediaPlayer();
             _mediaPlayer.Source = _mediaPlaybackList; // MediaPlayerElement < MediaPlayer < MediaPlaybackList < MediaPlaybackItem
             MyMediaPlayer.SetMediaPlayer(_mediaPlayer);
-
         }
 
         private async void MediaPlaybackList_CurrentItemChanged(MediaPlaybackList sender, CurrentMediaPlaybackItemChangedEventArgs args)
@@ -103,14 +99,14 @@ namespace VideoSystem.Pages
         private void Image_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
             imageSong.Source = new BitmapImage(new Uri("ms-appx:///Assets/Images/pepefrg-4.gif"));
-            imageSong1.Source = new BitmapImage(new Uri("ms-appx:///Assets/Images/1FPE.gif"));
+            //imageSong1.Source = new BitmapImage(new Uri("ms-appx:///Assets/Images/1FPE.gif"));
             imageSong2.Source = new BitmapImage(new Uri("ms-appx:///Assets/Images/6K2.gif"));
         }
 
         private void MyMediaPlayer_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
             imageSong.Source = new BitmapImage(new Uri("ms-appx:///Assets/Images/pepefrg-4.gif"));
-            imageSong1.Source = new BitmapImage(new Uri("ms-appx:///Assets/Images/1FPE.gif"));
+            //imageSong1.Source = new BitmapImage(new Uri("ms-appx:///Assets/Images/1FPE.gif"));
             imageSong2.Source = new BitmapImage(new Uri("ms-appx:///Assets/Images/6K2.gif"));
         }
     }

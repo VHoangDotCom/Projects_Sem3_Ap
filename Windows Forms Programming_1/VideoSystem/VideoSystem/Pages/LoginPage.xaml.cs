@@ -48,8 +48,7 @@ namespace VideoSystem.Pages
             };
 
             Credential credential = await accountService.Login(loginInformation);
-           
-           
+                   
             if (credential != null)
             {
                 Account account = await accountService.GetAccountInformation(credential.access_token);
