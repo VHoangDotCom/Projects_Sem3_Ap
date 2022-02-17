@@ -10,8 +10,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Page.Resources>
-        <DataTemplate x:Key="SongTemplate"                         >
-            <Grid x:ConnectionId='3' Margin="0,12,0,12"                                          >
+        <DataTemplate  x:Key="SongTemplate"                         >
+            <Grid x:ConnectionId='3' Background="MediumAquamarine" Margin="0,12,0,12"                                          >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" MinWidth="150"/>
                     <ColumnDefinition Width="*" />
@@ -36,14 +36,13 @@
         </DataTemplate>
     </Page.Resources>
     <ScrollViewer>
-        <StackPanel>
-
-            <ListView x:ConnectionId='7' x:Name="MyListSong"
+        <StackPanel Background="MediumAquamarine">
+            <ListView x:ConnectionId='7'  x:Name="MyListSong"
                       SelectionMode="Single"
                                                                    
                       
                       ItemTemplate="{StaticResource SongTemplate}"
-     Height="570"
+     Height="670"
      MinWidth="0"
      
      BorderBrush="{ThemeResource SystemControlForegroundBaseMediumLowBrush}">

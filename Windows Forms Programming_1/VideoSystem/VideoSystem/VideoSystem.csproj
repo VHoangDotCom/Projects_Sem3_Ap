@@ -162,6 +162,7 @@
     <Compile Include="Services\AccountSevice.cs" />
     <Compile Include="Services\LoginHelper.cs" />
     <Compile Include="Services\SongService.cs" />
+    <Compile Include="Utils\MicrosoftPassportHelper.cs" />
     <Compile Include="Views\CustomerListPage.xaml.cs">
       <DependentUpon>CustomerListPage.xaml</DependentUpon>
     </Compile>

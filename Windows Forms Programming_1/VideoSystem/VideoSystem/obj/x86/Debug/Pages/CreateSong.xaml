@@ -99,7 +99,7 @@
                         </Button>
                         <TextBlock Margin="10 15 0 0" FontSize="30" Text="Click me to Add !" ></TextBlock>
                     </StackPanel>
-                    <ProgressRing x:ConnectionId='2' x:Name="progress1" Width="90" Height="90" Background="MediumAquamarine" Margin="10 -500 90 0" HorizontalAlignment="Center" VerticalAlignment="Top" />
+                    <ProgressRing x:ConnectionId='2' x:Name="progress1" Width="90" Height="90" Foreground="MediumAquamarine" Margin="10 -500 90 0" HorizontalAlignment="Center" VerticalAlignment="Top" />
                 </StackPanel>
 
             </Border>

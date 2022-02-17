@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using VideoSystem.Entity;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -20,6 +22,8 @@ namespace VideoSystem.Pages
     
     public sealed partial class NavigationListSong : Page
     {
+       
+
         public NavigationListSong()
         {
             this.InitializeComponent();
@@ -53,6 +57,11 @@ namespace VideoSystem.Pages
                 var item = _pages.First(p => p.Tag.Equals(selectedItem.Tag));
                 MainContent.Navigate(item.Page);
             }
+
+        }
+
+        private void NavViewSearchBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+        {
 
         }
     }

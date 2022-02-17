@@ -15,8 +15,8 @@
                         ItemInvoked="NavView_ItemInvoked">
 
             <NavigationView.MenuItems >
-                <NavigationViewItem Content="My Music" Tag="listSong" Icon="MusicInfo"  />
-                <NavigationViewItem Content="My Song" Tag="mySong" Icon="Audio"  />
+                <NavigationViewItem Content="List Songs" Tag="listSong" Icon="MusicInfo"  />
+                <NavigationViewItem Content="My Songs" Tag="mySong" Icon="Audio"  />
                 <NavigationViewItem Content="Create Song" Tag="createSong" Icon="Add"  >
                   
                 </NavigationViewItem>
@@ -27,7 +27,7 @@
             </NavigationView.MenuItems>
 
             <NavigationView.AutoSuggestBox >
-                <AutoSuggestBox  x:Name="NavViewSearchBox" QueryIcon="Find"/>
+                <AutoSuggestBox  TextChanged="NavViewSearchBox_TextChanged" x:Name="NavViewSearchBox" QueryIcon="Find"/>
             </NavigationView.AutoSuggestBox>
             <ScrollViewer>
                 <Frame x:Name="MainContent" Margin="5" Padding="5" />

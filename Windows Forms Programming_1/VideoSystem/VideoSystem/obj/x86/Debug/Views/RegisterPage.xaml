@@ -142,7 +142,7 @@
                         </Button>
                         <Image Source="/Assets/talk.png" Margin="-330 -120 70 70" Width="100" Height="75" AutomationProperties.Name="Slice"/>
                     </StackPanel>
-                    <ProgressRing x:ConnectionId='2' x:Name="progress1" Width="80" Height="80" Margin="0 -500 90 0" HorizontalAlignment="Center" VerticalAlignment="Top" />
+                    <ProgressRing x:ConnectionId='2' Foreground="MediumAquamarine" x:Name="progress1" Width="80" Height="80" Margin="0 -500 90 0" HorizontalAlignment="Center" VerticalAlignment="Top" />
                 </StackPanel>
 
             </Border>

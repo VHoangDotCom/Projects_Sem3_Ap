@@ -131,6 +131,6 @@
                 </Grid>
             </StackPanel>
         </ScrollViewer>
-        <ProgressRing x:Name="progress1" Width="140" Height="140" Margin="0 300 -1200 0" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <ProgressRing x:Name="progress1" Foreground="MediumAquamarine" Width="140" Height="140" Margin="0 300 -1200 0" HorizontalAlignment="Center" VerticalAlignment="Top" />
     </Grid>
 </Page>
