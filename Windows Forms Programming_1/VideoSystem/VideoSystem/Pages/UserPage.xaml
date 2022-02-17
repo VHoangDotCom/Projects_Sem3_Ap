@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Background="MediumAquamarine">
 
         <StackPanel Margin="0,10,697,565">
             <PersonPicture x:Name="avatarImage" ProfilePicture="https://docs.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.png" Margin="0 60 100 0" Width="200" Height="300" />
@@ -30,7 +30,7 @@
         <TextBlock  HorizontalAlignment="Left" Margin="468,414,0,0" Text="Birthday :"  TextWrapping="Wrap" VerticalAlignment="Top" Width="152" FontSize="28" Height="64" />
         <TextBlock x:Name="txtBirthday" HorizontalAlignment="Left" Margin="630,414,0,0" Text=""  TextWrapping="Wrap" VerticalAlignment="Top" Width="427" FontSize="24" Height="69" />
 
-        <Button Click="Button_Click" Content="Log Out" Margin="665,500,0,0" VerticalAlignment="Top"/>
+        <Button Click="Button_Click" Content="Log Out" Width="200" Height="80" Margin="700,600,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

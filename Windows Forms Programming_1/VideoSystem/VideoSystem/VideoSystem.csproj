@@ -133,11 +133,17 @@
     <Compile Include="Pages\CameraPreview.xaml.cs">
       <DependentUpon>CameraPreview.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\CreateSong.xaml.cs">
+      <DependentUpon>CreateSong.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ListSongPage.xaml.cs">
       <DependentUpon>ListSongPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MySongPage.xaml.cs">
+      <DependentUpon>MySongPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\NavigationListSong.xaml.cs">
       <DependentUpon>NavigationListSong.xaml</DependentUpon>
@@ -176,12 +182,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\1.jpg" />
+    <Content Include="Assets\Images\14Tr.gif" />
+    <Content Include="Assets\Images\1FPE.gif" />
+    <Content Include="Assets\Images\6k2.gif" />
     <Content Include="Assets\Images\madPepe.png" />
     <Content Include="Assets\Images\pepe-frog-2.png" />
-    <Content Include="Assets\Images\pepe-frog-4.png" />
+    <Content Include="Assets\Images\pepe-frog-4.scale-200.png" />
+    <Content Include="Assets\Images\pepe-frog-4.scale-400.png" />
     <Content Include="Assets\Images\pepe-the-frog-6.png" />
     <Content Include="Assets\Images\pepe-the-frog.png" />
+    <Content Include="Assets\Images\pepefrg-23.gif" />
+    <Content Include="Assets\Images\pepefrg-4.gif" />
+    <Content Include="Assets\Images\pepefrg-9.gif" />
     <Content Include="Assets\talk.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -204,11 +218,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\CreateSong.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\ListSongPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MySongPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -266,6 +288,9 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Media">
       <Version>7.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.7.0</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.1</Version>

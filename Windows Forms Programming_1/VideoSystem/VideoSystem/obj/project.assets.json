@@ -10951,6 +10951,7 @@
       "Microsoft.Toolkit.Uwp.UI.Behaviors >= 7.1.2",
       "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid >= 7.1.2",
       "Microsoft.Toolkit.Uwp.UI.Media >= 7.1.2",
+      "Microsoft.UI.Xaml >= 2.7.0",
       "Newtonsoft.Json >= 13.0.1"
     ]
   },
@@ -11021,6 +11022,10 @@
           "Microsoft.Toolkit.Uwp.UI.Media": {
             "target": "Package",
             "version": "[7.1.2, )"
+          },
+          "Microsoft.UI.Xaml": {
+            "target": "Package",
+            "version": "[2.7.0, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",

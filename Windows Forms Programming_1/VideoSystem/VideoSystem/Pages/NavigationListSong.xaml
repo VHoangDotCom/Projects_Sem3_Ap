@@ -4,22 +4,29 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:VideoSystem.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
 
-        <NavigationView x:Name="NavView" Loaded="NavView_Loaded" 
+        <NavigationView  x:Name="NavView" Loaded="NavView_Loaded" 
                         ItemInvoked="NavView_ItemInvoked">
 
-            <NavigationView.MenuItems>
-                <NavigationViewItem Content="My Music" Tag="listSong" Icon="Audio"  />
-                <NavigationViewItem   Content="Account" Tag="account"  Icon="AddFriend"  />
-
+            <NavigationView.MenuItems >
+                <NavigationViewItem Content="My Music" Tag="listSong" Icon="MusicInfo"  />
+                <NavigationViewItem Content="My Song" Tag="mySong" Icon="Audio"  />
+                <NavigationViewItem Content="Create Song" Tag="createSong" Icon="Add"  >
+                  
+                </NavigationViewItem>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem   Content="Account" Tag="account"  Icon="Contact"  />
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem   Content="Logout" Tag="logout"  Icon="Back"  />
             </NavigationView.MenuItems>
 
-            <NavigationView.AutoSuggestBox>
+            <NavigationView.AutoSuggestBox >
                 <AutoSuggestBox  x:Name="NavViewSearchBox" QueryIcon="Find"/>
             </NavigationView.AutoSuggestBox>
             <ScrollViewer>

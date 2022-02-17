@@ -70,9 +70,9 @@ namespace VideoSystem.Services
             return null;
         }
 
-        private async void SaveTokenAsync(string content)
+        private async Task SaveTokenAsync(string content)
         {
-            Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.TemporaryFolder;
+            Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
             Windows.Storage.StorageFile sampleFile = await storageFolder.CreateFileAsync(TokenFileName,
                 Windows.Storage.CreationCollisionOption.ReplaceExisting);
             await FileIO.WriteTextAsync(sampleFile, content);
@@ -86,8 +86,8 @@ namespace VideoSystem.Services
             {
                 return null;
             }
+            App.currentCredential = credential;
             account = await GetAccountInformation(credential.access_token);
-
             return account;
         }
 

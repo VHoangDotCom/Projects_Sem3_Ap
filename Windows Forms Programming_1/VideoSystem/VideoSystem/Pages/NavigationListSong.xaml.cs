@@ -17,9 +17,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace VideoSystem.Pages
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+    
     public sealed partial class NavigationListSong : Page
     {
         public NavigationListSong()
@@ -31,6 +29,9 @@ namespace VideoSystem.Pages
         {
            ("listSong", typeof(ListSongPage)),
            ("account", typeof(UserPage)),
+            ("logout", typeof(LoginPage)),
+             ("createSong", typeof(CreateSong)),
+              ("mySong", typeof(MySongPage)),
         };
 
 

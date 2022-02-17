@@ -39,6 +39,7 @@ namespace VideoSystem.Pages
         {
             //ErrorMessage.Text = "";
             //SignInPassport();
+            ShowLoading(true);
             var loginInformation = new LoginViewModel()
             {
                 email = txtEmail.Text,
@@ -47,15 +48,28 @@ namespace VideoSystem.Pages
             };
 
             Credential credential = await accountService.Login(loginInformation);
-            Account account = await accountService.GetAccountInformation(credential.access_token);
-            if (account != null)
+           
+           
+            if (credential != null)
             {
-                App.currentLoggedIn = account;
-                this.Frame.Navigate(typeof(Pages.NavigationListSong));
+                Account account = await accountService.GetAccountInformation(credential.access_token);
+                if (account != null)
+                {
+                    App.currentLoggedIn = account;
+                    this.Frame.Navigate(typeof(Pages.NavigationListSong));
+                }
+                ShowLoading(false);
             }
             else
             {
-                ErrorMessage.Text = "Username or Password is invalid";
+                ShowLoading(true);
+                ContentDialog contentDialog = new ContentDialog();
+                contentDialog.Title = "Login Fail";
+                contentDialog.Content = "Incorrect Email or Password";
+                contentDialog.CloseButtonText = "OK";
+                await contentDialog.ShowAsync();
+                Frame.Navigate(typeof(Pages.LoginPage));
+                ShowLoading(false);
             }
         }
 
@@ -65,55 +79,69 @@ namespace VideoSystem.Pages
             Frame.Navigate(typeof(RegisterPage));
         }
 
-       /* protected override async void OnNavigatedTo(NavigationEventArgs e)
+        /* protected override async void OnNavigatedTo(NavigationEventArgs e)
+         {
+             // Check Microsoft Passport is setup and available on this machine
+             if (await LoginHelper.MicrosoftPassportAvailableCheckAsync())
+             {
+                 if (e.Parameter != null)
+                 {
+                     _isExistingAccount = true;
+                     // Set the account to the existing account being passed in
+                     _account = (AccountGallery)e.Parameter;
+                     txtEmail.Text = _account.email;
+                     txtPassword.Password = _account.password;
+                     SignInPassport();
+                 }
+             }
+             else
+             {
+                 // Microsoft Passport is not setup so inform the user           
+                 btnSignIn.IsEnabled = false;
+             }
+         }  */
+
+        /*  private async void SignInPassport()
+          {
+              if (_isExistingAccount)
+              {
+                  if (await LoginHelper.GetPassportAuthenticationMessageAsync(_account))
+                  {
+                      Frame.Navigate(typeof(Welcome), _account);
+                  }
+              }
+              else if (AccountHelper.ValidateAccountCredentials(txtEmail.Text, txtPassword.Password))
+              {
+                  // Create and add a new local account
+                  _account = AccountHelper.AddAccount(" ", " ", txtEmail.Text, txtPassword.Password," "," "," ", " ", " ");
+                  Debug.WriteLine("Successfully signed in with traditional credentials and created local account instance!");
+
+                  if (await LoginHelper.CreatePassportKeyAsync(txtEmail.Text,txtPassword.Password))
+                  {
+                      Debug.WriteLine("Successfully signed in with Microsoft Passport!");
+                      Frame.Navigate(typeof(NavigationView), _account);
+                  }
+              }
+              else
+              {
+                  ErrorMessage.Text = "Invalid Credentials";
+              }
+          }
+          */
+
+        private void ShowLoading(bool load)
         {
-            // Check Microsoft Passport is setup and available on this machine
-            if (await LoginHelper.MicrosoftPassportAvailableCheckAsync())
+            if (load)
             {
-                if (e.Parameter != null)
-                {
-                    _isExistingAccount = true;
-                    // Set the account to the existing account being passed in
-                    _account = (AccountGallery)e.Parameter;
-                    txtEmail.Text = _account.email;
-                    txtPassword.Password = _account.password;
-                    SignInPassport();
-                }
+                progress1.IsActive = true;
+                progress1.Visibility = Visibility.Visible;
             }
             else
             {
-                // Microsoft Passport is not setup so inform the user           
-                btnSignIn.IsEnabled = false;
-            }
-        }  */
-
-      /*  private async void SignInPassport()
-        {
-            if (_isExistingAccount)
-            {
-                if (await LoginHelper.GetPassportAuthenticationMessageAsync(_account))
-                {
-                    Frame.Navigate(typeof(Welcome), _account);
-                }
-            }
-            else if (AccountHelper.ValidateAccountCredentials(txtEmail.Text, txtPassword.Password))
-            {
-                // Create and add a new local account
-                _account = AccountHelper.AddAccount(" ", " ", txtEmail.Text, txtPassword.Password," "," "," ", " ", " ");
-                Debug.WriteLine("Successfully signed in with traditional credentials and created local account instance!");
-
-                if (await LoginHelper.CreatePassportKeyAsync(txtEmail.Text,txtPassword.Password))
-                {
-                    Debug.WriteLine("Successfully signed in with Microsoft Passport!");
-                    Frame.Navigate(typeof(NavigationView), _account);
-                }
-            }
-            else
-            {
-                ErrorMessage.Text = "Invalid Credentials";
+                progress1.IsActive = false;
+                progress1.Visibility = Visibility.Collapsed;
             }
         }
-        */
 
         private void RegisterButtonTextBlock_PointerEntered(object sender, PointerRoutedEventArgs e)
         {

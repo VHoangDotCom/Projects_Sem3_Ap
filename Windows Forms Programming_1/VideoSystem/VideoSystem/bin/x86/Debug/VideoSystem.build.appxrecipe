@@ -106,14 +106,37 @@
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\1.jpg">
       <PackagePath>Assets\1.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\14Tr.gif">
+      <PackagePath>Assets\Images\14Tr.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\1FPE.gif">
+      <PackagePath>Assets\Images\1FPE.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\6k2.gif">
+      <PackagePath>Assets\Images\6k2.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\pepefrg-23.gif">
+      <PackagePath>Assets\Images\pepefrg-23.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\pepefrg-4.gif">
+      <PackagePath>Assets\Images\pepefrg-4.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\pepefrg-9.gif">
+      <PackagePath>Assets\Images\pepefrg-9.gif</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\madPepe.png">
       <PackagePath>Assets\Images\madPepe.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\pepe-frog-2.png">
       <PackagePath>Assets\Images\pepe-frog-2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\pepe-frog-4.png">
-      <PackagePath>Assets\Images\pepe-frog-4.png</PackagePath>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\pepe-frog-4.scale-200.png">
+      <PackagePath>Assets\Images\pepe-frog-4.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\pepe-frog-4.scale-400.png">
+      <PackagePath>Assets\Images\pepe-frog-4.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\pepe-the-frog-6.png">
       <PackagePath>Assets\Images\pepe-the-frog-6.png</PackagePath>
@@ -124,28 +147,27 @@
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\talk.png">
       <PackagePath>Assets\talk.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
@@ -166,11 +188,17 @@
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\CameraPreview.xbf">
       <PackagePath>Pages\CameraPreview.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\CreateSong.xbf">
+      <PackagePath>Pages\CreateSong.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\ListSongPage.xbf">
       <PackagePath>Pages\ListSongPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\LoginPage.xbf">
       <PackagePath>Pages\LoginPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\MySongPage.xbf">
+      <PackagePath>Pages\MySongPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\NavigationListSong.xbf">
       <PackagePath>Pages\NavigationListSong.xbf</PackagePath>

@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>829C63765C8BEC940142669C093283C8A2FF3B33CCAAD41698DB9FFFF3BA061C</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>1C101768BB2BAC1CA776CBD5ADF61282F33BAF00ACC8F1D363A34AD722C91772</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>56b12cde-4d72-4a7b-b5a7-0bad69db3273_1.0.0.0_x86__5gyrq6psz227t</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>56b12cde-4d72-4a7b-b5a7-0bad69db3273_5gyrq6psz227t!App</RegisteredUserModeAppID>
     <RegisteredPackageID>56b12cde-4d72-4a7b-b5a7-0bad69db3273</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-02-14T08:22:10.030</Modified>
+      <Modified>2022-02-17T02:33:56.189</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\VideoSystem.exe">
       <PackagePath>entrypoint\VideoSystem.exe</PackagePath>
-      <Modified>2022-02-14T08:22:08.976</Modified>
+      <Modified>2022-02-17T02:33:55.237</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\cloudinarydotnet\1.17.0\lib\netstandard2.0\CloudinaryDotNet.dll">
       <PackagePath>CloudinaryDotNet.dll</PackagePath>
@@ -142,6 +142,30 @@
       <PackagePath>Assets\1.jpg</PackagePath>
       <Modified>2022-01-25T01:33:39.419</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\14Tr.gif">
+      <PackagePath>Assets\Images\14Tr.gif</PackagePath>
+      <Modified>2022-02-16T00:01:43.911</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\1FPE.gif">
+      <PackagePath>Assets\Images\1FPE.gif</PackagePath>
+      <Modified>2022-02-16T00:01:43.961</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\6k2.gif">
+      <PackagePath>Assets\Images\6k2.gif</PackagePath>
+      <Modified>2022-02-16T00:01:43.945</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\pepefrg-23.gif">
+      <PackagePath>Assets\Images\pepefrg-23.gif</PackagePath>
+      <Modified>2022-02-15T23:52:44.431</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\pepefrg-4.gif">
+      <PackagePath>Assets\Images\pepefrg-4.gif</PackagePath>
+      <Modified>2022-02-15T23:24:41.310</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\pepefrg-9.gif">
+      <PackagePath>Assets\Images\pepefrg-9.gif</PackagePath>
+      <Modified>2022-02-15T23:50:03.606</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\madPepe.png">
       <PackagePath>Assets\Images\madPepe.png</PackagePath>
       <Modified>2022-01-26T08:01:08.385</Modified>
@@ -150,8 +174,14 @@
       <PackagePath>Assets\Images\pepe-frog-2.png</PackagePath>
       <Modified>2022-01-24T03:14:54.370</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\pepe-frog-4.png">
-      <PackagePath>Assets\Images\pepe-frog-4.png</PackagePath>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\pepe-frog-4.scale-200.png">
+      <PackagePath>Assets\Images\pepe-frog-4.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-01-24T03:08:52.148</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\pepe-frog-4.scale-400.png">
+      <PackagePath>Assets\Images\pepe-frog-4.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-24T03:08:52.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Images\pepe-the-frog-6.png">
@@ -166,33 +196,33 @@
       <PackagePath>Assets\talk.png</PackagePath>
       <Modified>2022-01-25T01:33:58.668</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-01-24T03:08:52.148</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2022-01-08T12:18:49.896</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-08T12:18:49.897</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-08T12:18:49.898</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-08T12:18:49.898</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-08T12:18:49.899</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-08T12:18:49.899</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\Assets\Wide310x150Logo.scale-200.png">
@@ -206,59 +236,67 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\VideoSystem.xr.xml">
       <PackagePath>VideoSystem.xr.xml</PackagePath>
-      <Modified>2022-02-14T08:01:52.758</Modified>
+      <Modified>2022-02-17T02:07:52.773</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-02-14T08:21:07.592</Modified>
+      <Modified>2022-02-17T02:21:41.591</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-02-14T08:21:07.592</Modified>
+      <Modified>2022-02-17T02:21:41.592</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\CameraPreview.xbf">
       <PackagePath>Pages\CameraPreview.xbf</PackagePath>
-      <Modified>2022-02-14T08:21:07.592</Modified>
+      <Modified>2022-02-17T02:21:41.593</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\CreateSong.xbf">
+      <PackagePath>Pages\CreateSong.xbf</PackagePath>
+      <Modified>2022-02-17T02:21:41.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\ListSongPage.xbf">
       <PackagePath>Pages\ListSongPage.xbf</PackagePath>
-      <Modified>2022-02-14T08:21:07.592</Modified>
+      <Modified>2022-02-17T02:21:41.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\LoginPage.xbf">
       <PackagePath>Pages\LoginPage.xbf</PackagePath>
-      <Modified>2022-02-14T08:21:07.592</Modified>
+      <Modified>2022-02-17T02:21:41.593</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\MySongPage.xbf">
+      <PackagePath>Pages\MySongPage.xbf</PackagePath>
+      <Modified>2022-02-17T02:21:41.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\NavigationListSong.xbf">
       <PackagePath>Pages\NavigationListSong.xbf</PackagePath>
-      <Modified>2022-02-14T08:21:07.592</Modified>
+      <Modified>2022-02-17T02:21:41.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\SettingPage.xbf">
       <PackagePath>Pages\SettingPage.xbf</PackagePath>
-      <Modified>2022-02-14T08:21:07.592</Modified>
+      <Modified>2022-02-17T02:21:41.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\SQLDemo.xbf">
       <PackagePath>Pages\SQLDemo.xbf</PackagePath>
-      <Modified>2022-02-14T08:21:07.592</Modified>
+      <Modified>2022-02-17T02:21:41.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Pages\UserPage.xbf">
       <PackagePath>Pages\UserPage.xbf</PackagePath>
-      <Modified>2022-02-14T08:21:07.593</Modified>
+      <Modified>2022-02-17T02:21:41.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Views\CustomerListPage.xbf">
       <PackagePath>Views\CustomerListPage.xbf</PackagePath>
-      <Modified>2022-02-14T08:21:07.593</Modified>
+      <Modified>2022-02-17T02:21:41.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Views\RegisterPage.xbf">
       <PackagePath>Views\RegisterPage.xbf</PackagePath>
-      <Modified>2022-02-14T08:21:07.589</Modified>
+      <Modified>2022-02-17T02:21:41.590</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Views\UserSelection.xbf">
       <PackagePath>Views\UserSelection.xbf</PackagePath>
-      <Modified>2022-02-14T08:21:07.593</Modified>
+      <Modified>2022-02-17T02:21:41.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Views\Welcome.xbf">
       <PackagePath>Views\Welcome.xbf</PackagePath>
-      <Modified>2022-02-14T08:21:07.593</Modified>
+      <Modified>2022-02-17T02:21:41.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -270,11 +308,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-02-14T03:11:25.071</Modified>
+      <Modified>2022-02-17T00:18:24.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\VideoSystem\VideoSystem\bin\x86\Debug\Core\VideoSystem.exe">
       <PackagePath>VideoSystem.exe</PackagePath>
-      <Modified>2022-02-14T08:22:10.026</Modified>
+      <Modified>2022-02-17T02:33:56.185</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>

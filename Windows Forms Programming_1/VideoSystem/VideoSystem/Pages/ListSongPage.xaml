@@ -9,13 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Page.Resources>
-        <DataTemplate x:Key="SongTemplate" x:DataType="entity:Song">
-            <Grid Margin="0,12,0,12" AutomationProperties.Name="{x:Bind name}">
+        <DataTemplate  x:Key="SongTemplate" x:DataType="entity:Song">
+            <Grid Background="MediumAquamarine" Margin="0,12,0,12" AutomationProperties.Name="{x:Bind name}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" MinWidth="150"/>
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="{x:Bind thumbnail}" MaxHeight="100" Width="150" Height="150" Stretch="Fill"/>
+                <Image Source="{x:Bind thumbnail}" PointerPressed="Image_PointerPressed" MaxHeight="100" Width="150" Height="150" Stretch="Fill"/>
 
                 <StackPanel Margin="12,0,0,0" Grid.Column="1" >
                     <TextBlock Text="{x:Bind name}" FontSize="14" FontWeight="SemiBold" Style="{ThemeResource BaseTextBlockStyle}"
@@ -31,18 +31,18 @@
                         <TextBlock Text=" Likes" HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}"/>
                     </StackPanel>
                 </StackPanel>
+               
             </Grid>
         </DataTemplate>
     </Page.Resources>
-    <ScrollViewer>
-        <StackPanel>
-
-            <ListView x:Name="MyListSong"
+    <ScrollViewer >
+        <StackPanel Background="MediumAquamarine">
+            <ListView  x:Name="MyListSong"
                       SelectionMode="Single"
                      SelectionChanged="MyListSong_SelectionChanged"
                       
                       ItemTemplate="{StaticResource SongTemplate}"
-     Height="570"
+     Height="670"
      MinWidth="0"
      
      BorderBrush="{ThemeResource SystemControlForegroundBaseMediumLowBrush}">
@@ -53,9 +53,22 @@
 
 
             </ListView>
-            <MediaPlayerElement x:Name="MyMediaPlayer" AreTransportControlsEnabled="True" AutoPlay="False" />
 
+            <MediaPlayerElement   PointerPressed="MyMediaPlayer_PointerPressed"  x:Name="MyMediaPlayer" AreTransportControlsEnabled="True"   AutoPlay="False"  >
+                <MediaPlayerElement.TransportControls>
+                    <MediaTransportControls  IsFullWindowButtonVisible="False"
+                                            IsNextTrackButtonVisible="True"
+                                            IsPreviousTrackButtonVisible="True"
+                                            IsZoomButtonVisible="False">
+
+                    </MediaTransportControls>
+                </MediaPlayerElement.TransportControls>
+            </MediaPlayerElement>
+            <Image x:Name="imageSong"  Margin="550 -800 0 0" Width="1000" Height="600" />
+            <Image x:Name="imageSong1"  Margin="-200 -750 0 0" Width="1000" Height="600" />
+            <Image x:Name="imageSong2"  Margin="500 -800 0 0" Width="1500" Height="600" />
         </StackPanel>
 
     </ScrollViewer>
+   
 </Page>

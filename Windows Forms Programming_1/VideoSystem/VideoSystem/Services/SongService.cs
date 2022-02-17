@@ -13,8 +13,25 @@ namespace VideoSystem.Services
 {
     public class SongService
     {
-        public void Create()
+        public async Task<bool> Createsong(Song song)
         {
+            var jsonString = JsonConvert.SerializeObject(song);
+            HttpClient httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {App.currentCredential.access_token}");
+            HttpContent contentToSend = new StringContent(jsonString, Encoding.UTF8, APIConfig.MediaType);
+            var result = await httpClient.PostAsync($"{APIConfig.ApiDomain}{APIConfig.MySongPath}", contentToSend);
+            var content = await result.Content.ReadAsStringAsync();
+            Debug.WriteLine($"Response {content} - {result.StatusCode}");
+            if (result.StatusCode == System.Net.HttpStatusCode.Created)
+            {
+                return true;
+
+            }
+            else
+            {
+                Debug.WriteLine(content);
+                return false;
+            }
 
         }
 
@@ -37,7 +54,7 @@ namespace VideoSystem.Services
             }
             return listSong;
         }
-      /*  public async Task<List<Song>> GetMyList()
+        public async Task<List<Song>> GetMyList()
         {
             List<Song> listSong = new List<Song>();
             using (HttpClient httpClient = new HttpClient())
@@ -49,7 +66,7 @@ namespace VideoSystem.Services
                 if (result.StatusCode == System.Net.HttpStatusCode.OK)
                 {
 
-                    List<Song> songs = JsonConvert.DeserializeObject<List<Song>>(content);
+                    listSong = JsonConvert.DeserializeObject<List<Song>>(content);
                 }
                 else
                 {
@@ -59,7 +76,7 @@ namespace VideoSystem.Services
                 }
 
             }
-            return new List<Song>();
-        }*/
+            return listSong;
+        }
     }
 }
