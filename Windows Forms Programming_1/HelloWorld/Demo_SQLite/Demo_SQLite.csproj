@@ -119,6 +119,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ConfigDB\CRUD_Table.cs" />
     <Compile Include="Demo\DatabaseInitialize.cs" />
     <Compile Include="Demo\OrderDemo.xaml.cs">
       <DependentUpon>OrderDemo.xaml</DependentUpon>

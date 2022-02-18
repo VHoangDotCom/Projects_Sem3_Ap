@@ -1,4 +1,5 @@
 ﻿using Demo_SQLite.Entity;
+using SQLitePCL;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -16,92 +17,77 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using System.Data.SQLite;
+using Microsoft.Toolkit.Uwp.UI.Controls;
+using Demo_SQLite.ConfigDB;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Demo_SQLite.Pages
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+   
     public sealed partial class ListTransactionPage : Page
     {
-        public ObservableCollection<PersonalTransaction> Persons { get; set; }
-
+        private static SQLiteConnection sQLiteConnection = new SQLiteConnection("sqlitepcldemo.db");
+        private CRUD_Table crud = new CRUD_Table();
         public ListTransactionPage()
-        {
-           
-            Persons = new ObservableCollection<PersonalTransaction>();
-            DataContext = this;
+        {         
             this.InitializeComponent();
+            this.Loaded += Page_Loaded;
         }
 
-        private async void Page_Loaded(object sender, RoutedEventArgs e)
+        private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            await ShowDataList(Persons);
+            ListData.ItemsSource = crud.ListData();
         }
 
-        public static async Task ShowDataList(ObservableCollection<PersonalTransaction> persons)
+        private void Create_Click(object sender, RoutedEventArgs e)
         {
-            using(SQLiteConnection conn = new SQLiteConnection("sqlitepcldemo.db"))
+            Frame.Navigate(typeof(Pages.CreateTransactionPage));
+        }
+
+        private void ListData_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ListData.SelectedItem != null)
             {
-                await conn.OpenAsync();
-                SQLiteCommand command = new SQLiteCommand("Select * from PersonalTransaction", conn);
-                using (var reader = await command.ExecuteReaderAsync())
+                PersonalTransaction ps = (PersonalTransaction)ListData.SelectedItem;
+                txtID.Text = "ID : " + ps.ID.ToString();
+                txtName.Text = "Expenditure name : " + ps.Name;
+                txtDescription.Text = "Description : " + ps.Description;
+                txtMoney.Text = "Expended : " + ps.Money.ToString() + "VND";
+                txtCreated.Text = "Date time : " + ps.CreatedDate.ToString();
+                txtCategory.Text = "Category code : " + ps.Category;
+            }
+        }
+
+        //Filter by date
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ListData.ItemsSource = FilterByDate();
+        }
+
+        public List<PersonalTransaction> FilterByDate()
+        {
+            var infoData = new List<PersonalTransaction>();
+            var sql = "SELECT * FROM PersonalTransaction " +
+                "WHERE CreatedDate between ? and ?";
+
+            using (var stt = sQLiteConnection.Prepare(sql))
+            {
+                stt.Bind(1, from.SelectedDate.ToString());
+                stt.Bind(2, to.SelectedDate.ToString());
+                while (stt.Step() == SQLiteResult.ROW)
                 {
-                    var idOrdinal = reader.GetOrdinal("Id");
-                    var nameOrdinal = reader.GetOrdinal("Name");
-                    var desOrdinal = reader.GetOrdinal("Description");
-                    var moneyOrdinal = reader.GetOrdinal("Money");
-                    var dateOrdinal = reader.GetOrdinal("CreatedDate");
-                    var cateOrdinal = reader.GetOrdinal("Category");
-                    //them truong
-                    while (await reader.ReadAsync())
-                    {
-                        persons.Add(new PersonalTransaction() {
-                            ID = reader.GetInt32(idOrdinal),
-                            Name = reader.GetString(nameOrdinal),
-                         Description = reader.GetString(desOrdinal),
-                            Money = reader.GetDouble(moneyOrdinal),
-                            CreatedDate = reader.GetDateTime(dateOrdinal),
-                            Category = reader.GetInt32(cateOrdinal)
-                        });
-                    }
+                    var id = Convert.ToInt32(stt["Id"]);
+                    var name = (string)stt["Name"];
+                    var desc = (string)stt["Description"];
+                    var money = Convert.ToDouble(stt["Money"]);
+                    var createdAt = Convert.ToDateTime(stt["CreatedDate"]);
+                    var category = Convert.ToInt32(stt["Category"]);
+                    var infoObj = new PersonalTransaction(id, name, desc, money, createdAt, category);
+                    infoData.Add(infoObj);
                 }
-               
             }
-        }
-
-        public async Task<List<PersonalTransaction>> GetTransaction()
-        {
-            List<PersonalTransaction> perList = null;
-            try
-            {
-                var conn = new SQLiteConnection("sqlitepcldemo.db");
-                var query = "select * from PersonalTransaction;";
-                var expenditures = new List<PersonalTransaction>();
-                /* using (var stmt = conn.Prepare(query))
-                 {
-                      while(SQLiteResult.DONE == stmt.Step())
-                      {
-                          perList = new List<PersonalTransaction>()
-                          {
-                              ID = (int)stmt[1],
-                              perList[Name] = (string)stmt[1],
-                              Description = (string)stmt[2],
-                              Money = (double)stmt[3],
-                              CreatedDate = (DateTime)stmt[4],
-                              Category = (int)stmt[5]
-                          }; 
-                      }
-            }*/
-                return perList;
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+            return infoData;
         }
 
     }

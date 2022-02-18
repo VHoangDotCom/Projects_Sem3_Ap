@@ -23,7 +23,7 @@ namespace Demo_SQLite.Demo
         }
         private void GenerateOrders()
         {
-            _expenditures.Add(new PersonalTransaction(1001, "Maria Anders", "Germany", 30000,DateTime.Now , 23));
+            _expenditures.Add(new PersonalTransaction( 21,"Maria Anders", "Germany", 30000,DateTime.Now , 23));
            
         }
     }
