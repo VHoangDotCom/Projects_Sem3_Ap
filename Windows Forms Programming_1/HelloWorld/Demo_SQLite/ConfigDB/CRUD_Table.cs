@@ -48,14 +48,18 @@ namespace Demo_SQLite.ConfigDB
             return infoData;
         }
 
-        public PersonalTransaction GetExpend()
+        //Filter by date
+        public List<PersonalTransaction> FilterByDate(string from, string to)
         {
-            PersonalTransaction personalTransaction = new PersonalTransaction();
-            var stmt = "SELECT Id, Name, Description, Money, CreatedDate, Category " +
-                "FROM PersonalTransaction WHERE Id = " +personalTransaction.ID;
-            using (var stt = sQLiteConnection.Prepare(stmt))
+            var infoData = new List<PersonalTransaction>();
+            var sql = "SELECT * FROM PersonalTransaction " +
+                "WHERE CreatedDate BETWEEN ? AND ? ";
+
+            using (var stt = sQLiteConnection.Prepare(sql))
             {
-                if(SQLiteResult.DONE == stt.Step())
+                stt.Bind(1, from.ToString());
+                stt.Bind(2, to.ToString());
+                while (stt.Step() == SQLiteResult.ROW)
                 {
                     var id = Convert.ToInt32(stt["Id"]);
                     var name = (string)stt["Name"];
@@ -64,10 +68,36 @@ namespace Demo_SQLite.ConfigDB
                     var createdAt = Convert.ToDateTime(stt["CreatedDate"]);
                     var category = Convert.ToInt32(stt["Category"]);
                     var infoObj = new PersonalTransaction(id, name, desc, money, createdAt, category);
-                    personalTransaction = infoObj;
+                    infoData.Add(infoObj);
                 }
             }
-            return personalTransaction;
+            return infoData;
+        }
+
+        //Filter by category
+        public List<PersonalTransaction> FilterByCategory(string txtFindCate)
+        {
+            var infoData = new List<PersonalTransaction>();
+            var sql = "SELECT * FROM PersonalTransaction " +
+                "WHERE Category = ? ";
+
+            using (var stt = sQLiteConnection.Prepare(sql))
+            {
+                stt.Bind(1, txtFindCate.ToString());
+
+                while (stt.Step() == SQLiteResult.ROW)
+                {
+                    var id = Convert.ToInt32(stt["Id"]);
+                    var name = (string)stt["Name"];
+                    var desc = (string)stt["Description"];
+                    var money = Convert.ToDouble(stt["Money"]);
+                    var createdAt = Convert.ToDateTime(stt["CreatedDate"]);
+                    var category = Convert.ToInt32(stt["Category"]);
+                    var infoObj = new PersonalTransaction(id, name, desc, money, createdAt, category);
+                    infoData.Add(infoObj);
+                }
+            }
+            return infoData;
         }
 
 

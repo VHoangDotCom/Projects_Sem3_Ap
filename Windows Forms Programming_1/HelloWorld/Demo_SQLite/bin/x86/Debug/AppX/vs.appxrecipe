@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>8D0352EA67D996234BB5CF6C18D8EE281E6751B97A4101A1049B609D7C6A2569</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>7C8888DBCC31E88924BB163509B320F80BC7D665F1078BA5DC1A363E5AAD20D4</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>10d0df7c-f7b3-44e3-95ac-c573158a5661_1.0.0.0_x86__5gyrq6psz227t</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>10d0df7c-f7b3-44e3-95ac-c573158a5661_5gyrq6psz227t!App</RegisteredUserModeAppID>
     <RegisteredPackageID>10d0df7c-f7b3-44e3-95ac-c573158a5661</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-02-18T10:13:25.359</Modified>
+      <Modified>2022-02-19T00:01:01.629</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Demo_SQLite.exe">
       <PackagePath>entrypoint\Demo_SQLite.exe</PackagePath>
-      <Modified>2022-02-18T10:13:24.425</Modified>
+      <Modified>2022-02-19T00:01:00.327</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -162,8 +162,14 @@
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Media\Microsoft.Toolkit.Uwp.UI.Controls.Media.xr.xml</PackagePath>
       <Modified>2021-11-18T21:55:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Assets\Images\madPepe.png">
-      <PackagePath>Assets\Images\madPepe.png</PackagePath>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Assets\Images\madPepe.scale-200.png">
+      <PackagePath>Assets\Images\madPepe.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-12T01:03:33.595</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Assets\Images\madPepe.scale-400.png">
+      <PackagePath>Assets\Images\madPepe.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-02-12T01:03:33.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Assets\LockScreenLogo.scale-200.png">
@@ -173,17 +179,17 @@
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-08T12:18:49.897</Modified>
+      <Modified>2022-02-12T01:03:33.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-08T12:18:49.898</Modified>
+      <Modified>2022-02-12T01:03:33.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-08T12:18:49.898</Modified>
+      <Modified>2022-02-12T01:03:33.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
@@ -198,7 +204,7 @@
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-08T12:18:49.899</Modified>
+      <Modified>2022-02-12T01:03:33.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -206,27 +212,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Demo_SQLite.xr.xml">
       <PackagePath>Demo_SQLite.xr.xml</PackagePath>
-      <Modified>2022-02-18T10:02:57.861</Modified>
+      <Modified>2022-02-18T15:20:05.958</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-02-18T10:12:43.399</Modified>
+      <Modified>2022-02-19T00:01:00.225</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Demo\OrderDemo.xbf">
       <PackagePath>Demo\OrderDemo.xbf</PackagePath>
-      <Modified>2022-02-18T10:12:43.399</Modified>
+      <Modified>2022-02-19T00:01:00.225</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-02-18T10:12:43.399</Modified>
+      <Modified>2022-02-19T00:01:00.226</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Pages\CreateTransactionPage.xbf">
       <PackagePath>Pages\CreateTransactionPage.xbf</PackagePath>
-      <Modified>2022-02-18T10:12:43.399</Modified>
+      <Modified>2022-02-19T00:01:00.226</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Pages\ListTransactionPage.xbf">
       <PackagePath>Pages\ListTransactionPage.xbf</PackagePath>
-      <Modified>2022-02-18T10:12:43.398</Modified>
+      <Modified>2022-02-19T00:01:00.225</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -238,11 +244,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-02-18T01:59:05.166</Modified>
+      <Modified>2022-02-18T23:57:59.130</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\epc\Ap-Sem3\Windows Forms Programming\Test\HelloWorld\Demo_SQLite\bin\x86\Debug\Core\Demo_SQLite.exe">
       <PackagePath>Demo_SQLite.exe</PackagePath>
-      <Modified>2022-02-18T10:13:25.357</Modified>
+      <Modified>2022-02-19T00:01:01.623</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>

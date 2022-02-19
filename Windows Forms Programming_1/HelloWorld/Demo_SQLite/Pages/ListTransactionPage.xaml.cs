@@ -27,7 +27,7 @@ namespace Demo_SQLite.Pages
    
     public sealed partial class ListTransactionPage : Page
     {
-        private static SQLiteConnection sQLiteConnection = new SQLiteConnection("sqlitepcldemo.db");
+       
         private CRUD_Table crud = new CRUD_Table();
         public ListTransactionPage()
         {         
@@ -62,33 +62,73 @@ namespace Demo_SQLite.Pages
         //Filter by date
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ListData.ItemsSource = FilterByDate();
-        }
-
-        public List<PersonalTransaction> FilterByDate()
-        {
-            var infoData = new List<PersonalTransaction>();
-            var sql = "SELECT * FROM PersonalTransaction " +
-                "WHERE CreatedDate between ? and ?";
-
-            using (var stt = sQLiteConnection.Prepare(sql))
+            if(ValidateDate() == true)
             {
-                stt.Bind(1, from.SelectedDate.ToString());
-                stt.Bind(2, to.SelectedDate.ToString());
-                while (stt.Step() == SQLiteResult.ROW)
-                {
-                    var id = Convert.ToInt32(stt["Id"]);
-                    var name = (string)stt["Name"];
-                    var desc = (string)stt["Description"];
-                    var money = Convert.ToDouble(stt["Money"]);
-                    var createdAt = Convert.ToDateTime(stt["CreatedDate"]);
-                    var category = Convert.ToInt32(stt["Category"]);
-                    var infoObj = new PersonalTransaction(id, name, desc, money, createdAt, category);
-                    infoData.Add(infoObj);
-                }
+                ListData.ItemsSource = crud.FilterByDate(from.SelectedDate.ToString(), to.SelectedDate.ToString());
+            }           
+        }
+        private bool ValidateDate()
+        {
+           if(from.SelectedDate.ToString() == "")
+            {
+                dateErr.Text = "*Please choose the started date !";
+                return false;
+            }else if (to.SelectedDate.ToString() == "")
+            {
+                dateErr.Text = "*Please choose the ended date !";
+                return false;
             }
-            return infoData;
+            return true;
         }
 
+        private void from_SelectedDateChanged(DatePicker sender, DatePickerSelectedValueChangedEventArgs args)
+        {
+            dateErr.Text = "";
+        }
+
+        private void to_SelectedDateChanged(DatePicker sender, DatePickerSelectedValueChangedEventArgs args)
+        {
+            dateErr.Text = "";
+        }
+
+        //Filter by Category
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (ValidateCate() == true)
+            {
+                ListData.ItemsSource = crud.FilterByCategory(txtFindCate.Text);
+            }           
+        }
+       
+        private bool ValidateCate()
+        {
+            if(txtFindCate.Text == "")
+            {
+                cateErr.Text = "*Please enter category code !";
+                return false;
+            }
+            return true;
+        }
+        private void txtFindCate_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            cateErr.Text = "";
+        }
+
+        //Reset data
+        private void Show_Click(object sender, RoutedEventArgs e)
+        {
+            ListData.ItemsSource = crud.ListData();
+            cateErr.Text = "";
+            dateErr.Text = "";
+            txtID.Text = "";
+            txtName.Text = "";
+            txtDescription.Text = "";
+            txtMoney.Text = "";
+            txtCreated.Text = "";
+            txtCategory.Text = "";
+            from.SelectedDate = null;
+            to.SelectedDate = null;
+            txtFindCate.Text = "";
+        }
     }
 }

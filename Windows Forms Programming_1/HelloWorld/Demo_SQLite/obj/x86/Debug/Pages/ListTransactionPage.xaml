@@ -13,12 +13,12 @@
     <ScrollViewer  VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto" >
         <Grid Background="AliceBlue">
             <StackPanel  Orientation="Horizontal"  HorizontalAlignment="Center">
-                <TextBlock x:ConnectionId='16' x:Name="title" Foreground="DarkBlue"   FontSize="30" Text="EXPENDITURE MANAGEMENT" Margin="0 20 0 10" />
+                <TextBlock x:ConnectionId='19' x:Name="title" Foreground="DarkBlue"   FontSize="30" Text="EXPENDITURE MANAGEMENT" Margin="0 20 0 10" />
             </StackPanel>
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                 <StackPanel Margin="0,120,0,0">
-                    <Border Background="GhostWhite" Width="700" Height="600" Margin="0 0 0 0" BorderBrush="CadetBlue" BorderThickness="2" CornerRadius="40">
-                        <controls:DataGrid x:ConnectionId='15'  
+                    <Border Background="GhostWhite" Width="750" Height="500" Margin="-30 50 0 0" BorderBrush="CadetBlue" BorderThickness="2" CornerRadius="40">
+                        <controls:DataGrid x:ConnectionId='18'  
                 x:Name="ListData" 
                                                             
                 ItemsSource="{Binding Orders}"
@@ -26,7 +26,7 @@
                 AutoGenerateColumns="True"
                 VerticalAlignment="Top" 
                 Margin="35 10 0 10"
-                Width="600"
+                Width="650"
                 AlternatingRowBackground="LightBlue"
                 AreRowDetailsFrozen="True"
                 Background="GhostWhite"
@@ -42,21 +42,31 @@
                 </StackPanel>
                 <StackPanel  HorizontalAlignment="Right" Orientation="Vertical">
                     <StackPanel>
-                        <Border Background="FloralWhite" Width="650" Height="130" Margin="0 100 0 0" BorderBrush="CadetBlue" BorderThickness="2" CornerRadius="40">
+                        <Border Background="FloralWhite" Width="650" Height="130" Margin="30 100 0 0" BorderBrush="CadetBlue" BorderThickness="2" CornerRadius="40">
                             <StackPanel Orientation="Vertical">
-                                <Button x:ConnectionId='11'                      Foreground="White" Background="CadetBlue" FontSize="15" HorizontalAlignment="Center" Content="Filter by time"></Button>
+                                <Button x:ConnectionId='14'                      Foreground="White" Background="CadetBlue" FontSize="15" HorizontalAlignment="Center" Content="Filter by time"></Button>
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Foreground="CadetBlue" Margin="120 0 100 0" FontSize="20" Text="From : "></TextBlock>
                                     <TextBlock Foreground="CadetBlue" Margin="180 0 0 0" FontSize="20" Text="To : "></TextBlock>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                    <DatePicker x:ConnectionId='13' x:Name="from" Width="280" Background="CadetBlue"  Margin="20 0 0 0" />
-                                    <DatePicker x:ConnectionId='14' x:Name="to" Width="280" Background="CadetBlue"  Margin="20 0 0 0" />
+                                    <DatePicker x:ConnectionId='16'                                                x:Name="from" Width="280" Background="CadetBlue"  Margin="20 0 0 0" />
+                                    <DatePicker x:ConnectionId='17'                                              x:Name="to" Width="280" Background="CadetBlue"  Margin="20 0 0 0" />
                                 </StackPanel>
-                                <TextBlock x:ConnectionId='12' x:Name="dateErr" FontSize="20" Foreground="Red" HorizontalAlignment="Center" FontWeight="Bold" ></TextBlock>
+                                <TextBlock x:ConnectionId='15' x:Name="dateErr" FontSize="20" Foreground="Red" HorizontalAlignment="Center" FontWeight="Bold" ></TextBlock>
                             </StackPanel>
                         </Border>
-                        <Border Background="FloralWhite" Width="550" Height="400" Margin="0 40 0 0" BorderBrush="CadetBlue" BorderThickness="2" CornerRadius="40">
+                        <Border Background="FloralWhite" Width="650" Height="100" Margin="30 30 0 0" BorderBrush="CadetBlue" BorderThickness="2" CornerRadius="40">
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Foreground="CadetBlue" FontSize="15" HorizontalAlignment="Center" Text="Enter category code"></TextBlock>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBox x:ConnectionId='12' x:Name="txtFindCate"                                                 Background="White" Foreground="CadetBlue" Margin="40 10 0 0" Width="400" FontSize="20" PlaceholderText="Enter Category code"></TextBox>
+                                    <Button x:ConnectionId='13'                        Foreground="CadetBlue" Height="40" Width="100" Content="Search" Margin="0 10 0 0" FontSize="20" ></Button>
+                                </StackPanel>
+                                <TextBlock x:ConnectionId='11' x:Name="cateErr" FontSize="20" Foreground="Red" HorizontalAlignment="Center" FontWeight="Bold" ></TextBlock>
+                            </StackPanel>
+                        </Border>
+                        <Border Background="FloralWhite" Width="550" Height="350" Margin="30 40 0 0" BorderBrush="CadetBlue" BorderThickness="2" CornerRadius="40">
                             <StackPanel Margin="20" Orientation="Vertical">
                                 <TextBlock x:ConnectionId='5' Margin="0 10 0 0"  FontSize="30" x:Name="txtID" ></TextBlock>
                                 <TextBlock x:ConnectionId='6' Margin="0 10 0 0" FontSize="30" x:Name="txtName" ></TextBlock>
@@ -69,9 +79,9 @@
                             
                         </Border>
                     </StackPanel>
-                    <StackPanel  Margin="30 0 0 0" HorizontalAlignment="Center" Orientation="Horizontal">
+                    <StackPanel  Margin="-1400 -90 0 0" HorizontalAlignment="Center" Orientation="Horizontal">
                         <Button x:ConnectionId='2' Margin="35" Style="{StaticResource BasicBtn}"                      Content="Create" x:Name="Create" ></Button>
-                        <Button x:ConnectionId='3' Margin="35" Style="{StaticResource BasicBtn}" Content="Show"  x:Name="Show" ></Button>
+                        <Button x:ConnectionId='3' Margin="35" Style="{StaticResource BasicBtn}"                    Content="Reset"  x:Name="Show" ></Button>
                         <Button x:ConnectionId='4' Margin="35" Style="{StaticResource BasicBtn}" Content="Delete"  x:Name="Delete" ></Button>
                     </StackPanel>
                 </StackPanel>

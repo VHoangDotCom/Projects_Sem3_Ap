@@ -17,7 +17,7 @@
             </StackPanel>
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                 <StackPanel Margin="0,120,0,0">
-                    <Border Background="GhostWhite" Width="700" Height="600" Margin="0 0 0 0" BorderBrush="CadetBlue" BorderThickness="2" CornerRadius="40">
+                    <Border Background="GhostWhite" Width="750" Height="500" Margin="-30 50 0 0" BorderBrush="CadetBlue" BorderThickness="2" CornerRadius="40">
                         <controls:DataGrid  
                 x:Name="ListData" 
                 SelectionChanged="ListData_SelectionChanged"
@@ -26,7 +26,7 @@
                 AutoGenerateColumns="True"
                 VerticalAlignment="Top" 
                 Margin="35 10 0 10"
-                Width="600"
+                Width="650"
                 AlternatingRowBackground="LightBlue"
                 AreRowDetailsFrozen="True"
                 Background="GhostWhite"
@@ -42,7 +42,7 @@
                 </StackPanel>
                 <StackPanel  HorizontalAlignment="Right" Orientation="Vertical">
                     <StackPanel>
-                        <Border Background="FloralWhite" Width="650" Height="130" Margin="0 100 0 0" BorderBrush="CadetBlue" BorderThickness="2" CornerRadius="40">
+                        <Border Background="FloralWhite" Width="650" Height="130" Margin="30 100 0 0" BorderBrush="CadetBlue" BorderThickness="2" CornerRadius="40">
                             <StackPanel Orientation="Vertical">
                                 <Button Click="Button_Click" Foreground="White" Background="CadetBlue" FontSize="15" HorizontalAlignment="Center" Content="Filter by time"></Button>
                                 <StackPanel Orientation="Horizontal">
@@ -50,13 +50,23 @@
                                     <TextBlock Foreground="CadetBlue" Margin="180 0 0 0" FontSize="20" Text="To : "></TextBlock>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                    <DatePicker x:Name="from" Width="280" Background="CadetBlue"  Margin="20 0 0 0" />
-                                    <DatePicker x:Name="to" Width="280" Background="CadetBlue"  Margin="20 0 0 0" />
+                                    <DatePicker SelectedDateChanged="from_SelectedDateChanged" x:Name="from" Width="280" Background="CadetBlue"  Margin="20 0 0 0" />
+                                    <DatePicker SelectedDateChanged="to_SelectedDateChanged" x:Name="to" Width="280" Background="CadetBlue"  Margin="20 0 0 0" />
                                 </StackPanel>
                                 <TextBlock x:Name="dateErr" FontSize="20" Foreground="Red" HorizontalAlignment="Center" FontWeight="Bold" ></TextBlock>
                             </StackPanel>
                         </Border>
-                        <Border Background="FloralWhite" Width="550" Height="400" Margin="0 40 0 0" BorderBrush="CadetBlue" BorderThickness="2" CornerRadius="40">
+                        <Border Background="FloralWhite" Width="650" Height="100" Margin="30 30 0 0" BorderBrush="CadetBlue" BorderThickness="2" CornerRadius="40">
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Foreground="CadetBlue" FontSize="15" HorizontalAlignment="Center" Text="Enter category code"></TextBlock>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBox x:Name="txtFindCate" SelectionChanged="txtFindCate_SelectionChanged" Background="White" Foreground="CadetBlue" Margin="40 10 0 0" Width="400" FontSize="20" PlaceholderText="Enter Category code"></TextBox>
+                                    <Button Click="Button_Click_1" Foreground="CadetBlue" Height="40" Width="100" Content="Search" Margin="0 10 0 0" FontSize="20" ></Button>
+                                </StackPanel>
+                                <TextBlock x:Name="cateErr" FontSize="20" Foreground="Red" HorizontalAlignment="Center" FontWeight="Bold" ></TextBlock>
+                            </StackPanel>
+                        </Border>
+                        <Border Background="FloralWhite" Width="550" Height="350" Margin="30 40 0 0" BorderBrush="CadetBlue" BorderThickness="2" CornerRadius="40">
                             <StackPanel Margin="20" Orientation="Vertical">
                                 <TextBlock Margin="0 10 0 0"  FontSize="30" x:Name="txtID" ></TextBlock>
                                 <TextBlock Margin="0 10 0 0" FontSize="30" x:Name="txtName" ></TextBlock>
@@ -69,9 +79,9 @@
                             
                         </Border>
                     </StackPanel>
-                    <StackPanel  Margin="30 0 0 0" HorizontalAlignment="Center" Orientation="Horizontal">
+                    <StackPanel  Margin="-1400 -90 0 0" HorizontalAlignment="Center" Orientation="Horizontal">
                         <Button Margin="35" Style="{StaticResource BasicBtn}" Click="Create_Click" Content="Create" x:Name="Create" ></Button>
-                        <Button Margin="35" Style="{StaticResource BasicBtn}" Content="Show"  x:Name="Show" ></Button>
+                        <Button Margin="35" Style="{StaticResource BasicBtn}" Click="Show_Click" Content="Reset"  x:Name="Show" ></Button>
                         <Button Margin="35" Style="{StaticResource BasicBtn}" Content="Delete"  x:Name="Delete" ></Button>
                     </StackPanel>
                 </StackPanel>

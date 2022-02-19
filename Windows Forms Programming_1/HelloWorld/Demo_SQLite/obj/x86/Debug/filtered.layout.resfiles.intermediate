@@ -1,7 +1,8 @@
 WinMetadata\Windows.winmd
 SQLitePCL.Ext.dll
 SQLitePCL.Ext.pri
-Assets\Images\madPepe.png
+Assets\Images\madPepe.scale-200.png
+Assets\Images\madPepe.scale-400.png
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png

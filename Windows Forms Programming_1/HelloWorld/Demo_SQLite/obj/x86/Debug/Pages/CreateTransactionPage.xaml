@@ -60,56 +60,15 @@
                     <Image x:ConnectionId='5' x:Name="image4" Margin="20 0 0 0" Width="30" Height="30" />
                     <TextBlock x:ConnectionId='6' x:Name="CateErr"  Foreground="Red"  Margin="20 0 93 0"/>
                 </StackPanel>
-
-         
-            
-
-
+                
                 <!-- Button -->
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <Button x:ConnectionId='2' Style="{StaticResource BasicBtn}"                      Content="Thêm"   Margin="0 10 30 0"/>
+                    <Button x:ConnectionId='2' Style="{StaticResource BasicBtn}"                      Content="Create"   Margin="0 10 30 0"/>
                     <Button x:ConnectionId='3'  Style="{StaticResource BasicBtn}" Content="List"  Margin="0 10 30 0"                  />
-                  
                 </StackPanel>
             </StackPanel>
         </Border>
     </Grid>
-    <!-- <Page.Resources>
-        <DataTemplate x:Key="AccountListViewTemplate" x:DataType="local1:PersonalTransaction">
-            <StackPanel Orientation="Horizontal" Margin="5">
-                <Image Source="{x:Bind Name}" Width="100"/>
-                <TextBlock Style="{StaticResource MsgError}" Text="{x:Bind ID}" x:Phase="1"/>
-                <TextBlock Text="{x:Bind Description}" x:Phase="1"/>
-            </StackPanel>
-        </DataTemplate>
-
-        <DataTemplate x:Key="AccountListViewTemplate2" x:DataType="local1:PersonalTransaction">
-            <Grid Margin="0,12,0,12" AutomationProperties.Name="{x:Bind Name}">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" MinWidth="150"/>
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Image Source="{x:Bind Description}" MaxHeight="100" Stretch="Fill"/>
-
-                <StackPanel Margin="12,0,0,0" Grid.Column="1" >
-                    <TextBlock Style="{StaticResource MsgError}" Text="{x:Bind Description}" FontSize="14" FontWeight="SemiBold" 
-                        HorizontalAlignment="Left" Margin="0,0,0,6" LineHeight="20"/>
-                    <TextBlock Text="{x:Bind Money}" FontFamily="Segoe UI" FontWeight="Normal" Style="{ThemeResource BodyTextBlockStyle}"
-                        TextTrimming="CharacterEllipsis" Width="350" MaxLines="1"/>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="10" HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}" Margin="0,0,0,0"/>
-                        <TextBlock Text=" Views " HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}"/>
-                        <TextBlock Text=" ⋅ " FontFamily="Segoe UI" FontSize="12" FontWeight="Bold"
-                            HorizontalAlignment="Left"/>
-                        <TextBlock Text="2" HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}" Margin="5,0,0,0"/>
-                        <TextBlock Text=" Likes" HorizontalAlignment="Left" Style="{ThemeResource CaptionTextBlockStyle}"/>
-                    </StackPanel>
-                </StackPanel>
-            </Grid>
-        </DataTemplate>
-    </Page.Resources>
-    <StackPanel>
-        <ListView x:Name="MyListView" ItemTemplate="{StaticResource AccountListViewTemplate2}"></ListView>
-    </StackPanel>  -->
+  
 </Page>
 
