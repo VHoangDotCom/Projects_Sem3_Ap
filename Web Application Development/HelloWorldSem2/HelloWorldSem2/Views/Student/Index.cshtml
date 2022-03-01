@@ -1,0 +1,13 @@
+﻿@model IEnumerable<HelloWorldSem2.Models.Student>
+
+<h1>
+    List Student
+</h1>
+<ul>
+    @foreach(var s in Model)
+            {
+                <li>
+                    @s.RollNumber - @s.FullName
+                </li>
+            }
+</ul>

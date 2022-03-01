@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<style>
+    .myclass {
+        text-decoration: none;
+    }
+</style>
+
+<h2>@Html.ActionLink("This is a link", "Say", "Hello", new { @class = "text-success myclass", @id = "my-id" })</h2>
+<h2>@ViewBag.Title.</h2>
+<h2>@ViewBag.Phone.</h2>
+@{
+    HelloWorldSem2.Models.Student std = (HelloWorldSem2.Models.Student)ViewData["student"];
+}
+<p>@std.RollNumber</p>
+<p>@std.FullName</p>
+
+@{ Html.BeginForm("Say", "Hello", FormMethod.Get);}
+@{ Html.EndForm();}
+@Html.Partial("DemoPartialview")
