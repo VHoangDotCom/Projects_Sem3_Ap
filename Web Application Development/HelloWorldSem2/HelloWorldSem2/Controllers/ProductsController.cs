@@ -21,6 +21,11 @@ namespace HelloWorldSem2.Controllers
             return View(db.Products.ToList());
         }
 
+        public ActionResult IndexAjax()
+        {
+            return PartialView(db.Products.ToList());
+        }
+
         // GET: Products/Details/5
         public ActionResult Details(int? id)
         {
@@ -56,6 +61,19 @@ namespace HelloWorldSem2.Controllers
                 return RedirectToAction("Index");
             }
 
+            return View(product);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult CreateAjax([Bind(Include = "Id,Name,Price,Thumbnail")] Product product)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Products.Add(product);
+                db.SaveChanges();
+                return PartialView("CreateAjax");
+            }
             return View(product);
         }
 

@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @RenderSection("style",false)
+</head>
+<body>
+    <div>
+        <h1>Header nha lam</h1>
+        -------------------------------------------
+        @RenderBody()
+        -------------------------------------------
+    </div>
+    <footer>
+        Footer nha lam
+        @RenderSection("footer")
+    </footer>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    @RenderSection("script", false)
+</body>
+</html>

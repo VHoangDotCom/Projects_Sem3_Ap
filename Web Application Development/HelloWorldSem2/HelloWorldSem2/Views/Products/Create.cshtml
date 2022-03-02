@@ -6,10 +6,16 @@
 
 <h2>Create</h2>
 
-@using (Html.BeginForm()) 
+@using (Ajax.BeginForm("CreateAjax", "Products", new AjaxOptions
+{
+    InsertionMode = InsertionMode.Replace,
+    HttpMethod = "post",
+    OnFailure = "failed",
+    LoadingElementId = "ajax-loader",
+    UpdateTargetId = "results",
+}))
 {
     @Html.AntiForgeryToken()
-    
     <div class="form-horizontal">
         <h4>Product</h4>
         <hr />
@@ -40,12 +46,34 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input id="btn-submit" type="submit" value="Create" class="btn btn-default" />
             </div>
         </div>
     </div>
+    <img id="ajax-loader" width="50px" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AAjax_loader_metal_512.gif&psig=AOvVaw0qO-PDXotvB_T3NmxcX2g7&ust=1646274259315000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNjL7NmvpvYCFQAAAAAdAAAAABAJ" style="display:none" />
 }
+
+<div id="failed">
+   
+</div>
+
+<div id="results">
+
+</div>
 
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
+
+@section script{
+    <script>
+        /*  $(document).ready(function () {
+              $('#btn-submit').click(function (event) {
+               //   document.forms['product-forms']['Name'].value
+                  var data = $('form[name=product.form]').serialize();
+                  $.post('/Products/Create',data);
+              });
+          }) */
+
+    </script>
+}
